@@ -1,9 +1,0 @@
-entity,metric,reported_value,unit,period,precision,source_id,observation_id,landing_url,source_locator,usage_constraint
-Russian airlines,carried_passengers,108850000,passengers,2025,published_decimal_millions,S03,O006,https://www.favt.gov.ru/novosti-novosti/?id=17763,First paragraph,all_routes; reported total
-Russian airlines,domestic_passengers,81450000,passengers,2025,published_decimal_millions,S03,O007,https://www.favt.gov.ru/novosti-novosti/?id=17763,First paragraph,domestic_only
-Russian airlines,international_passengers,27400000,passengers,2025,published_decimal_millions,S03,O008,https://www.favt.gov.ru/novosti-novosti/?id=17763,First paragraph,international_only
-Russian airports,passenger_handlings,214660000,airport_handlings,2025,published_decimal_millions,S03,O009,https://www.favt.gov.ru/novosti-novosti/?id=17763,First paragraph,NOT airline passenger denominator
-Red Wings,carried_passengers,2700000,passengers,2025,rounded,S08,O017,https://flyredwings.com/en/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,Overall passenger volume paragraph,all lines; rounded
-Red Wings,passengers_on_russian_aircraft,2000000,passengers,2025,greater_than,S08,O018,https://flyredwings.com/en/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,Russian fleet paragraph,NOT solely domestic flights
-Red Wings,flights_on_russian_aircraft,24000,flights,2025,approximately,S08,O019,https://flyredwings.com/en/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,Russian fleet paragraph,not free capacity
-Red Wings,new_regular_destinations,25,destinations,2025,published_integer,S08,O021,https://flyredwings.com/en/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,New routes paragraph,17 domestic and 8 international
