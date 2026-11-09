@@ -1,0 +1,9 @@
+entity,metric,published_value,unit,period,qualifier,source_id,landing_url,source_locator,scope_constraint
+Red Wings,passengers_carried,2700000,passengers,2025,rounded_reported,S08,https://flyredwings.com/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,Абзац об общем пассажиропотоке,all_airlines_services
+Red Wings,russian_aircraft_passengers,2000000,passengers,2025,greater_than,S08,https://flyredwings.com/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,Абзац о российских самолётах,russian_aircraft_not_domestic_routes
+Red Wings,russian_aircraft_flights,24000,flights,2025,approximately,S08,https://flyredwings.com/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,Абзац о 24 тыс. рейсов,russian_aircraft_only
+Red Wings,new_regular_destinations,25,destinations,2025,as_published_integer,S08,https://flyredwings.com/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,Абзац о 25 новых направлениях,17_domestic_8_international
+Russian airlines,passengers_carried,108900000,passengers,2025,rounded_millions,S05,https://mintrans.gov.ru/file/557797,"Гражданская авиация, печатная с. 3",all_routes
+Russian airlines,domestic_passengers_carried,81500000,passengers,2025,rounded_millions,S05,https://mintrans.gov.ru/file/557797,"Гражданская авиация, печатная с. 4",domestic_routes
+Non_Moscow_domestic_routes,passengers_carried,34400000,passengers,2025,rounded_millions,S05,https://mintrans.gov.ru/file/557797,"Гражданская авиация, печатная с. 4",non_moscow_segments_not_final_OD
+Regional_regular_routes,share_bypassing_moscow,54.4,percent,2025,as_published_decimal,S05,https://mintrans.gov.ru/file/557797,"Гражданская авиация, печатная с. 4",routes_flights_wording_ambiguous
