@@ -1,0 +1,8 @@
+﻿вариант,origin,destination,legs,id,пересадка_мин
+H,IKT,HMA,"['H-0-1-B1-in', 'H-0-2-B2-out']",IKT-HMA-0,75
+H,KZN,NJC,"['H-0-1-B2-in', 'H-0-2-B1-out']",KZN-NJC-0,75
+H,NUX,SVX,"['H-1-1-B1-in', 'H-1-2-B1-out']",NUX-SVX-1,75
+H,SVX,NUX,"['H-2-1-B1-in', 'H-2-2-B1-out']",SVX-NUX-2,75
+H,HMA,OVB,"['H-3-1-B1-in', 'H-3-2-B1-out']",HMA-OVB-3,75
+H,OVB,KZN,"['H-4-1-B2-in', 'H-4-2-B1-out']",OVB-KZN-4,75
+H,SGC,IKT,"['H-4-1-B1-in', 'H-4-2-B2-out']",SGC-IKT-4,75

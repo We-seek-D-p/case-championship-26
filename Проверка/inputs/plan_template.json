@@ -1,0 +1,311 @@
+{
+  "baseline_version": "RW-S0-2026-11-08-P0-v2-sourced",
+  "baseline_status": "partial",
+  "description": "Проверочный срез остаточного парка, не прогноз, не доказательство новой базы",
+  "zones": {
+    "Кольцово": "Asia/Yekaterinburg",
+    "Центральный": "Asia/Omsk",
+    "Толмачёво": "Asia/Novosibirsk"
+  },
+  "turn_minutes": {
+    "Кольцово": 50,
+    "Центральный": 50
+  },
+  "day_zone": "Asia/Yekaterinburg",
+  "daily_limit": null,
+  "discount": null,
+  "connection_rules": {},
+  "plans": [
+    {
+      "variant": "без_новой_базы",
+      "flights": [
+        {
+          "id": "Д-туда",
+          "origin": "Кольцово",
+          "destination": "Центральный",
+          "departure": "2026-11-11T16:35+05:00",
+          "arrival": "2026-11-11T19:15+06:00",
+          "source": "проверочный сдвиг времени С01, вылет не заявлен",
+          "carrier": "Red Wings",
+          "tail": "Е1",
+          "type": "Superjet 100",
+          "seats": null
+        },
+        {
+          "id": "Д-обратно",
+          "origin": "Центральный",
+          "destination": "Кольцово",
+          "departure": "2026-11-11T20:05+06:00",
+          "arrival": "2026-11-11T20:50+05:00",
+          "source": "проверочный сдвиг времени С01, вылет не заявлен",
+          "carrier": "Red Wings",
+          "tail": "Е1",
+          "type": "Superjet 100",
+          "seats": null
+        }
+      ],
+      "initial_rub": null,
+      "cases": [
+        {
+          "case": "базовый",
+          "sales": null,
+          "annual": [
+            {
+              "year": 2027,
+              "new_ticket_revenue": null,
+              "lost_ticket_revenue": null,
+              "avoided_costs": null,
+              "extra_costs": {
+                "рейсы": null,
+                "обслуживание_пассажиров": null,
+                "перегоны": null,
+                "база_и_персонал": null,
+                "парк_и_резерв": null,
+                "вытеснение_других_рейсов": null,
+                "налоги_и_оборотные_средства": null
+              },
+              "support": null,
+              "support_status": "неизвестна",
+              "base_boardings": null,
+              "net_new_boardings": null,
+              "base_market": null,
+              "net_market_change": null
+            },
+            {
+              "year": 2028,
+              "new_ticket_revenue": null,
+              "lost_ticket_revenue": null,
+              "avoided_costs": null,
+              "extra_costs": {
+                "рейсы": null,
+                "обслуживание_пассажиров": null,
+                "перегоны": null,
+                "база_и_персонал": null,
+                "парк_и_резерв": null,
+                "вытеснение_других_рейсов": null,
+                "налоги_и_оборотные_средства": null
+              },
+              "support": null,
+              "support_status": "неизвестна",
+              "base_boardings": null,
+              "net_new_boardings": null,
+              "base_market": null,
+              "net_market_change": null
+            }
+          ]
+        },
+        {
+          "case": "осторожный",
+          "sales": null,
+          "annual": [
+            {
+              "year": 2027,
+              "new_ticket_revenue": null,
+              "lost_ticket_revenue": null,
+              "avoided_costs": null,
+              "extra_costs": {
+                "рейсы": null,
+                "обслуживание_пассажиров": null,
+                "перегоны": null,
+                "база_и_персонал": null,
+                "парк_и_резерв": null,
+                "вытеснение_других_рейсов": null,
+                "налоги_и_оборотные_средства": null
+              },
+              "support": null,
+              "support_status": "неизвестна",
+              "base_boardings": null,
+              "net_new_boardings": null,
+              "base_market": null,
+              "net_market_change": null
+            },
+            {
+              "year": 2028,
+              "new_ticket_revenue": null,
+              "lost_ticket_revenue": null,
+              "avoided_costs": null,
+              "extra_costs": {
+                "рейсы": null,
+                "обслуживание_пассажиров": null,
+                "перегоны": null,
+                "база_и_персонал": null,
+                "парк_и_резерв": null,
+                "вытеснение_других_рейсов": null,
+                "налоги_и_оборотные_средства": null
+              },
+              "support": null,
+              "support_status": "неизвестна",
+              "base_boardings": null,
+              "net_new_boardings": null,
+              "base_market": null,
+              "net_market_change": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "новая_база",
+      "flights": [
+        {
+          "id": "Перегон-в-Омск",
+          "origin": "Кольцово",
+          "destination": "Центральный",
+          "departure": "2026-11-10T21:20+05:00",
+          "arrival": "2026-11-11T00:00+06:00",
+          "source": "проверочный перегон, не заявлен",
+          "carrier": "Red Wings",
+          "tail": "Е1",
+          "type": "Superjet 100",
+          "seats": 0
+        },
+        {
+          "id": "Б-туда",
+          "origin": "Центральный",
+          "destination": "Кольцово",
+          "departure": "2026-11-11T20:05+06:00",
+          "arrival": "2026-11-11T20:50+05:00",
+          "source": "проверочный сдвиг времени С01, вылет не заявлен",
+          "carrier": "Red Wings",
+          "tail": "Е1",
+          "type": "Superjet 100",
+          "seats": null
+        },
+        {
+          "id": "Б-обратно",
+          "origin": "Кольцово",
+          "destination": "Центральный",
+          "departure": "2026-11-11T21:40+05:00",
+          "arrival": "2026-11-12T00:20+06:00",
+          "source": "проверочный сдвиг времени С01, вылет не заявлен",
+          "carrier": "Red Wings",
+          "tail": "Е1",
+          "type": "Superjet 100",
+          "seats": null
+        },
+        {
+          "id": "Перегон-из-Омска",
+          "origin": "Центральный",
+          "destination": "Кольцово",
+          "departure": "2026-11-12T01:10+06:00",
+          "arrival": "2026-11-12T01:55+05:00",
+          "source": "проверочный перегон, не заявлен",
+          "carrier": "Red Wings",
+          "tail": "Е1",
+          "type": "Superjet 100",
+          "seats": 0
+        }
+      ],
+      "initial_rub": null,
+      "cases": [
+        {
+          "case": "базовый",
+          "sales": null,
+          "annual": [
+            {
+              "year": 2027,
+              "new_ticket_revenue": null,
+              "lost_ticket_revenue": null,
+              "avoided_costs": null,
+              "extra_costs": {
+                "рейсы": null,
+                "обслуживание_пассажиров": null,
+                "перегоны": null,
+                "база_и_персонал": null,
+                "парк_и_резерв": null,
+                "вытеснение_других_рейсов": null,
+                "налоги_и_оборотные_средства": null
+              },
+              "support": null,
+              "support_status": "неизвестна",
+              "base_boardings": null,
+              "net_new_boardings": null,
+              "base_market": null,
+              "net_market_change": null
+            },
+            {
+              "year": 2028,
+              "new_ticket_revenue": null,
+              "lost_ticket_revenue": null,
+              "avoided_costs": null,
+              "extra_costs": {
+                "рейсы": null,
+                "обслуживание_пассажиров": null,
+                "перегоны": null,
+                "база_и_персонал": null,
+                "парк_и_резерв": null,
+                "вытеснение_других_рейсов": null,
+                "налоги_и_оборотные_средства": null
+              },
+              "support": null,
+              "support_status": "неизвестна",
+              "base_boardings": null,
+              "net_new_boardings": null,
+              "base_market": null,
+              "net_market_change": null
+            }
+          ]
+        },
+        {
+          "case": "осторожный",
+          "sales": null,
+          "annual": [
+            {
+              "year": 2027,
+              "new_ticket_revenue": null,
+              "lost_ticket_revenue": null,
+              "avoided_costs": null,
+              "extra_costs": {
+                "рейсы": null,
+                "обслуживание_пассажиров": null,
+                "перегоны": null,
+                "база_и_персонал": null,
+                "парк_и_резерв": null,
+                "вытеснение_других_рейсов": null,
+                "налоги_и_оборотные_средства": null
+              },
+              "support": null,
+              "support_status": "неизвестна",
+              "base_boardings": null,
+              "net_new_boardings": null,
+              "base_market": null,
+              "net_market_change": null
+            },
+            {
+              "year": 2028,
+              "new_ticket_revenue": null,
+              "lost_ticket_revenue": null,
+              "avoided_costs": null,
+              "extra_costs": {
+                "рейсы": null,
+                "обслуживание_пассажиров": null,
+                "перегоны": null,
+                "база_и_персонал": null,
+                "парк_и_резерв": null,
+                "вытеснение_других_рейсов": null,
+                "налоги_и_оборотные_средства": null
+              },
+              "support": null,
+              "support_status": "неизвестна",
+              "base_boardings": null,
+              "net_new_boardings": null,
+              "base_market": null,
+              "net_market_change": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "planes": [
+    {
+      "id": "Е1",
+      "type": "Superjet 100",
+      "origin": "Кольцово",
+      "destination": "Кольцово",
+      "reserved": false,
+      "from": "2026-11-10T20:00+05:00",
+      "to": "2026-11-12T03:00+05:00"
+    }
+  ]
+}
