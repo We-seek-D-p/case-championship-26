@@ -1,0 +1,476 @@
+source_id,raw_path,source_locator,destination_city,departure_time,arrival_time,days,period_source,airline,flight_number,aircraft,destination_airport
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 3",Абакан,02:00,06:55,пн,26 окт / 23 ноя,RED WINGS,WZ-5015,RRJ-95B,ABA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 4",Абакан,02:00,06:55,"пн, чт",03 дек / 22 мар,RED WINGS,WZ-5015,RRJ-95B,ABA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 6",Алматы,12:40,15:30,"пн, ср, сб",02 ноя / 14 ноя,RED WINGS,WZ-1073,RRJ-95B,ALA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 7",Алматы,12:40,15:30,"пн, сб",16 ноя / 28 ноя,RED WINGS,WZ-1073,RRJ-95B,ALA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 8",Алматы,12:40,15:30,"пн, ср, сб",30 ноя / 19 дек,RED WINGS,WZ-1073,RRJ-95B,ALA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 10",Анталья,01:25,04:25,чт,19 ноя / 19 ноя,Southwindairlines,2S-126,A-321,AYT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 11",Анталья,01:25,04:25,"чт, вс",26 ноя / 29 ноя,Southwindairlines,2S-126,A-321NEO,AYT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 12",Анталья,01:25,04:25,чт,03 дек / 24 дек,Southwindairlines,2S-126,B-737 MAX8,AYT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 13",Анталья,01:25,04:25,вс,06 дек / 20 дек,Southwindairlines,2S-126,B-737 MAX8,AYT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 14",Анталья,03:25,06:25,вс,08 ноя / 15 ноя,Southwindairlines,2S-126,B-777,AYT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 15",Анталья,03:30,06:25,"чт, вс",12 ноя / 15 ноя,Air Anka,6K-2101,B-737,AYT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 16",Анталья,03:35,06:35,вс,22 ноя / 22 ноя,Southwindairlines,2S-126,B-777,AYT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 17",Анталья,05:10,08:10,ср,11 ноя / 11 ноя,Southwindairlines,2S-226,A-321,AYT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 19",Астана,11:45,13:35,чт,26 ноя / 26 ноя,RED WINGS,WZ-1097,RRJ-95B,NQZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 20",Астана,13:00,14:50,вт,17 ноя / 17 ноя,RED WINGS,WZ-1097,RRJ-95B,NQZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 21",Астана,16:00,17:50,"пн, ср, чт, пт, сб, вс",02 ноя / 22 ноя,RED WINGS,WZ-1097,RRJ-95B,NQZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 22",Астана,16:00,17:50,"пн, ср, пт, сб, вс",23 ноя / 29 ноя,RED WINGS,WZ-1097,RRJ-95B,NQZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 23",Астана,16:00,17:50,"пн, ср, чт, пт, сб, вс",30 ноя / 13 дек,RED WINGS,WZ-1097,RRJ-95B,NQZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 24",Астана,16:15,18:00,вт,08 дек / 08 дек,RED WINGS,WZ-1097,RRJ-95B,NQZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 26",Баку,02:50,04:55,"пн, ср, пт",04 ноя / 16 ноя,Госконцерн Азербайджан Хава Йоллары,J2-646,A-320,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 27",Баку,02:50,04:55,сб,14 ноя / 28 ноя,Госконцерн Азербайджан Хава Йоллары,J2-646,EMB-190,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 28",Баку,02:50,04:55,"пн, ср",18 ноя / 23 ноя,Госконцерн Азербайджан Хава Йоллары,J2-646,A-320,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 29",Баку,02:50,04:55,пт,20 ноя / 20 ноя,Госконцерн Азербайджан Хава Йоллары,J2-646,A-319,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 30",Баку,02:50,04:55,"пн, ср, пт",25 ноя / 30 ноя,Госконцерн Азербайджан Хава Йоллары,J2-646,A-320,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 31",Баку,02:50,04:55,"пн, ср, пт, сб",02 дек / 07 дек,Госконцерн Азербайджан Хава Йоллары,J2-646,A-320,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 32",Баку,02:50,04:55,"пн, ср, пт",09 дек / 14 дек,Госконцерн Азербайджан Хава Йоллары,J2-646,A-320,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 33",Баку,03:30,05:45,сб,07 ноя / 12 дек,Ural airlines,U6-2951,A-320,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 34",Баку,19:05,21:20,"пн, ср, вс",26 окт / 15 ноя,Ural airlines,U6-2951,A-320,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 35",Баку,19:05,21:20,"пн, ср",16 ноя / 09 дек,Ural airlines,U6-2951,A-320,GYD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 37",Бангкок,02:30,12:50,"пт, вс",30 окт / 28 мар,Аэрофлот,SU-652,A-330,BKK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 39",Барнаул,22:50,03:20 (+1),пн,30 ноя / 30 ноя,RED WINGS,WZ-4503,RRJ-95B,BAX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 40",Барнаул,23:35,04:00 (+1),"вт, чт, вс",27 окт / 15 ноя,RED WINGS,WZ-5075,RRJ-95B,BAX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 41",Барнаул,23:35,04:00 (+1),"чт, вс",19 ноя / 29 ноя,RED WINGS,WZ-5075,RRJ-95B,BAX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 42",Барнаул,23:35,04:00 (+1),"вт, чт, вс",01 дек / 27 дек,RED WINGS,WZ-5075,RRJ-95B,BAX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 44",Батуми,15:05,17:50,сб,31 окт / 27 мар,RED WINGS,WZ-1203,RRJ-95B,BUS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 46",Белоярский,08:00,09:30,вт,27 окт / 23 мар,РусЛайн,7R-825,CRJ-200,EYK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 47",Белоярский,10:55,12:25,сб,31 окт / 27 мар,РусЛайн,7R-825,CRJ-200,EYK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 48",Белоярский,11:00,12:30,сб,14 ноя / 14 ноя,Газпром авиа,4G-407,RRJ-95B,EYK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 49",Белоярский,13:50,15:20,ср,28 окт / 24 мар,РусЛайн,7R-825,CRJ-200,EYK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 51",Бишкек,12:00,15:55,пт,30 окт / 18 дек,Ural airlines,U6-2985,A-319,BSZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 52",Бишкек,12:45,16:30,пн,26 окт / 22 мар,Ural airlines,U6-2985,A-320,BSZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 53",Бишкек,16:25,20:15,ср,18 ноя / 24 мар,Ural airlines,U6-2985,A-319,BSZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 55",Благовещенск,20:40,06:20 (+1),ежедневно,26 окт / 27 дек,Ural airlines,U6-299,A-319,BQS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 57",Бухара,00:25,03:25,чт,29 окт / 25 мар,RED WINGS,WZ-1439,RRJ-95B,BHK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 59",Владивосток,18:15,06:20 (+1),пт,30 окт / 26 мар,Ural airlines,U6-571,A-320NEO,VVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 60",Владивосток,19:10,07:15 (+1),"пн, вт, ср, чт, сб, вс",26 окт / 21 мар,Ural airlines,U6-571,A-320NEO,VVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 62",Волгоград,17:15,17:55,"пн, чт",26 окт / 28 дек,NordStar,Y7-951,B-737,VOG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 64",Гоа,22:50,06:05 (+1),пт,30 окт / 26 мар,Аэрофлот,SU-632,B-737,GOI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 65",Гоа,23:50,07:05 (+1),вт,27 окт / 23 мар,Аэрофлот,SU-632,B-737,GOI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 66",Гоа,00:50,08:05,вс,01 ноя / 28 мар,Аэрофлот,SU-632,B-737,GOI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 67",Гоа,05:25,12:40,сб,14 ноя / 27 мар,Аэрофлот,SU-674,B-737,GOI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 68",Гоа,05:25,12:40,ср,25 ноя / 24 мар,Аэрофлот,SU-674,B-737,GOI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 70",Горно-Алтайск,13:50,18:30,"вт, сб",27 окт / 14 ноя,RED WINGS,WZ-5053,RRJ-95B,RGK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 71",Горно-Алтайск,13:50,18:30,сб,21 ноя / 12 дек,RED WINGS,WZ-5053,RRJ-95B,RGK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 72",Горно-Алтайск,13:50,18:30,чт,03 дек / 28 янв,RED WINGS,WZ-1053,RRJ-95B,RGK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 74",Дели,05:55,11:30,"вт, пт, вс",20 ноя / 20 дек,Ural airlines,U6-815,A-319,DEL
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 76",Дубай,05:40,10:20,сб,07 ноя / 14 ноя,Победа,DP-783,B-737,DWC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 77",Дубай,05:40,10:20,"пн, сб",16 ноя / 27 мар,Победа,DP-783,B-737,DWC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 78",Дубай,06:10,11:15,вс,08 ноя / 20 дек,Ural airlines,U6-737,A-320,DWC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 79",Дубай,06:35,11:40,"пн, вт, ср, чт, пт, сб",02 ноя / 19 дек,Ural airlines,U6-737,A-320,DWC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 80",Дубай,02:20,06:50,вт,10 ноя / 10 ноя,Flydubai,FZ-980,B-737 MAX8,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 81",Дубай,02:20,06:50,"пн, ср, чт, сб, вс",11 ноя / 18 ноя,Flydubai,FZ-980,B-737 MAX8,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 82",Дубай,02:20,06:50,пт,13 ноя / 13 ноя,Flydubai,FZ-980,B-737 MAX8,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 83",Дубай,02:20,06:50,вт,17 ноя / 17 ноя,Flydubai,FZ-980,B-737,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 84",Дубай,02:20,06:50,ежедневно,19 ноя / 01 дек,Flydubai,FZ-980,B-737 MAX8,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 85",Дубай,02:20,06:50,"пн, ср, чт, пт, сб, вс",02 дек / 07 дек,Flydubai,FZ-980,B-737,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 86",Дубай,02:20,06:50,ежедневно,08 дек / 14 дек,Flydubai,FZ-980,B-737,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 87",Дубай,08:15,13:30,вт,10 ноя / 10 ноя,Flydubai,FZ-998,B-737 MAX8,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 88",Дубай,08:15,13:30,ежедневно,11 ноя / 30 ноя,Flydubai,FZ-998,B-737 MAX8,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 89",Дубай,08:15,13:30,"вт, ср, чт, пт, сб, вс",01 дек / 06 дек,Flydubai,FZ-998,B-737,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 90",Дубай,08:15,13:30,ежедневно,07 дек / 21 мар,Flydubai,FZ-998,B-737,DXB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 92",Душанбе,23:05,02:25 (+1),сб,14 ноя / 27 мар,Ural airlines,U6-2753,A-320,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 93",Душанбе,23:15,02:30 (+1),пн,16 ноя / 22 мар,Ural airlines,U6-2753,A-320,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 94",Душанбе,01:20,04:40,чт,29 окт / 25 мар,Ural airlines,U6-2953,A-320,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 95",Душанбе,04:50,08:20,сб,14 ноя / 27 мар,Ural airlines,U6-2953,A-320,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 96",Душанбе,05:25,08:40,пн,09 ноя / 22 мар,Ural airlines,U6-2953,A-320,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 97",Душанбе,07:10,10:30,ср,18 ноя / 24 мар,Ural airlines,U6-2957,A-320,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 98",Душанбе,10:20,13:40,вт,10 ноя / 10 ноя,Ural airlines,U6-2753,A-320,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 99",Душанбе,11:35,15:00,пт,30 окт / 26 мар,Ural airlines,U6-2753,A-320,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 100",Душанбе,13:30,16:30,вс,25 окт / 22 ноя,Somon Air,SZ-210,B-737,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 101",Душанбе,13:30,16:30,вс,29 ноя / 21 мар,Somon Air,SZ-210,B-737,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 102",Душанбе,16:05,19:05,вт,27 окт / 23 мар,Somon Air,SZ-210,B-737,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 103",Душанбе,18:00,21:00,пт,30 окт / 26 мар,Somon Air,SZ-210,B-737,DYU
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 105",Ереван,07:30,10:10,пн,09 ноя / 22 мар,Ural airlines,U6-2949,A-320,EVN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 106",Ереван,08:00,10:40,"ср, сб",11 ноя / 27 мар,Ural airlines,U6-2949,A-320,EVN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 107",Ереван,11:30,13:30,"вт, пт",10 ноя / 11 дек,Flyone Armenia,3F-3478,A-320,EVN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 109",Иркутск,15:15,22:20,"пн, чт, сб",26 окт / 27 мар,S7 Airlines,S7-6416,B-737,IKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 111",Казань,08:30,08:10,"чт, сб",29 окт / 26 дек,RED WINGS,WZ-1067,RRJ-95B,KZN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 112",Казань,11:00,10:45,пн,16 ноя / 07 дек,RED WINGS,WZ-1067,RRJ-95B,KZN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 113",Казань,19:25,19:05,вт,17 ноя / 17 ноя,RED WINGS,WZ-1067,RRJ-95B,KZN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 114",Казань,22:25,22:05,"вт, ср, пт, вс",27 окт / 15 ноя,RED WINGS,WZ-1067,RRJ-95B,KZN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 115",Казань,22:25,22:05,"ср, пт, вс",18 ноя / 22 ноя,RED WINGS,WZ-1067,RRJ-95B,KZN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 116",Казань,22:25,22:05,"вт, ср, пт, вс",24 ноя / 27 дек,RED WINGS,WZ-1067,RRJ-95B,KZN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 118",Калининград,08:00,09:20,"ср, вс",28 окт / 15 ноя,Ural airlines,U6-403,A-320,KGD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 119",Калининград,08:00,09:20,вс,22 ноя / 22 ноя,Ural airlines,U6-403,A-320,KGD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 120",Калининград,08:00,09:20,"ср, вс",25 ноя / 27 дек,Ural airlines,U6-403,A-320,KGD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 121",Калининград,15:30,16:50,пн,16 ноя / 16 ноя,Ural airlines,U6-403,A-320,KGD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 122",Калининград,17:35,18:55,пт,30 окт / 26 мар,Ural airlines,U6-403,A-320,KGD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 124",Кемерово,00:55,05:30,пн,26 окт / 23 ноя,RED WINGS,WZ-5041,RRJ-95B,KEJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 125",Кемерово,00:55,05:30,"пн, вт",01 дек / 07 дек,RED WINGS,WZ-5041,RRJ-95B,KEJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 126",Кемерово,01:40,06:15,пт,30 окт / 13 ноя,RED WINGS,WZ-5041,RRJ-95B,KEJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 128",Краснодар,05:50,08:20,пт,30 окт / 27 ноя,Победа,DP-563,B-737,KRR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 129",Краснодар,05:50,08:20,пт,04 дек / 26 мар,Победа,DP-563,B-737,KRR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 130",Краснодар,05:50,08:25,"ср, сб",28 окт / 27 мар,Победа,DP-563,B-737,KRR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 131",Краснодар,05:50,08:25,вт,10 ноя / 22 дек,Победа,DP-563,B-737,KRR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 132",Краснодар,14:00,16:05,ежедневно,26 окт / 21 мар,Ural airlines,U6-209,A-320,KRR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 134",Красноярск,22:25,03:30 (+1),вт,27 окт / 23 мар,Россия,FV-6800,RRJ-95B,KJA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 135",Красноярск,11:40,16:30,пт,13 ноя / 18 дек,Россия,FV-6792,B-737,KJA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 136",Красноярск,12:05,16:55,вс,15 ноя / 20 дек,Россия,FV-6792,A-319,KJA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 137",Красноярск,12:10,17:00,сб,14 ноя / 20 мар,Россия,FV-6792,B-737,KJA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 138",Красноярск,12:10,17:05,ср,18 ноя / 16 дек,Россия,FV-6792,B-737,KJA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 139",Красноярск,12:10,17:05,чт,19 ноя / 24 дек,Россия,FV-6792,B-737,KJA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 140",Красноярск,13:40,18:35,пн,26 окт / 21 дек,Россия,FV-6792,B-737,KJA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 142",Магнитогорск,13:15,14:30,сб,14 ноя / 14 ноя,RED WINGS,WZ-920,RRJ-95B,MQF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 144",Маттала,01:05,10:00,чт,19 ноя / 19 ноя,AZUR air,ZF-4337,B-767,HRI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 145",Маттала,01:05,10:00,вт,01 дек / 01 дек,AZUR air,ZF-4337,B-767,HRI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 146",Маттала,02:25,11:20,пн,07 дек / 07 дек,AZUR air,ZF-4337,B-767,HRI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 147",Маттала,04:55,13:50,пт,13 ноя / 13 ноя,AZUR air,ZF-4337,B-767,HRI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 148",Маттала,06:10,15:05,ср,25 ноя / 25 ноя,AZUR air,ZF-4337,B-767,HRI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 150",Махачкала,15:05,16:20,вс,15 ноя / 15 ноя,RED WINGS,WZ-5045,RRJ-95B,MCX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 151",Махачкала,19:25,20:40,чт,29 окт / 24 дек,RED WINGS,WZ-5045,RRJ-95B,MCX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 152",Махачкала,22:00,23:15,вс,22 ноя / 13 дек,RED WINGS,WZ-5045,RRJ-95B,MCX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 154",Минеральные Воды,07:00,08:30,ежедневно,26 окт / 03 янв,Аэрофлот,SU-2817,A-320 SH,MRV
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 155",Минеральные Воды,08:45,10:20,"пн, пт, сб",26 окт / 27 мар,Ural airlines,U6-205,A-320,MRV
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 156",Минеральные Воды,15:30,17:05,"вт, чт, вс",27 окт / 21 мар,Ural airlines,U6-205,A-320,MRV
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 157",Минеральные Воды,16:45,18:15,ср,28 окт / 24 мар,Ural airlines,U6-251,A-320,MRV
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 159",Минск,13:30,14:45,вт,24 ноя / 24 ноя,Belavia,B2-966,B-737,MSQ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 160",Минск,18:45,20:00,пт,06 ноя / 13 ноя,Belavia,B2-966,B-737,MSQ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 161",Минск,18:45,20:00,"пн, пт",16 ноя / 20 ноя,Belavia,B2-966,B-737,MSQ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 162",Минск,18:45,20:00,"пн, пт",23 ноя / 27 ноя,Belavia,B2-966,EMB-195,MSQ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 163",Минск,18:45,20:00,пт,04 дек / 25 дек,Belavia,B2-966,B-737,MSQ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 164",Минск,18:45,20:00,пн,07 дек / 21 дек,Belavia,B2-966,EMB-195,MSQ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 166",Москва,06:50,07:25,"пн, вт, пт, сб",09 ноя / 14 ноя,Ural airlines,U6-264,A-320,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 167",Москва,06:50,07:25,ежедневно,16 ноя / 27 дек,Ural airlines,U6-264,A-320,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 168",Москва,08:15,08:50,ежедневно,26 окт / 27 дек,Ural airlines,U6-262,A-320,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 169",Москва,09:30,10:10,ежедневно,26 окт / 21 мар,Ural airlines,U6-272,A-320,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 170",Москва,12:00,12:40,ежедневно,27 окт / 28 дек,Ural airlines,U6-300,A-319,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 171",Москва,16:00,16:40,ежедневно,26 окт / 21 мар,Ural airlines,U6-268,A-320,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 172",Москва,19:00,19:35,ежедневно,02 ноя / 21 мар,Ural airlines,U6-266,A-320,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 173",Москва,20:30,21:10,"пт, вс",13 ноя / 15 ноя,Ural airlines,U6-270,A-320,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 174",Москва,20:30,21:10,ежедневно,16 ноя / 27 дек,Ural airlines,U6-270,A-320,DME
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 175",Москва,23:10,00:05 (+1),пн,23 ноя / 23 ноя,Аэрофлот,SU-1409,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 176",Москва,23:50,00:35 (+1),вт,17 ноя / 17 ноя,Аэрофлот,SU-1775,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 177",Москва,00:45,01:25,ср,18 ноя / 18 ноя,Россия,FV-6212,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 178",Москва,00:45,01:25,ср,02 дек / 24 мар,Россия,FV-6212,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 179",Москва,00:45,01:30,ср,28 окт / 11 ноя,Россия,FV-6212,RRJ-95B,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 180",Москва,00:50,01:35,"чт, пт",12 ноя / 20 ноя,Аэрофлот,SU-1021,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 181",Москва,00:50,01:35,сб,14 ноя / 21 ноя,Аэрофлот,SU-1021,A-320,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 182",Москва,00:50,01:35,"ср, чт, пт, сб",25 ноя / 28 ноя,Аэрофлот,SU-1021,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 183",Москва,00:50,01:35,чт,03 дек / 31 дек,Аэрофлот,SU-1021,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 184",Москва,05:15,05:45,вт,10 ноя / 10 ноя,NORD WIND,N4-6805,A-330,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 185",Москва,05:45,06:25,"пн, пт",26 окт / 26 мар,Победа,DP-6544,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 186",Москва,06:00,06:45,"вт, ср, чт, пт, вс",27 окт / 15 ноя,Победа,DP-6542,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 187",Москва,06:00,06:45,вт,17 ноя / 24 ноя,Победа,DP-6542,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 188",Москва,06:00,06:45,"ср, чт, пт, вс",18 ноя / 29 ноя,Победа,DP-6542,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 189",Москва,06:00,06:45,"вт, ср, чт, пт, вс",01 дек / 21 мар,Победа,DP-6542,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 190",Москва,07:00,07:35,сб,26 окт / 21 мар,Аэрофлот,SU-1417,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 191",Москва,07:00,07:40,"пн, вт",26 окт / 23 мар,Аэрофлот,SU-1417,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 192",Москва,07:00,07:40,вс,01 ноя / 21 мар,Аэрофлот,SU-1417,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 193",Москва,08:30,09:20,вт,27 окт / 23 мар,Аэрофлот,SU-1407,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 194",Москва,08:30,09:20,"ср, чт, пт, вс",11 ноя / 15 ноя,Аэрофлот,SU-1407,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 195",Москва,08:30,09:20,сб,14 ноя / 27 мар,Аэрофлот,SU-1407,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 196",Москва,08:30,09:20,"пн, ср, чт, пт, вс",16 ноя / 27 дек,Аэрофлот,SU-1407,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 197",Москва,12:10,12:55,ежедневно,26 окт / 27 дек,Россия,FV-6210,RRJ-95B,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 198",Москва,13:55,14:35,"пн, вт, чт, пт, сб, вс",09 ноя / 15 ноя,Аэрофлот,SU-1401,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 199",Москва,13:55,14:35,ср,11 ноя / 11 ноя,Аэрофлот,SU-1401,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 200",Москва,13:55,14:35,"пн, ср, чт, сб, вс",16 ноя / 22 ноя,Аэрофлот,SU-1401,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 201",Москва,13:55,14:35,вт,17 ноя / 17 ноя,Аэрофлот,SU-1401,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 202",Москва,13:55,14:35,пт,20 ноя / 20 ноя,Аэрофлот,SU-1401,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 203",Москва,13:55,14:35,ежедневно,23 ноя / 27 дек,Аэрофлот,SU-1401,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 204",Москва,15:20,16:00,ежедневно,02 ноя / 15 ноя,Аэрофлот,SU-1413,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 205",Москва,15:20,16:00,"пн, ср, чт, сб, вс",16 ноя / 22 ноя,Аэрофлот,SU-1413,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 206",Москва,15:20,16:00,"вт, пт",17 ноя / 20 ноя,Аэрофлот,SU-1413,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 207",Москва,15:20,16:00,ежедневно,23 ноя / 21 мар,Аэрофлот,SU-1413,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 208",Москва,17:15,18:00,пт,27 ноя / 27 ноя,Аэрофлот,SU-1409,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 209",Москва,17:30,18:20,ср,28 окт / 24 мар,Аэрофлот,SU-1023,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 210",Москва,17:55,18:45,"пн, чт",09 ноя / 26 ноя,Аэрофлот,SU-1449,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 211",Москва,17:55,18:45,"пн, чт, вс",30 ноя / 21 мар,Аэрофлот,SU-1449,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 212",Москва,18:45,19:15,"пн, сб",09 ноя / 27 мар,Победа,DP-6542,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 213",Москва,19:05,19:40,"пн, вт, ср, чт, пт, сб",09 ноя / 28 ноя,Аэрофлот,SU-1403,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 214",Москва,19:05,19:40,ежедневно,30 ноя / 03 янв,Аэрофлот,SU-1403,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 215",Москва,19:20,19:50,вс,15 ноя / 29 ноя,Аэрофлот,SU-1403,A-350,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 216",Москва,20:00,20:45,вс,25 окт / 21 мар,Аэрофлот,SU-1023,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 217",Москва,21:05,21:50,ср,25 ноя / 25 ноя,Аэрофлот,SU-1409,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 218",Москва,21:10,21:55,пн,26 окт / 30 ноя,Аэрофлот,SU-1405,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 219",Москва,21:20,21:55,"ср, чт, пт, сб",18 ноя / 21 ноя,Россия,FV-6208,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 220",Москва,21:15,21:55,"ср, чт, пт, сб",02 дек / 27 мар,Россия,FV-6208,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 221",Москва,21:10,21:55,пн,07 дек / 22 фев,Аэрофлот,SU-1405,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 222",Москва,21:20,22:05,"ср, чт, сб",28 окт / 14 ноя,Россия,FV-6208,RRJ-95B,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 223",Москва,21:20,22:10,пт,30 окт / 13 ноя,Аэрофлот,SU-1405,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 224",Москва,23:10,23:40,пн,30 ноя / 22 мар,Россия,FV-6208,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 225",Москва,23:10,23:50,пт,13 ноя / 13 ноя,Аэрофлот,SU-1415,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 226",Москва,23:10,23:50,"сб, вс",14 ноя / 15 ноя,Аэрофлот,SU-1415,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 227",Москва,23:10,23:50,"пт, сб, вс",20 ноя / 22 ноя,Аэрофлот,SU-1415,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 228",Москва,23:10,23:50,"пт, сб",27 ноя / 26 дек,Аэрофлот,SU-1415,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 229",Москва,23:10,23:50,вс,29 ноя / 27 дек,Аэрофлот,SU-1415,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 230",Москва,23:10,23:55,пн,26 окт / 16 ноя,Россия,FV-6208,RRJ-95B,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 231",Москва,23:10,23:55,"вт, ср, чт",29 окт / 12 ноя,Аэрофлот,SU-1415,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 232",Москва,23:10,23:55,ср,18 ноя / 18 ноя,Аэрофлот,SU-1415,B-737,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 233",Москва,23:10,23:55,чт,19 ноя / 19 ноя,Аэрофлот,SU-1415,A-321 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 234",Москва,23:10,23:55,"вт, ср, чт",23 ноя / 30 дек,Аэрофлот,SU-1415,A-320 SH,SVO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 235",Москва,05:50,06:30,"чт, сб",29 окт / 09 янв,Победа,DP-406,B-737,VKO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 236",Москва,05:50,06:30,вс,01 ноя / 10 янв,Победа,DP-406,B-737,VKO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 237",Москва,06:10,06:50,пн,09 ноя / 16 ноя,Победа,DP-404,B-737,VKO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 238",Москва,06:50,07:35,"чт, вс",12 ноя / 22 ноя,Победа,DP-404,B-737,VKO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 239",Москва,06:50,07:35,"пн, чт, вс",23 ноя / 27 дек,Победа,DP-404,B-737,VKO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 240",Москва,07:00,07:40,ср,11 ноя / 23 дек,Победа,DP-408,B-737,VKO
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 242",Мурманск,12:20,13:40,вс,25 окт / 21 мар,RED WINGS,WZ-5007,RRJ-95B,MMK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 243",Мурманск,12:20,13:40,чт,03 дек / 25 мар,RED WINGS,WZ-5007,RRJ-95B,MMK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 245",Надым,06:30,08:30,пт,13 ноя / 13 ноя,Газпром авиа,4G-413,RRJ-95B,NYM
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 246",Надым,08:00,10:00,ср,11 ноя / 11 ноя,Газпром авиа,4G-411,RRJ-95B,NYM
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 247",Надым,13:15,15:10,"вт, чт",27 окт / 25 мар,Ямал,YC-211,RRJ-95B,NYM
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 248",Надым,14:05,16:00,ср,11 ноя / 11 ноя,Газпром авиа,4G-311,RRJ-95B,NYM
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 250",Наманган,12:00,15:00,пн,26 окт / 22 мар,Uzbekistan Airways,HY-9830,A-320,NMA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 251",Наманган,21:00,23:55,"чт, сб",12 ноя / 14 ноя,Ural airlines,U6-2963,A-320,NMA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 252",Наманган,21:00,23:55,"вт, чт, сб",17 ноя / 27 мар,Ural airlines,U6-2963,A-320,NMA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 254",Нарьян-Мар,13:10,13:35,вс,25 окт / 21 мар,РусЛайн,7R-841,CRJ-200,NNM
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 255",Нарьян-Мар,13:30,13:45,чт,29 окт / 25 мар,РусЛайн,7R-841,CRJ-200,NNM
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 257",Нижневартовск,03:25,05:05,"ср, чт, вс",28 окт / 25 мар,РусЛайн,7R-815,CRJ-200,NJC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 258",Нижневартовск,15:15,17:10,сб,14 ноя / 14 ноя,RED WINGS,WZ-1005,RRJ-95B,NJC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 259",Нижневартовск,20:10,22:35,"пн, пт",26 окт / 26 мар,ЮТэйр,UT-177,AT-72,NJC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 261",Нижний Новгород,07:00,07:00,вс,25 окт / 20 дек,RED WINGS,WZ-5029,RRJ-95B,GOJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 262",Нижний Новгород,07:35,07:40,ср,28 окт / 23 дек,RED WINGS,WZ-5029,RRJ-95B,GOJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 263",Нижний Новгород,08:40,08:40,пт,30 окт / 25 дек,RED WINGS,WZ-5029,RRJ-95B,GOJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 264",Нижний Новгород,08:35,08:40,пн,09 ноя / 21 дек,RED WINGS,WZ-5029,RRJ-95B,GOJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 265",Нижний Новгород,10:00,10:00,чт,19 ноя / 26 ноя,RED WINGS,WZ-5029,RRJ-95B,GOJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 267",Новокузнецк,21:30,02:05 (+1),ср,18 ноя / 23 дек,RED WINGS,WZ-5091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 268",Новокузнецк,21:30,02:05 (+1),вс,29 ноя / 21 мар,RED WINGS,WZ-2091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 269",Новокузнецк,22:35,03:10 (+1),пн,26 окт / 23 ноя,RED WINGS,WZ-5091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 270",Новокузнецк,22:35,03:10 (+1),пн,30 ноя / 30 ноя,RED WINGS,WZ-2091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 271",Новокузнецк,22:35,03:10 (+1),пн,07 дек / 22 мар,RED WINGS,WZ-5091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 272",Новокузнецк,23:45,04:20 (+1),пт,30 окт / 13 ноя,RED WINGS,WZ-5091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 273",Новокузнецк,23:45,04:20 (+1),пт,20 ноя / 20 ноя,RED WINGS,WZ-2091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 274",Новокузнецк,23:45,04:20 (+1),пт,27 ноя / 27 ноя,RED WINGS,WZ-5091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 275",Новокузнецк,23:45,04:20 (+1),пт,04 дек / 19 мар,RED WINGS,WZ-2091,RRJ-95B,NOZ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 277",Новосибирск,21:15,01:30 (+1),ежедневно,26 окт / 14 мар,S7 Airlines,S7-5020,EMB-170,OVB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 278",Новосибирск,06:50,11:05,ежедневно,25 окт / 31 дек,S7 Airlines,S7-5018,EMB-170,OVB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 279",Новосибирск,15:20,19:35,ежедневно,26 окт / 22 ноя,S7 Airlines,S7-5014,EMB-170,OVB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 280",Новосибирск,15:20,19:35,"пн, вт, чт, пт, сб, вс",23 ноя / 29 ноя,S7 Airlines,S7-5014,EMB-170,OVB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 281",Новосибирск,15:20,19:35,ежедневно,30 ноя / 24 янв,S7 Airlines,S7-5014,EMB-170,OVB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 282",Новосибирск,15:35,19:50,ср,25 ноя / 25 ноя,S7 Airlines,S7-5014,A-320,OVB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 283",Новосибирск,18:20,22:35,"пн, ср, сб",26 окт / 27 мар,S7 Airlines,S7-5012,EMB-170,OVB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 284",Новосибирск,18:20,22:35,чт,29 окт / 25 мар,S7 Airlines,S7-5012,EMB-170,OVB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 286",Новый Уренгой,08:50,10:55,чт,12 ноя / 12 ноя,Газпром авиа,4G-419,RRJ-95B,NUX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 287",Новый Уренгой,11:55,14:10,"вт, чт, сб",01 дек / 27 мар,RED WINGS,WZ-1021,RRJ-95B,NUX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 288",Новый Уренгой,13:30,15:45,вс,25 окт / 21 мар,Ямал,YC-221,RRJ-95B,NUX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 289",Новый Уренгой,13:30,15:45,пн,26 окт / 22 мар,Ямал,YC-221,RRJ-95B,NUX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 290",Новый Уренгой,13:30,15:45,ср,28 окт / 24 мар,Ямал,YC-221,RRJ-95B,NUX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 291",Новый Уренгой,13:30,15:45,пт,30 окт / 25 дек,Ямал,YC-221,RRJ-95B,NUX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 293",Норильск,01:45,06:45,"вт, пт",27 окт / 29 дек,NordStar,Y7-918,B-737,NSK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 295",Ноябрьск,12:30,14:20,пн,26 окт / 22 мар,Ямал,YC-249,RRJ-95B,NOJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 296",Ноябрьск,12:45,14:20,пт,30 окт / 25 дек,Ямал,YC-249,RRJ-95B,NOJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 297",Ноябрьск,12:45,14:20,ср,25 ноя / 25 ноя,Ямал,YC-249,RRJ-95B,NOJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 299",Нягань,13:00,15:10,пн,26 окт / 22 мар,ЮТэйр,UT-332,AT-72,NYA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 300",Нягань,13:10,15:10,пт,30 окт / 26 мар,ЮТэйр,UT-332,AT-72,NYA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 302",Нячанг,17:45,04:35 (+1),ср,11 ноя / 11 ноя,VietJet Air,VJ-6779,A-330,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 303",Нячанг,17:45,04:35 (+1),ср,02 дек / 02 дек,VietJet Air,VJ-6779,A-330,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 304",Нячанг,20:15,07:05 (+1),вт,24 ноя / 24 ноя,VietJet Air,VJ-6779,A-330,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 305",Нячанг,20:35,07:25 (+1),вс,22 ноя / 22 ноя,VietJet Air,VJ-6779,A-330,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 306",Нячанг,21:10,08:00 (+1),пт,13 ноя / 13 ноя,VietJet Air,VJ-6779,A-330,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 307",Нячанг,21:10,08:00 (+1),пт,04 дек / 04 дек,VietJet Air,VJ-6779,A-330,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 308",Нячанг,22:15,08:45 (+1),вс,15 ноя / 15 ноя,NORD WIND,N4-3537,B-777,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 309",Нячанг,22:15,08:45 (+1),пт,27 ноя / 27 ноя,NORD WIND,N4-3537,B-777,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 310",Нячанг,23:25,10:30 (+1),вт,27 окт / 23 мар,Аэрофлот,SU-836,A-330,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 311",Нячанг,23:25,10:30 (+1),пт,30 окт / 26 мар,Аэрофлот,SU-836,A-330,CXR
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 313",Омск,21:20,00:00 (+1),"вт, пт",27 окт / 18 дек,RED WINGS,WZ-5071,RRJ-95B,OMS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 315",Оренбург,07:25,09:00,ср,28 окт / 24 мар,RED WINGS,WZ-5049,RRJ-95B,REN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 316",Оренбург,16:00,17:35,пн,26 окт / 22 мар,RED WINGS,WZ-5049,RRJ-95B,REN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 317",Оренбург,16:30,18:05,вс,25 окт / 15 ноя,RED WINGS,WZ-5049,RRJ-95B,REN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 318",Оренбург,16:30,18:05,вс,06 дек / 20 дек,RED WINGS,WZ-5049,RRJ-95B,REN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 319",Оренбург,16:55,18:30,сб,21 ноя / 21 ноя,RED WINGS,WZ-901,RRJ-95B,REN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 320",Оренбург,19:35,21:10,пт,30 окт / 13 ноя,RED WINGS,WZ-5049,RRJ-95B,REN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 321",Оренбург,19:35,21:10,пт,27 ноя / 26 мар,RED WINGS,WZ-5049,RRJ-95B,REN
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 323",Ош,20:55,00:55 (+1),пн,23 ноя / 23 ноя,Ural airlines,U6-2903,A-320,OSS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 324",Ош,21:40,01:40 (+1),пн,16 ноя / 16 ноя,Ural airlines,U6-2903,A-319,OSS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 325",Ош,21:40,01:40 (+1),пн,30 ноя / 07 дек,Ural airlines,U6-2903,A-319,OSS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 326",Ош,04:40,08:40,ср,18 ноя / 24 мар,Ural airlines,U6-2889,A-320,OSS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 327",Ош,07:45,11:40,пт,20 ноя / 26 мар,Ural airlines,U6-2903,A-320,OSS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 328",Ош,08:55,12:55,вс,15 ноя / 21 мар,Ural airlines,U6-2903,A-320,OSS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 329",Ош,13:30,17:30,сб,31 окт / 26 дек,AviaTraffic,YK-866,B-737,OSS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 330",Ош,15:00,19:00,ср,28 окт / 11 ноя,Ural airlines,U6-2889,A-320,OSS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 332",Пекин,18:40,03:55 (+1),пн,26 окт / 22 мар,Ural airlines,U6-875,A-319,PKX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 333",Пекин,18:45,03:55 (+1),чт,29 окт / 25 мар,Ural airlines,U6-875,A-319,PKX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 334",Пекин,18:45,03:55 (+1),сб,31 окт / 27 мар,Ural airlines,U6-875,A-319,PKX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 335",Пекин,00:50,09:55,пн,26 окт / 22 мар,Ural airlines,U6-775,A-319,PKX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 336",Пекин,00:50,09:55,"ср, чт, сб",28 окт / 27 мар,Ural airlines,U6-775,A-319,PKX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 338",Пхукет,22:20,08:45 (+1),чт,12 ноя / 12 ноя,NORD WIND,N4-3433,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 339",Пхукет,22:30,08:55 (+1),вт,17 ноя / 17 ноя,NORD WIND,N4-3433,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 340",Пхукет,23:05,09:30 (+1),вт,24 ноя / 24 ноя,NORD WIND,N4-3433,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 341",Пхукет,23:55,10:25 (+1),пт,30 окт / 26 мар,Аэрофлот,SU-626,B777-300ER,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 342",Пхукет,23:55,10:40 (+1),пн,26 окт / 22 мар,Аэрофлот,SU-626,B777-300ER,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 343",Пхукет,23:50,10:40 (+1),вс,15 ноя / 15 ноя,AZUR air,ZF-4037,B-767,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 344",Пхукет,00:20,10:45,сб,14 ноя / 14 ноя,NORD WIND,N4-3435,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 345",Пхукет,00:30,10:55,пн,30 ноя / 30 ноя,NORD WIND,N4-3433,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 346",Пхукет,01:00,11:25,сб,14 ноя / 14 ноя,NORD WIND,N4-3433,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 347",Пхукет,00:40,11:30,чт,10 дек / 10 дек,AZUR air,ZF-4037,B-767,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 348",Пхукет,01:30,11:55,вс,22 ноя / 22 ноя,NORD WIND,N4-3433,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 349",Пхукет,01:55,12:20,чт,26 ноя / 26 ноя,NORD WIND,N4-3433,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 350",Пхукет,01:50,12:40,пт,04 дек / 04 дек,AZUR air,ZF-4037,B-767,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 351",Пхукет,02:50,13:15,чт,26 ноя / 26 ноя,NORD WIND,N4-3435,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 352",Пхукет,03:00,13:50,вс,22 ноя / 22 ноя,AZUR air,ZF-4037,B-767,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 353",Пхукет,03:20,14:10,сб,28 ноя / 28 ноя,AZUR air,ZF-4037,B-767,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 354",Пхукет,04:50,15:15,вт,10 ноя / 10 ноя,NORD WIND,N4-3433,A-330,HKT
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 356",Салехард,13:40,15:40,пн,26 окт / 22 мар,Ямал,YC-121,RRJ-95B,SLY
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 357",Салехард,13:40,15:40,ср,28 окт / 24 мар,Ямал,YC-121,RRJ-95B,SLY
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 358",Салехард,13:40,15:40,пт,30 окт / 25 дек,Ямал,YC-121,RRJ-95B,SLY
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 360",Самара,11:50,13:00,пт,30 окт / 01 янв,ЮТэйр,UT-281,AT-72,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 361",Самара,11:50,13:10,"пн, вт, ср, сб, вс",09 ноя / 15 ноя,ЮТэйр,UT-281,AT-72,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 362",Самара,11:50,13:10,"пн, сб, вс",16 ноя / 22 ноя,ЮТэйр,UT-281,AT-72,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 363",Самара,11:50,13:10,"пн, вт, ср, сб, вс",23 ноя / 29 ноя,ЮТэйр,UT-281,AT-72,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 364",Самара,11:50,13:10,"пн, сб, вс",30 ноя / 06 дек,ЮТэйр,UT-281,AT-72,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 365",Самара,11:50,13:10,"пн, вт, ср, сб, вс",07 дек / 13 дек,ЮТэйр,UT-281,AT-72,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 366",Самара,15:50,17:10,ср,18 ноя / 18 ноя,ЮТэйр,UT-281,AT-72,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 367",Самара,15:50,17:10,ср,02 дек / 02 дек,ЮТэйр,UT-281,AT-72,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 368",Самара,18:15,19:00,вт,24 ноя / 24 ноя,RED WINGS,WZ-1033,RRJ-95B,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 369",Самара,22:45,23:30,"пн, вт, ср, чт, пт, сб",09 ноя / 14 ноя,RED WINGS,WZ-1033,RRJ-95B,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 370",Самара,22:45,23:30,ежедневно,16 ноя / 22 ноя,RED WINGS,WZ-1033,RRJ-95B,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 371",Самара,22:45,23:30,"пн, ср, чт, пт, сб, вс",23 ноя / 29 ноя,RED WINGS,WZ-1033,RRJ-95B,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 372",Самара,22:45,23:30,ежедневно,30 ноя / 27 дек,RED WINGS,WZ-1033,RRJ-95B,KUF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 374",Самарканд,21:00,23:55,"пн, ср, пт",09 ноя / 13 ноя,Ural airlines,U6-2861,A-320,SKD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 375",Самарканд,21:00,23:55,"пн, ср, пт, вс",16 ноя / 21 мар,Ural airlines,U6-2861,A-320,SKD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 377",Санкт-Петербург,07:10,06:20,"вт, ср, пт, вс",29 ноя / 30 дек,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 378",Санкт-Петербург,05:30,06:35,ежедневно,25 окт / 27 мар,Победа,DP-516,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 379",Санкт-Петербург,06:00,07:00,"пн, вт, ср, чт, вс",26 окт / 03 янв,Россия,FV-6402,A-319,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 380",Санкт-Петербург,06:10,07:05,"пт, сб",07 ноя / 13 ноя,Россия,FV-6402,A-320 SH,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 381",Санкт-Петербург,06:10,07:05,"пт, сб",27 ноя / 05 дек,Россия,FV-6402,A-320,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 382",Санкт-Петербург,06:10,07:10,сб,14 ноя / 14 ноя,Россия,FV-6402,A-320,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 383",Санкт-Петербург,06:10,07:10,пт,20 ноя / 20 ноя,Россия,FV-6402,A-319,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 384",Санкт-Петербург,06:10,07:10,сб,21 ноя / 21 ноя,Россия,FV-6402,A-320,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 385",Санкт-Петербург,07:10,08:15,"вт, ср, пт, сб, вс",03 ноя / 15 ноя,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 386",Санкт-Петербург,07:10,08:15,чт,05 ноя / 12 ноя,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 387",Санкт-Петербург,07:10,08:15,"вт, ср, чт, пт, сб, вс",17 ноя / 22 ноя,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 388",Санкт-Петербург,07:10,08:15,"вт, ср",24 ноя / 25 ноя,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 389",Санкт-Петербург,07:10,08:15,чт,26 ноя / 10 дек,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 390",Санкт-Петербург,07:10,08:15,сб,28 ноя / 28 ноя,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 391",Санкт-Петербург,07:10,08:15,сб,05 дек / 12 дек,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 392",Санкт-Петербург,07:15,08:20,пн,09 ноя / 22 мар,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 393",Санкт-Петербург,07:10,08:20,пт,27 ноя / 27 ноя,Smartavia,5N-502,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 394",Санкт-Петербург,10:05,11:15,ежедневно,27 окт / 22 мар,Ural airlines,U6-623,A-320,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 395",Санкт-Петербург,12:30,13:30,вс,08 ноя / 21 мар,Якутия,R3-467,B-737,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 396",Санкт-Петербург,12:30,13:40,ежедневно,27 окт / 28 дек,Ural airlines,U6-174,A-320NEO,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 397",Санкт-Петербург,17:40,18:45,пт,13 ноя / 13 ноя,Россия,FV-6418,RRJ-95B,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 398",Санкт-Петербург,17:40,18:45,вс,15 ноя / 15 ноя,Россия,FV-6418,RRJ-95B,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 399",Санкт-Петербург,17:40,18:45,"пт, вс",20 ноя / 20 дек,Россия,FV-6418,RRJ-95B,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 400",Санкт-Петербург,22:15,23:15,"пн, ср",09 ноя / 11 ноя,Россия,FV-6404,A-319,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 401",Санкт-Петербург,22:15,23:15,чт,12 ноя / 12 ноя,Россия,FV-6404,A-320,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 402",Санкт-Петербург,22:15,23:15,"пн, ср, чт, пт, сб, вс",13 ноя / 25 дек,Россия,FV-6404,A-319,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 403",Санкт-Петербург,22:15,23:20,вт,10 ноя / 15 дек,Россия,FV-6404,RRJ-95LR,LED
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 405",Санья,15:25,02:10 (+1),пт,13 ноя / 26 мар,Аэрофлот,SU-854,A-330,SYX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 406",Санья,15:45,02:30 (+1),ср,11 ноя / 24 мар,Аэрофлот,SU-854,A-330,SYX
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 408",Саратов,07:45,08:55,пт,30 окт / 25 дек,RED WINGS,WZ-5047,RRJ-95B,GSV
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 409",Саратов,18:25,19:30,ср,28 окт / 16 дек,RED WINGS,WZ-5047,RRJ-95B,GSV
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 411",Советский,12:50,14:40,"чт, вс",25 окт / 25 мар,ЮТэйр,UT-335,AT-72,OVS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 413",Сочи,05:05,07:05,"пн, вт",09 ноя / 10 ноя,Россия,FV-6122,B-737,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 414",Сочи,05:05,07:05,ср,11 ноя / 11 ноя,Россия,FV-6122,A-320,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 415",Сочи,05:05,07:05,ежедневно,12 ноя / 27 мар,Россия,FV-6122,B-737,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 416",Сочи,06:15,08:15,"пн, чт",09 ноя / 26 ноя,Победа,DP-340,B-737,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 417",Сочи,06:15,08:15,"пн, чт, сб",30 ноя / 26 дек,Победа,DP-340,B-737,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 418",Сочи,06:15,08:20,вс,01 ноя / 21 мар,Победа,DP-340,B-737,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 419",Сочи,13:05,15:00,пн,26 окт / 16 ноя,Ural airlines,U6-219,A-320,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 420",Сочи,13:00,15:00,"ср, чт, пт, сб, вс",28 окт / 15 ноя,Ural airlines,U6-219,A-320,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 421",Сочи,13:00,15:00,"чт, пт, сб, вс",19 ноя / 22 ноя,Ural airlines,U6-219,A-320,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 422",Сочи,13:00,15:00,"ср, чт, пт, сб, вс",25 ноя / 27 дек,Ural airlines,U6-219,A-320,AER
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 424",Стамбул,08:40,12:10,пт,30 окт / 13 ноя,Аэрофлот,SU-630,B-737,IST
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 425",Стамбул,12:25,15:55,"вт, чт, сб",27 окт / 27 мар,Ural airlines,U6-773,A-319,IST
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 426",Стамбул,12:25,16:10,"пн, ср, пт, вс",26 окт / 21 мар,Ural airlines,U6-773,A-319,IST
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 428",Сургут,22:05,00:30 (+1),ср,18 ноя / 18 ноя,ЮТэйр,UT-1112,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 429",Сургут,22:05,00:30 (+1),ср,02 дек / 02 дек,ЮТэйр,UT-1112,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 430",Сургут,10:10,12:10,вт,17 ноя / 17 ноя,ЮТэйр,UT-6434,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 431",Сургут,10:10,12:10,вт,01 дек / 01 дек,ЮТэйр,UT-6434,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 432",Сургут,12:40,14:25,ср,28 окт / 24 мар,RED WINGS,WZ-1017,RRJ-95B,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 433",Сургут,13:50,15:30,пт,30 окт / 26 мар,RED WINGS,WZ-1017,RRJ-95B,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 434",Сургут,19:00,20:55,ежедневно,09 ноя / 15 ноя,ЮТэйр,UT-112,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 435",Сургут,19:00,20:55,"пн, вт, чт, пт, сб, вс",16 ноя / 22 ноя,ЮТэйр,UT-112,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 436",Сургут,19:00,20:55,ежедневно,23 ноя / 29 ноя,ЮТэйр,UT-112,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 437",Сургут,19:00,20:55,"пн, вт, чт, пт, сб, вс",30 ноя / 06 дек,ЮТэйр,UT-112,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 438",Сургут,19:00,20:55,ежедневно,07 дек / 13 дек,ЮТэйр,UT-112,AT-72,SGC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 440",Сухум,08:40,10:30,сб,21 ноя / 27 мар,Ural airlines,U6-291,A-320,SUI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 441",Сухум,11:45,13:35,ср,25 ноя / 24 мар,Ural airlines,U6-291,A-320,SUI
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 443",Ташкент,22:00,01:00 (+1),"вт, сб",27 окт / 14 ноя,Ural airlines,U6-2961,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 444",Ташкент,22:00,01:00 (+1),сб,21 ноя / 21 ноя,Ural airlines,U6-2961,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 445",Ташкент,22:00,01:00 (+1),"вт, сб",24 ноя / 27 мар,Ural airlines,U6-2961,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 446",Ташкент,00:30,03:30,ср,28 окт / 24 мар,Uzbekistan Airways,HY-9662,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 447",Ташкент,00:55,03:50,пн,16 ноя / 22 мар,Centrum Air,C6-472,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 448",Ташкент,06:05,09:10,вт,27 окт / 23 мар,Ural airlines,U6-2007,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 449",Ташкент,09:20,12:20,чт,29 окт / 25 мар,Ural airlines,U6-2007,A-319,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 450",Ташкент,11:05,14:00,ср,28 окт / 24 мар,Centrum Air,C6-472,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 451",Ташкент,11:00,14:00,сб,31 окт / 26 дек,Uzbekistan Airways,HY-9662,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 452",Ташкент,19:30,22:30,пт,30 окт / 26 мар,Ural airlines,U6-2961,A-320,TAS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 454",Тбилиси,12:55,15:25,"пн, ср, пт, вс",09 ноя / 15 ноя,RED WINGS,WZ-1403,RRJ-95B,TBS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 455",Тбилиси,12:55,15:25,"ср, пт, вс",18 ноя / 22 ноя,RED WINGS,WZ-1403,RRJ-95B,TBS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 456",Тбилиси,12:55,15:25,"пт, вс",27 ноя / 29 ноя,RED WINGS,WZ-1403,RRJ-95B,TBS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 457",Тбилиси,12:55,15:25,"ср, пт, вс",02 дек / 20 дек,RED WINGS,WZ-1403,RRJ-95B,TBS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 459",Томск,00:50,05:20,"вт, сб",27 окт / 26 дек,RED WINGS,WZ-5003,RRJ-95B,TOF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 460",Томск,01:25,05:55,чт,29 окт / 26 ноя,RED WINGS,WZ-5003,RRJ-95B,TOF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 461",Томск,03:25,09:05,"ср, чт, вс",28 окт / 25 мар,РусЛайн,7R-815,CRJ-200,TOF
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 463",Урай,14:05,15:40,"вт, сб",27 окт / 27 мар,ЮТэйр,UT-262,AT-72,URJ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 465",Утапао,21:40,08:30 (+1),пт,20 ноя / 20 ноя,NORD WIND,N4-3801,A-330,UTP
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 467",Уфа,11:20,13:00,"вт, ср, чт, пт, сб, вс",10 ноя / 15 ноя,ЮТэйр,UT-105,AT-72,UFA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 468",Уфа,11:20,13:00,ежедневно,16 ноя / 21 мар,ЮТэйр,UT-105,AT-72,UFA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 469",Уфа,21:00,22:15,вт,24 ноя / 24 ноя,RED WINGS,WZ-1025,RRJ-95B,UFA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 470",Уфа,21:30,23:15,ежедневно,25 окт / 31 дек,ЮТэйр,UT-1105,AT-72,UFA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 471",Уфа,22:30,23:45,"вт, чт, пт, вс",10 ноя / 22 ноя,RED WINGS,WZ-1025,RRJ-95B,UFA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 472",Уфа,22:30,23:45,"чт, пт, вс",26 ноя / 29 ноя,RED WINGS,WZ-1025,RRJ-95B,UFA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 473",Уфа,22:30,23:45,"вт, чт, пт, вс",01 дек / 20 дек,RED WINGS,WZ-1025,RRJ-95B,UFA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 475",Фукуок,18:00,04:55 (+1),пн,16 ноя / 16 ноя,VietJet Air,VJ-6856,A-330,PQC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 476",Фукуок,18:00,04:55 (+1),пн,07 дек / 07 дек,VietJet Air,VJ-6856,A-330,PQC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 477",Фукуок,18:25,05:20 (+1),чт,26 ноя / 26 ноя,VietJet Air,VJ-6856,A-330,PQC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 478",Фукуок,22:35,09:30 (+1),сб,14 ноя / 14 ноя,NORD WIND,N4-3831,B-777,PQC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 479",Фукуок,23:05,10:00 (+1),чт,26 ноя / 26 ноя,NORD WIND,N4-3831,B-777,PQC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 480",Фукуок,22:45,11:40 (+1),ср,18 ноя / 18 ноя,АО Авиакомпания SCAT,DV-452,B-737 MAX9,PQC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 481",Фукуок,22:45,11:40 (+1),сб,28 ноя / 28 ноя,АО Авиакомпания SCAT,DV-452,B-737 MAX9,PQC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 482",Фукуок,22:45,11:40 (+1),ср,09 дек / 09 дек,АО Авиакомпания SCAT,DV-452,B-737 MAX9,PQC
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 484",Хабаровск,18:55,06:10 (+1),ежедневно,26 окт / 27 дек,Ural airlines,U6-173,A-320,KHV
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 486",Ханты-Мансийск,11:35,13:50,"пн, пт",26 окт / 28 дек,ЮТэйр,UT-302,AT-72,HMA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 487",Ханты-Мансийск,11:35,13:50,"ср, сб",28 окт / 02 янв,ЮТэйр,UT-302,AT-72,HMA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 488",Ханты-Мансийск,13:00,15:15,чт,29 окт / 31 дек,ЮТэйр,UT-302,AT-72,HMA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 489",Ханты-Мансийск,18:10,20:10,вс,25 окт / 03 янв,ЮТэйр,UT-302,AT-72,HMA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 491",Харбин,20:10,05:05 (+1),вс,08 ноя / 06 дек,Ural airlines,U6-755,A-319,HRB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 492",Харбин,20:10,05:05 (+1),"чт, вс",10 дек / 27 дек,Ural airlines,U6-755,A-319,HRB
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 494",Худжанд,21:40,00:40 (+1),ср,04 ноя / 24 мар,Ural airlines,U6-2955,A-320,LBD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 495",Худжанд,23:45,02:45 (+1),пт,30 окт / 13 ноя,Ural airlines,U6-2655,A-320,LBD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 496",Худжанд,23:40,02:45 (+1),пн,09 ноя / 22 мар,Ural airlines,U6-2955,A-320,LBD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 497",Худжанд,23:45,02:45 (+1),"вт, пт",17 ноя / 26 мар,Ural airlines,U6-2655,A-320,LBD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 498",Худжанд,18:55,21:55,сб,31 окт / 27 мар,Ural airlines,U6-2955,A-320,LBD
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 500",Хургада,00:10,03:35,сб,14 ноя / 14 ноя,Almasria Universal Airlines,UJ-668,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 501",Хургада,01:20,04:45,ср,18 ноя / 25 ноя,Almasria Universal Airlines,UJ-668,A-321,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 502",Хургада,01:35,05:00,чт,10 дек / 10 дек,Almasria Universal Airlines,UJ-724,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 503",Хургада,01:50,05:15,чт,19 ноя / 19 ноя,Almasria Universal Airlines,UJ-724,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 504",Хургада,05:05,08:30,сб,05 дек / 27 фев,Almasria Universal Airlines,UJ-668,A-321,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 505",Хургада,05:40,09:00,чт,12 ноя / 12 ноя,Россия,FV-5971,B-737,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 506",Хургада,05:40,09:05,ср,28 окт / 11 ноя,Almasria Universal Airlines,UJ-668,A-321,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 507",Хургада,05:40,09:05,ср,02 дек / 03 мар,Almasria Universal Airlines,UJ-668,A-321,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 508",Хургада,05:50,09:10,вс,08 ноя / 29 ноя,Nesma Airlines,NE-431,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 509",Хургада,06:15,09:35,пн,07 дек / 01 мар,Almasria Universal Airlines,UJ-668,A-321,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 510",Хургада,06:30,09:50,вс,06 дек / 06 дек,Nesma Airlines,NE-431,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 511",Хургада,06:40,10:05,сб,28 ноя / 28 ноя,Almasria Universal Airlines,UJ-668,A-321,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 512",Хургада,07:00,10:20,пн,16 ноя / 30 ноя,Almasria Universal Airlines,UJ-668,A-321,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 513",Хургада,07:20,10:45,вс,29 ноя / 29 ноя,Almasria Universal Airlines,UJ-724,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 514",Хургада,08:50,12:10,чт,29 окт / 26 ноя,Nesma Airlines,NE-431,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 515",Хургада,09:15,12:35,чт,03 дек / 10 дек,Nesma Airlines,NE-431,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 516",Хургада,09:40,13:05,сб,21 ноя / 21 ноя,Almasria Universal Airlines,UJ-668,A-321,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 517",Хургада,14:25,17:50,сб,14 ноя / 14 ноя,Almasria Universal Airlines,UJ-668D,A-320,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 518",Хургада,18:05,21:05,сб,31 окт / 27 мар,Россия,FV-5971,B-737,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 519",Хургада,19:10,22:45,пн,02 ноя / 22 мар,Россия,FV-5971,B-737,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 520",Хургада,19:25,22:45,ср,18 ноя / 24 мар,Россия,FV-5971,B-737,HRG
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 522",Челябинск,14:00,15:00,вс,29 ноя / 29 ноя,RED WINGS,WZ-920,RRJ-95B,CEK
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 524",Череповец,11:20,11:20,вс,01 ноя / 29 ноя,Северсталь,D2-182,CRJ-200,CEE
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 525",Череповец,11:20,11:20,вс,06 дек / 26 дек,Северсталь,D2-182,CRJ-200,CEE
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 527",Чита,22:15,06:45 (+1),ежедневно,26 окт / 27 дек,Ural airlines,U6-624,A-320,HTA
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 529",Шарм Эль Шейх,21:50,00:50 (+1),пт,04 дек / 04 дек,Nesma Airlines,NE-437,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 530",Шарм Эль Шейх,00:55,03:55,вс,22 ноя / 22 ноя,Almasria Universal Airlines,UJ-662,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 531",Шарм Эль Шейх,01:10,04:10,пт,30 окт / 26 мар,Almasria Universal Airlines,UJ-722,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 532",Шарм Эль Шейх,01:15,04:15,вт,17 ноя / 24 ноя,Nesma Airlines,NE-437,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 533",Шарм Эль Шейх,01:20,04:20,вс,08 ноя / 15 ноя,Almasria Universal Airlines,UJ-662,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 534",Шарм Эль Шейх,01:20,04:20,вс,29 ноя / 29 ноя,Almasria Universal Airlines,UJ-662,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 535",Шарм Эль Шейх,01:30,04:30,чт,19 ноя / 19 ноя,Almasria Universal Airlines,UJ-662,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 536",Шарм Эль Шейх,01:45,04:45,вт,08 дек / 15 дек,Nesma Airlines,NE-437,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 537",Шарм Эль Шейх,02:10,05:10,сб,07 ноя / 14 ноя,Nesma Airlines,NE-437,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 538",Шарм Эль Шейх,02:10,05:10,сб,28 ноя / 28 ноя,Nesma Airlines,NE-437,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 539",Шарм Эль Шейх,04:20,07:20,"чт, вс",03 дек / 28 фев,Almasria Universal Airlines,UJ-662,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 540",Шарм Эль Шейх,04:50,07:35,ср,28 окт / 24 мар,Red Sea Airlines,4S-332,B-737,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 541",Шарм Эль Шейх,06:20,09:20,пн,16 ноя / 28 дек,Almasria Universal Airlines,UJ-722,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 542",Шарм Эль Шейх,07:20,10:20,чт,05 ноя / 12 ноя,Almasria Universal Airlines,UJ-662,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 543",Шарм Эль Шейх,07:20,10:20,чт,26 ноя / 26 ноя,Almasria Universal Airlines,UJ-662,A-321,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 544",Шарм Эль Шейх,09:00,12:00,ср,28 окт / 18 ноя,Nesma Airlines,NE-439,A-320,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 545",Шарм Эль Шейх,09:30,13:05,вт,10 ноя / 23 мар,Россия,FV-5969,B-737,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 546",Шарм Эль Шейх,17:00,20:20,вс,08 ноя / 21 мар,Россия,FV-5969,B-737,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 547",Шарм Эль Шейх,19:20,22:55,чт,10 дек / 31 дек,Россия,FV-5969,B-737,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 548",Шарм Эль Шейх,19:20,23:05,чт,12 ноя / 03 дек,Россия,FV-5969,B-737,SSH
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 550",Якутск,20:40,06:00 (+1),вс,08 ноя / 22 ноя,Якутия,R3-468,B-737,YKS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 551",Якутск,20:40,06:00 (+1),вс,06 дек / 21 мар,Якутия,R3-468,B-737,YKS
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 553",Ямбург,07:45,10:00,пт,13 ноя / 13 ноя,Газпром авиа,4G-313,RRJ-95B,YMQ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 554",Ямбург,06:30,10:30,пт,13 ноя / 13 ноя,Газпром авиа,4G-413,RRJ-95B,YMQ
+S19,data/raw/schedules/S19__koltsovo_schedule_winter_2026.html,"table 1, tr 556",Ярославль,23:45,23:45,чт,12 ноя / 12 ноя,S7 Airlines,S7-8402,A-320,IAR

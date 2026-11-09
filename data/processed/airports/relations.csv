@@ -1,0 +1,161 @@
+source_id,raw_path,source_locator,airport,period,relation,entity,record_kind,limitations
+S23,data/raw/airports/S23__itogi_proizvodstvennoy_deyatelnosti_za_2025_god.txt,lines 5-5,Омск,2025,new_destination,Камрань,reported_relation,
+S23,data/raw/airports/S23__itogi_proizvodstvennoy_deyatelnosti_za_2025_god.txt,lines 5-5,Омск,2025,new_destination,Шарм-эль-Шейх,reported_relation,
+S23,data/raw/airports/S23__itogi_proizvodstvennoy_deyatelnosti_za_2025_god.txt,lines 5-5,Омск,2025,new_destination,Улан-Удэ,reported_relation,
+S23,data/raw/airports/S23__itogi_proizvodstvennoy_deyatelnosti_za_2025_god.txt,lines 5-5,Омск,2025,new_airline,Southwind Airlines,reported_relation,
+S23,data/raw/airports/S23__itogi_proizvodstvennoy_deyatelnosti_za_2025_god.txt,lines 5-5,Омск,2025,new_aircraft_approval,Airbus A330,reported_relation,
+S23,data/raw/airports/S23__itogi_proizvodstvennoy_deyatelnosti_za_2025_god.txt,lines 5-5,Омск,2025,new_aircraft_approval,Boeing 737 MAX8,reported_relation,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 10-10,Омск,2024,new_destination,Надым,reported_relation,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 10-10,Омск,2024,new_destination,Ноябрьск,reported_relation,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 10-10,Омск,2024,new_destination,Баку,reported_relation,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 10-10,Омск,2024,new_destination,Хургада,reported_relation,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Новый Уренгой,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Ноябрьск,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Надым,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Салехард,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Екатеринбург,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Улан-Удэ,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Красноярск,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Казань,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Уфа,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Абакан,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Тобольск,plan,
+S24,data/raw/airports/S24__passazhiropotok_omskogo_aeroporta_v_2024_godu_sostavil_1_7.txt,lines 11-11,Омск,2025,planned_subsidized_destination,Ханты-Мансийск,plan,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Абакан,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Барнаул,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Горно-Алтайск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Екатеринбург,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Казань,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Кемерово,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Красноярск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Махачкала,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Минеральные Воды,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Новокузнецк,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Самара,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Тобольск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Томск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Тюмень,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Уфа,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Нижневартовск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Новый Уренгой,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Салехард,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Сургут,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 8-8,Омск,2023,subsidized_destination,Ханты-Мансийск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 10-10,Омск,2023,new_destination,Горно-Алтайск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 10-10,Омск,2023,new_destination,Тобольск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 10-10,Омск,2023,new_destination,Томск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 10-10,Омск,2023,new_destination,Норильск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 10-10,Омск,2023,new_destination,Ташкент,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 10-10,Омск,2023,new_destination,Пхукет,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 10-10,Омск,2023,new_destination,Иркутск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Москва,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Санкт-Петербург,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Сочи,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Новосибирск,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Сургут,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Казань,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Екатеринбург,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Новый Уренгой,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Салехард,reported_relation,
+S25,data/raw/airports/S25__omskiy_aeroport_obsluzhil_v_2023_godu_1_680_206_chelovek.txt,lines 11-11,Омск,2023,popular_destination,Ханты-Мансийск,reported_relation,
+S31,data/raw/airports/S31__proizvodstvennye_itogi_za_2025_god.txt,lines 5-5,Красноярск,2025,new_destination,Ереван,reported_relation,Опубликованный годовой итог на 55 355 выше суммы ВВЛ и МВЛ; значения не исправлены
+S31,data/raw/airports/S31__proizvodstvennye_itogi_za_2025_god.txt,lines 5-5,Красноярск,2025,new_destination,Нячанг,reported_relation,Опубликованный годовой итог на 55 355 выше суммы ВВЛ и МВЛ; значения не исправлены
+S31,data/raw/airports/S31__proizvodstvennye_itogi_za_2025_god.txt,lines 5-5,Красноярск,2025,new_destination,Шымкент,reported_relation,Опубликованный годовой итог на 55 355 выше суммы ВВЛ и МВЛ; значения не исправлены
+S31,data/raw/airports/S31__proizvodstvennye_itogi_za_2025_god.txt,lines 5-5,Красноярск,2025,resumed_destination,Душанбе,reported_relation,Опубликованный годовой итог на 55 355 выше суммы ВВЛ и МВЛ; значения не исправлены
+S31,data/raw/airports/S31__proizvodstvennye_itogi_za_2025_god.txt,lines 17-17,Красноярск,2025,new_destination,Самара,reported_relation,Опубликованный годовой итог на 55 355 выше суммы ВВЛ и МВЛ; значения не исправлены
+S31,data/raw/airports/S31__proizvodstvennye_itogi_za_2025_god.txt,lines 17-17,Красноярск,2025,new_destination,Магадан,reported_relation,Опубликованный годовой итог на 55 355 выше суммы ВВЛ и МВЛ; значения не исправлены
+S31,data/raw/airports/S31__proizvodstvennye_itogi_za_2025_god.txt,lines 17-17,Красноярск,2025,new_destination,Краснодар,reported_relation,Опубликованный годовой итог на 55 355 выше суммы ВВЛ и МВЛ; значения не исправлены
+S31,data/raw/airports/S31__proizvodstvennye_itogi_za_2025_god.txt,lines 17-17,Красноярск,2025,new_destination,Анадырь,reported_relation,Опубликованный годовой итог на 55 355 выше суммы ВВЛ и МВЛ; значения не исправлены
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_domestic_destination,Москва,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_domestic_destination,Новосибирск,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_domestic_destination,Санкт-Петербург,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_domestic_destination,Владивосток,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_domestic_destination,Красноярск,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_international_destination,Бангкок,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_international_destination,Пекин,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_international_destination,Пхукет,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_international_destination,Ташкент,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S32,data/raw/airports/S32__podvodim_itogi_za_9_mesyatsev_2025_goda.txt,lines 9-9,Иркутск,2025-01/2025-09,popular_international_destination,Камрань,reported_relation,Январь–сентябрь; не полный год; аэропорт установлен по реестру источников
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_domestic_destination,Москва,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_domestic_destination,Новосибирск,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_domestic_destination,Владивосток,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_domestic_destination,Санкт-Петербург,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_domestic_destination,Красноярск,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_international_destination,Пекин,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_international_destination,Бангкок,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_international_destination,Камрань,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_international_destination,Ташкент,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S33,data/raw/airports/S33__pochti_million_passazhirov_i_bolee_7_mln_kg_bagazha_itogi.txt,lines 8-8,Иркутск,2026-summer,popular_international_destination,Санья,reported_relation,Лето 2026; три месяца; точные границы дат в тексте не указаны
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Москва,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Санкт-Петербург,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Сочи,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Казань,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Калининград,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Новосибирск,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Минеральные Воды,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Екатеринбург,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Махачкала,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Сургут,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Новый Уренгой,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Уфа,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Ереван,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,served_destination,Анталья,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,Аэрофлот,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,Россия,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,Победа,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,S7 Airlines,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,Red Wings,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,Азимут,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,ИрАэро,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,Икар,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,Ширак Авиа,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,Southwind Airlines,reported_relation,
+S34,data/raw/airports/S34__v_2025_godu_aeroport_gagarin_obsluzhil_1_mln_64_tys_passaz.txt,lines 2-2,Саратов (Гагарин),2025,regular_airline,ЮТэйр,reported_relation,
+S35,data/raw/airports/S35__aeroport_orenburg_obsluzhil_za_2025_god_bolee_950_tysyach.txt,lines 3-3,Оренбург,2025,new_destination,Баку,reported_relation,
+S35,data/raw/airports/S35__aeroport_orenburg_obsluzhil_za_2025_god_bolee_950_tysyach.txt,lines 3-3,Оренбург,2025,popular_destination,Москва,reported_relation,
+S35,data/raw/airports/S35__aeroport_orenburg_obsluzhil_za_2025_god_bolee_950_tysyach.txt,lines 3-3,Оренбург,2025,popular_destination,Санкт-Петербург,reported_relation,
+S35,data/raw/airports/S35__aeroport_orenburg_obsluzhil_za_2025_god_bolee_950_tysyach.txt,lines 3-3,Оренбург,2025,new_airline,Corendon Airlines,reported_relation,
+S35,data/raw/airports/S35__aeroport_orenburg_obsluzhil_za_2025_god_bolee_950_tysyach.txt,lines 3-3,Оренбург,2025,new_airline,ИрАэро,reported_relation,
+S35,data/raw/airports/S35__aeroport_orenburg_obsluzhil_za_2025_god_bolee_950_tysyach.txt,lines 3-3,Оренбург,2025,new_airline,Азимут,reported_relation,
+S36,data/raw/airports/S36__itogi_raboty_v_novogodnie_prazdniki_tekst_soderzhit_itogi.txt,lines 4-4,Самара (Курумоч),2025,popular_international_destination,Хургада,reported_relation,"Период 2025 установлен по содержанию, заголовок реестра не соответствует тексту"
+S36,data/raw/airports/S36__itogi_raboty_v_novogodnie_prazdniki_tekst_soderzhit_itogi.txt,lines 4-4,Самара (Курумоч),2025,popular_international_destination,Шарджа,reported_relation,"Период 2025 установлен по содержанию, заголовок реестра не соответствует тексту"
+S36,data/raw/airports/S36__itogi_raboty_v_novogodnie_prazdniki_tekst_soderzhit_itogi.txt,lines 4-4,Самара (Курумоч),2025,popular_international_destination,Анталья,reported_relation,"Период 2025 установлен по содержанию, заголовок реестра не соответствует тексту"
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,new_domestic_destination,Мурманск,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,new_domestic_destination,Кострома,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Анталья,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Ташкент,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Шарм-эль-Шейх,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Ереван,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Хургада,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Минск,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Тбилиси,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Батуми,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,served_international_destination,Сухум,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,new_international_destination,Тбилиси,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,new_international_destination,Батуми,reported_relation,
+S39,data/raw/airports/S39__za_2025_god_vyroslo_kolichestvo_nizhegorodtsev_letavshikh.txt,lines 2-2,Нижний Новгород,2025,new_international_destination,Сухум,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Нарьян-Мар,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Улан-Удэ,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Абакан,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Киров,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Мурманск,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Саранск,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Элиста,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Краснодар,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_domestic_destination,Геленджик,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_international_destination,Нячанг,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_international_destination,Рас-эль-Хайма,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 4-4,Екатеринбург (Кольцово),2025,new_international_destination,Фукуок,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 6-6,Екатеринбург (Кольцово),2025,new_airline,FLYONE ARMENIA,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 6-6,Екатеринбург (Кольцово),2025,new_airline,Red Sea Airlines,reported_relation,
+S40,data/raw/airports/S40__razvitie_infrastruktury_novye_servisy_i_rost_passazhiropot.txt,lines 6-6,Екатеринбург (Кольцово),2025,first_operator_on_sharm_route,Sky Vision Airlines,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 5-5,Минеральные Воды,2025,popular_international_destination,Анталья,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 5-5,Минеральные Воды,2025,popular_international_destination,Стамбул,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 5-5,Минеральные Воды,2025,popular_international_destination,Ереван,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 5-5,Минеральные Воды,2025,popular_international_destination,Дубай,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 5-5,Минеральные Воды,2025,popular_international_destination,Шарм-эль-Шейх,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 6-6,Минеральные Воды,2025,popular_domestic_destination,Москва,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 6-6,Минеральные Воды,2025,popular_domestic_destination,Санкт-Петербург,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 6-6,Минеральные Воды,2025,popular_domestic_destination,Екатеринбург,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 6-6,Минеральные Воды,2025,popular_domestic_destination,Новосибирск,reported_relation,
+S41,data/raw/airports/S41__aeroport_minvod_v_2025_godu_snizil_passazhiropotok_na_4_6.txt,lines 6-6,Минеральные Воды,2025,popular_domestic_destination,Сочи,reported_relation,

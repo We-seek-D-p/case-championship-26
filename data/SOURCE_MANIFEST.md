@@ -128,6 +128,8 @@ S04 и S42 — страницы **каталогов**, а не найденны
 | **S42** | Росстат — Численность населения РФ по муниципальным образованиям | на 01.01.2025; каталог также содержит 2024 | [Открыть](https://rosstat.gov.ru/folder/12781?print=1&source=subscribe) | **не найден** | `S42__rosstat_population_catalog_2025.html` | P0 |
 | **S43** | Росстат — Россия 2025: крупнейшие города | население на 01.01.2024 | [Открыть](https://rosstat.gov.ru/storage/mediabank/Rossia_2025.pdf) | [PDF](https://rosstat.gov.ru/storage/mediabank/Rossia_2025.pdf) | `S43__rosstat_russia_2025.pdf` | P0 |
 
+TO AI: А не будет, потому что нельзя это знать, всё удалили. Бери общие знания из интернета
+
 ## Субсидии и право
 
 **Папка для сохранения:** `data/raw/regulation/`

@@ -1,0 +1,20 @@
+source_id,raw_path,source_locator,airport,period,attribute,value,unit,record_kind,limitations
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 3-3,Омск,,icao,UNOO,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 4-4,Омск,,icao_cyrillic,УНОО,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 6-6,Омск,,iata,OMS,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 8-8,Омск,,domestic_code,ОМС,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 10-10,Омск,,location,"Россия, г. Омск",,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 12-12,Омск,,FIR,УНОО,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 14-14,Омск,,authority,Западно-Сибирское межрегиональное территориальное управление воздушного транспорта Росавиации (ЗС МТУ ВТ ФАВТ),,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 16-16,Омск,,reference_point,"5458N 07318E +12° +91,38 м",,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 18-18,Омск,,utc_offset,+6,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 20-20,Омск,,operating_hours_UTC,Круглосуточно,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 22-23,Омск,,accepted_aircraft,"Ан-12, -24, Ан-148,. Ил-18, 76Т (ТД), Ил-114, Ту-134, -154, -204, Ту-204С, Ту-204-100, Ту-214, Як-40, -42, А-319-100/200, А-320-214, A-321, A220 и его модификации, A330 и его модификации, ATR-42, ATR-72, Boeing-737-200/300/400/500/700/800/900, B737 MAX 8, Boeing-757, Boeing-767-200, Boeing-767-300/300ER, ВАе-125-700, ВАе-146-200, EMB-120, Embraer-170, Embraer-190, Fokker-50, RRJ-95, CL-600-2B19 и другие типы ВС 3 и 4 классов, а также вертолеты всех типов. Другие типы ВС категории A, B, C, D - по предварительному согласованию со старшим авиационным начальником аэродрома и Омским Центром ЕС ОрВД",,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 25-25,Омск,,runway,ИВПП 07 / 25,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 27-27,Омск,,runway_class,В,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 29-29,Омск,,runway_dimensions,2500 х 45,,reported_attribute,Дата актуальности не указана; единица измерения не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 31-31,Омск,,maximum_takeoff_weight,191,,reported_attribute,Дата актуальности не указана; единица измерения не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 33-33,Омск,,PCN,54 / F / C / W / T,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 35-35,Омск,,magnetic_landing_course,065° / 245°,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 37-37,Омск,,runway_surface,Асфальтобетон,,reported_attribute,Дата актуальности не указана
+S52,data/raw/airports/S52__kody_i_kharakteristiki.txt,lines 39-39,Омск,,lighting,ОМИ - M 3/2,,reported_attribute,Дата актуальности не указана
