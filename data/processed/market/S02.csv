@@ -1,0 +1,379 @@
+source_id,raw_path,source_locator,metric,segment,service_type,period,value,unit,record_kind
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 3,ПАССАЖИРООБОРОТ,Всего,все,2023,264699051.19,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 4,ПАССАЖИРООБОРОТ,Всего,все,2024,286236627.57,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 5,ПАССАЖИРООБОРОТ,Всего,все,2024 к 2023,108.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 6,ПАССАЖИРООБОРОТ,Всего,регулярные,2023,243397413.26,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 7,ПАССАЖИРООБОРОТ,Всего,регулярные,2024,263335038.89,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 8,ПАССАЖИРООБОРОТ,Всего,регулярные,2024 к 2023,108.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 9,ПАССАЖИРООБОРОТ,Всего,нерегулярные,2023,21301637.93,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 10,ПАССАЖИРООБОРОТ,Всего,нерегулярные,2024,22901588.68,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 6 column 11,ПАССАЖИРООБОРОТ,Всего,нерегулярные,2024 к 2023,107.5,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 3,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2023,83213903.57,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 4,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024,101416813.05,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 5,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024 к 2023,121.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 6,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2023,65934736.80,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 7,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024,82608799.50,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 8,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,125.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 9,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2023,17279166.77,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 10,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024,18808013.55,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 8 column 11,ПАССАЖИРООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,108.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 3,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,все,2023,58149052.96,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 4,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,все,2024,74582175.37,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 5,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,все,2024 к 2023,128.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 6,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,регулярные,2023,41557040.58,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 7,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024,56515738.84,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 8,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024 к 2023,136.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 9,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2023,16592012.38,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 10,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024,18066436.53,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 10 column 11,ПАССАЖИРООБОРОТ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024 к 2023,108.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 3,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,все,2023,25064850.61,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 4,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,все,2024,26834637.68,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 5,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,все,2024 к 2023,107.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 6,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,регулярные,2023,24377696.22,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 7,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,регулярные,2024,26093060.66,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 8,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,регулярные,2024 к 2023,107.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 9,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,нерегулярные,2023,687154.39,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 10,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,нерегулярные,2024,741577.02,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 11 column 11,ПАССАЖИРООБОРОТ,между Россией и странами СНГ,нерегулярные,2024 к 2023,107.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 3,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2023,181485147.62,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 4,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024,184819814.52,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 5,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024 к 2023,101.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 6,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2023,177462676.46,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 7,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024,180726239.39,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 8,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,101.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 9,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2023,4022471.16,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 10,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024,4093575.13,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 12 column 11,ПАССАЖИРООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,101.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 3,ПАССАЖИРООБОРОТ,местные перевозки,все,2023,2069174.86,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 4,ПАССАЖИРООБОРОТ,местные перевозки,все,2024,2120678.00,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 5,ПАССАЖИРООБОРОТ,местные перевозки,все,2024 к 2023,102.5,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 6,ПАССАЖИРООБОРОТ,местные перевозки,регулярные,2023,1626017.70,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 7,ПАССАЖИРООБОРОТ,местные перевозки,регулярные,2024,1677496.08,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 8,ПАССАЖИРООБОРОТ,местные перевозки,регулярные,2024 к 2023,103.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 9,ПАССАЖИРООБОРОТ,местные перевозки,нерегулярные,2023,443157.16,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 10,ПАССАЖИРООБОРОТ,местные перевозки,нерегулярные,2024,443181.92,тыс.пасс.км.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 14 column 11,ПАССАЖИРООБОРОТ,местные перевозки,нерегулярные,2024 к 2023,100.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 3,ТОННОКИЛОМЕТРЫ,Всего,все,2023,25546622.66,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 4,ТОННОКИЛОМЕТРЫ,Всего,все,2024,27675206.06,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 5,ТОННОКИЛОМЕТРЫ,Всего,все,2024 к 2023,108.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 6,ТОННОКИЛОМЕТРЫ,Всего,регулярные,2023,23274166.01,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 7,ТОННОКИЛОМЕТРЫ,Всего,регулярные,2024,25261616.42,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 8,ТОННОКИЛОМЕТРЫ,Всего,регулярные,2024 к 2023,108.5,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 9,ТОННОКИЛОМЕТРЫ,Всего,нерегулярные,2023,2272456.65,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 10,ТОННОКИЛОМЕТРЫ,Всего,нерегулярные,2024,2413589.64,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 15 column 11,ТОННОКИЛОМЕТРЫ,Всего,нерегулярные,2024 к 2023,106.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 3,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2023,8060963.94,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 4,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024,9847183.98,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 5,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024 к 2023,122.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 6,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2023,6317568.28,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 7,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024,7984668.37,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 8,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,126.4,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 9,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2023,1743395.66,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 10,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024,1862515.61,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 17 column 11,ТОННОКИЛОМЕТРЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,106.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 3,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,все,2023,5720487.13,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 4,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,все,2024,7339787.54,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 5,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,все,2024 к 2023,128.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 6,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,регулярные,2023,4049482.32,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 7,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024,5554605.31,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 8,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024 к 2023,137.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 9,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2023,1671004.81,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 10,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024,1785182.23,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 19 column 11,ТОННОКИЛОМЕТРЫ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024 к 2023,106.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 3,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,все,2023,2340476.81,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 4,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,все,2024,2507396.44,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 5,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,все,2024 к 2023,107.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 6,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,регулярные,2023,2268085.96,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 7,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,регулярные,2024,2430063.06,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 8,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,регулярные,2024 к 2023,107.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 9,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,нерегулярные,2023,72390.85,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 10,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,нерегулярные,2024,77333.38,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 20 column 11,ТОННОКИЛОМЕТРЫ,между Россией и странами СНГ,нерегулярные,2024 к 2023,106.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 3,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2023,17485658.72,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 4,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024,17828022.08,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 5,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024 к 2023,102.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 6,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2023,16956597.73,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 7,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024,17276948.05,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 8,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,101.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 9,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2023,529060.99,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 10,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024,551074.03,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 21 column 11,ТОННОКИЛОМЕТРЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,104.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 3,ТОННОКИЛОМЕТРЫ,местные перевозки,все,2023,201310.33,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 4,ТОННОКИЛОМЕТРЫ,местные перевозки,все,2024,206566.91,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 5,ТОННОКИЛОМЕТРЫ,местные перевозки,все,2024 к 2023,102.6,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 6,ТОННОКИЛОМЕТРЫ,местные перевозки,регулярные,2023,155005.53,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 7,ТОННОКИЛОМЕТРЫ,местные перевозки,регулярные,2024,160495.63,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 8,ТОННОКИЛОМЕТРЫ,местные перевозки,регулярные,2024 к 2023,103.5,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 9,ТОННОКИЛОМЕТРЫ,местные перевозки,нерегулярные,2023,46304.80,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 10,ТОННОКИЛОМЕТРЫ,местные перевозки,нерегулярные,2024,46071.28,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 23 column 11,ТОННОКИЛОМЕТРЫ,местные перевозки,нерегулярные,2024 к 2023,99.5,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 3,ГРУЗООБОРОТ,Всего,все,2023,1723708.05,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 4,ГРУЗООБОРОТ,Всего,все,2024,1913909.58,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 5,ГРУЗООБОРОТ,Всего,все,2024 к 2023,111.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 6,ГРУЗООБОРОТ,Всего,регулярные,2023,1368398.82,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 7,ГРУЗООБОРОТ,Всего,регулярные,2024,1561462.92,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 8,ГРУЗООБОРОТ,Всего,регулярные,2024 к 2023,114.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 9,ГРУЗООБОРОТ,Всего,нерегулярные,2023,355309.24,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 10,ГРУЗООБОРОТ,Всего,нерегулярные,2024,352446.66,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 24 column 11,ГРУЗООБОРОТ,Всего,нерегулярные,2024 к 2023,99.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 3,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2023,571712.62,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 4,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024,719670.81,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 5,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024 к 2023,125.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 6,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2023,383441.97,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 7,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024,549876.42,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 8,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,143.4,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 9,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2023,188270.65,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 10,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024,169794.39,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 26 column 11,ГРУЗООБОРОТ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,90.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 3,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,все,2023,487072.36,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 4,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,все,2024,627391.76,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 5,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,все,2024 к 2023,128.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 6,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,регулярные,2023,309348.67,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 7,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024,468188.81,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 8,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024 к 2023,151.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 9,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2023,177723.70,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 10,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024,159202.94,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 28 column 11,ГРУЗООБОРОТ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024 к 2023,89.6,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 3,ГРУЗООБОРОТ,между Россией и странами СНГ,все,2023,84640.26,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 4,ГРУЗООБОРОТ,между Россией и странами СНГ,все,2024,92279.05,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 5,ГРУЗООБОРОТ,между Россией и странами СНГ,все,2024 к 2023,109.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 6,ГРУЗООБОРОТ,между Россией и странами СНГ,регулярные,2023,74093.30,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 7,ГРУЗООБОРОТ,между Россией и странами СНГ,регулярные,2024,81687.60,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 8,ГРУЗООБОРОТ,между Россией и странами СНГ,регулярные,2024 к 2023,110.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 9,ГРУЗООБОРОТ,между Россией и странами СНГ,нерегулярные,2023,10546.95,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 10,ГРУЗООБОРОТ,между Россией и странами СНГ,нерегулярные,2024,10591.45,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 29 column 11,ГРУЗООБОРОТ,между Россией и странами СНГ,нерегулярные,2024 к 2023,100.4,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 3,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2023,1151995.43,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 4,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024,1194238.77,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 5,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024 к 2023,103.7,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 6,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2023,984956.85,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 7,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024,1011586.50,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 8,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,102.7,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 9,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2023,167038.59,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 10,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024,182652.27,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 30 column 11,ГРУЗООБОРОТ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,109.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 3,ГРУЗООБОРОТ,местные перевозки,все,2023,15084.59,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 4,ГРУЗООБОРОТ,местные перевозки,все,2024,15705.89,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 5,ГРУЗООБОРОТ,местные перевозки,все,2024 к 2023,104.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 6,ГРУЗООБОРОТ,местные перевозки,регулярные,2023,8663.94,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 7,ГРУЗООБОРОТ,местные перевозки,регулярные,2024,9520.98,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 8,ГРУЗООБОРОТ,местные перевозки,регулярные,2024 к 2023,109.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 9,ГРУЗООБОРОТ,местные перевозки,нерегулярные,2023,6420.66,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 10,ГРУЗООБОРОТ,местные перевозки,нерегулярные,2024,6184.91,тыс.ткм.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 32 column 11,ГРУЗООБОРОТ,местные перевозки,нерегулярные,2024 к 2023,96.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 3,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,все,2023,105445587,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 4,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,все,2024,111650533,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 5,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,все,2024 к 2023,105.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 6,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,регулярные,2023,98872628,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 7,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,регулярные,2024,104464713,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 8,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,регулярные,2024 к 2023,105.7,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 9,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,нерегулярные,2023,6572959,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 10,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,нерегулярные,2024,7185820,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 33 column 11,ПЕРЕВОЗКИ ПАССАЖИРОВ,Всего,нерегулярные,2024 к 2023,109.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 3,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2023,22447310,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 4,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024,26965861,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 5,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024 к 2023,120.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 6,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2023,18742800,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 7,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024,22643214,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 8,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,120.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 9,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2023,3704510,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 10,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024,4322647,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 35 column 11,ПЕРЕВОЗКИ ПАССАЖИРОВ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,116.7,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 3,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,все,2023,12658517,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 4,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,все,2024,16338927,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 5,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,все,2024 к 2023,129.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 6,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,регулярные,2023,9222856,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 7,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024,12347841,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 8,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024 к 2023,133.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 9,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2023,3435661,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 10,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024,3991086,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 37 column 11,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024 к 2023,116.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 3,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,все,2023,9788793,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 4,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,все,2024,10626934,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 5,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,все,2024 к 2023,108.6,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 6,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,регулярные,2023,9519944,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 7,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,регулярные,2024,10295373,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 8,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,регулярные,2024 к 2023,108.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 9,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,нерегулярные,2023,268849,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 10,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,нерегулярные,2024,331561,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 38 column 11,ПЕРЕВОЗКИ ПАССАЖИРОВ,между Россией и странами СНГ,нерегулярные,2024 к 2023,123.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 3,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2023,82998277,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 4,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024,84684672,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 5,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024 к 2023,102.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 6,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2023,80129828,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 7,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024,81821499,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 8,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,102.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 9,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2023,2868449,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 10,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024,2863173,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 39 column 11,ПЕРЕВОЗКИ ПАССАЖИРОВ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,99.8,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 3,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,все,2023,2722751,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 4,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,все,2024,2729182,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 5,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,все,2024 к 2023,100.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 6,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,регулярные,2023,1952892,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 7,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,регулярные,2024,1997953,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 8,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,регулярные,2024 к 2023,102.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 9,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,нерегулярные,2023,769859,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 10,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,нерегулярные,2024,731229,чел.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 41 column 11,ПЕРЕВОЗКИ ПАССАЖИРОВ,местные перевозки,нерегулярные,2024 к 2023,95.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 3,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,все,2023,467378.65,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 4,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,все,2024,489356.91,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 5,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,все,2024 к 2023,104.7,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 6,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,регулярные,2023,358449.76,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 7,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,регулярные,2024,388819.07,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 8,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,регулярные,2024 к 2023,108.5,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 9,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,нерегулярные,2023,108928.89,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 10,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,нерегулярные,2024,100537.84,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 42 column 11,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,Всего,нерегулярные,2024 к 2023,92.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 3,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2023,129805.22,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 4,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024,151174.83,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 5,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024 к 2023,116.5,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 6,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2023,81554.30,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 7,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024,109494.44,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 8,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,134.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 9,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2023,48250.92,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 10,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024,41680.39,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 44 column 11,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,86.4,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 3,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,все,2023,97766.18,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 4,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,все,2024,114941.30,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 5,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,все,2024 к 2023,117.6,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 6,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,регулярные,2023,53354.28,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 7,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024,77341.27,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 8,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024 к 2023,145.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 9,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2023,44411.90,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 10,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024,37600.03,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 46 column 11,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024 к 2023,84.7,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 3,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,все,2023,32039.04,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 4,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,все,2024,36233.53,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 5,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,все,2024 к 2023,113.1,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 6,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,регулярные,2023,28200.02,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 7,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,регулярные,2024,32153.17,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 8,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,регулярные,2024 к 2023,114.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 9,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,нерегулярные,2023,3839.02,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 10,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,нерегулярные,2024,4080.36,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 47 column 11,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,между Россией и странами СНГ,нерегулярные,2024 к 2023,106.3,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 3,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2023,337573.43,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 4,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024,338182.08,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 5,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024 к 2023,100.2,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 6,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2023,276895.46,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 7,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024,279324.63,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 8,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,100.9,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 9,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2023,60677.97,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 10,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024,58857.45,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 48 column 11,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,97.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 3,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,все,2023,26629.19,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 4,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,все,2024,26535.72,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 5,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,все,2024 к 2023,99.6,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 6,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,регулярные,2023,9973.21,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 7,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,регулярные,2024,10538.47,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 8,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,регулярные,2024 к 2023,105.7,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 9,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,нерегулярные,2023,16655.98,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 10,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,нерегулярные,2024,15997.25,тонн,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 50 column 11,ПЕРЕВОЗКИ ГРУЗОВ И ПОЧТЫ,местные перевозки,нерегулярные,2024 к 2023,96.0,% к предыдущему году,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 3,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,все,2023,87.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 4,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,все,2024,89.3,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 5,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,все,2024 к 2023,1.7,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 6,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,регулярные,2023,87.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 7,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,регулярные,2024,89.5,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 8,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,регулярные,2024 к 2023,1.8,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 9,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,нерегулярные,2023,86.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 10,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,нерегулярные,2024,87.5,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 51 column 11,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,Всего,нерегулярные,2024 к 2023,0.9,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 3,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2023,85.5,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 4,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024,87.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 5,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024 к 2023,2.2,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 6,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2023,83.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 7,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024,86.4,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 8,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,2.7,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 9,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2023,93.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 10,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024,94.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 53 column 11,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,1.0,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 3,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,все,2023,86.8,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 4,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,все,2024,88.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 5,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,все,2024 к 2023,1.4,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 6,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,регулярные,2023,84.3,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 7,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024,86.3,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 8,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024 к 2023,2.0,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 9,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2023,93.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 10,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024,94.5,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 55 column 11,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024 к 2023,0.9,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 3,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,все,2023,82.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 4,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,все,2024,86.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 5,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,все,2024 к 2023,4.0,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 6,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,регулярные,2023,82.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 7,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,регулярные,2024,86.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 8,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,регулярные,2024 к 2023,4.0,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 9,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,нерегулярные,2023,82.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 10,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,нерегулярные,2024,82.1,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 56 column 11,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,между Россией и странами СНГ,нерегулярные,2024 к 2023,-0.1,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 3,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2023,88.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 4,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024,90.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 5,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024 к 2023,1.6,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 6,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2023,89.3,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 7,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024,90.9,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 8,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,1.6,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 9,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2023,66.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 10,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024,66.4,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 57 column 11,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,-0.2,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 3,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,все,2023,71.5,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 4,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,все,2024,70.8,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 5,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,все,2024 к 2023,-0.7,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 6,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,регулярные,2023,75.9,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 7,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,регулярные,2024,75.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 8,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,регулярные,2024 к 2023,-0.7,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 9,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,нерегулярные,2023,59.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 10,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,нерегулярные,2024,58.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 59 column 11,ПРОЦЕНТ ЗАНЯТОСТИ ПАССАЖИРСКИХ КРЕСЕЛ,местные перевозки,нерегулярные,2024 к 2023,-1.0,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 3,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,все,2023,74.3,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 4,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,все,2024,75.1,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 5,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,все,2024 к 2023,0.8,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 6,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,регулярные,2023,75.4,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 7,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,регулярные,2024,76.1,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 8,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,регулярные,2024 к 2023,0.7,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 9,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,нерегулярные,2023,65.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 10,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,нерегулярные,2024,66.1,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 60 column 11,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,Всего,нерегулярные,2024 к 2023,0.9,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 3,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2023,69.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 4,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024,71.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 5,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,все,2024 к 2023,1.6,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 6,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2023,69.5,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 7,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024,71.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 8,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,1.5,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 9,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2023,70.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 10,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024,71.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 62 column 11,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,1.7,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 3,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,все,2023,68.4,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 4,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,все,2024,69.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 5,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,все,2024 к 2023,1.3,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 6,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,регулярные,2023,67.5,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 7,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024,69.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 8,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,регулярные,2024 к 2023,1.5,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 9,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2023,70.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 10,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024,72.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 64 column 11,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и зарубежными странами за пределами СНГ,нерегулярные,2024 к 2023,1.5,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 3,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,все,2023,72.6,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 4,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,все,2024,75.8,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 5,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,все,2024 к 2023,3.2,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 6,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,регулярные,2023,73.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 7,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,регулярные,2024,76.3,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 8,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,регулярные,2024 к 2023,3.1,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 9,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,нерегулярные,2023,57.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 10,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,нерегулярные,2024,62.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 65 column 11,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,между Россией и странами СНГ,нерегулярные,2024 к 2023,4.5,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 3,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2023,76.8,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 4,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024,77.5,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 5,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,все,2024 к 2023,0.7,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 6,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2023,77.9,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 7,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024,78.7,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 8,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,регулярные,2024 к 2023,0.8,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 9,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2023,53.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 10,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024,52.3,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 66 column 11,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,ВНУТРЕННИЕ ПЕРЕВОЗКИ,нерегулярные,2024 к 2023,-0.7,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 3,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,все,2023,67.9,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 4,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,все,2024,69.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 5,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,все,2024 к 2023,1.1,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 6,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,регулярные,2023,75.8,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 7,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,регулярные,2024,76.0,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 8,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,регулярные,2024 к 2023,0.2,п.п.,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 9,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,нерегулярные,2023,50.4,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 10,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,нерегулярные,2024,52.2,%,observation
+S02,data/raw/market/S02__rosaviation_form_12ga.html,HTML table 1 row 68 column 11,ПРОЦЕНТ КОММЕРЧЕСКОЙ ЗАГРУЗКИ,местные перевозки,нерегулярные,2024 к 2023,1.8,п.п.,observation

@@ -1,0 +1,17 @@
+source_id,raw_path,source_locator,period,metric,segment,value,unit,record_kind
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_passengers,total,108.85,млн человек,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_passengers,domestic,81.45,млн человек,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_passengers,international,27.40,млн человек,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_passengers,international_non_CIS,17.72,млн человек,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_passengers_change,international,1.6,% к 2024,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_passengers_change,international_non_CIS,8.4,% к 2024,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airport_passengers,total,214.66,млн человек,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,seat_load_factor,total,89.5,%,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,seat_load_factor_change,total,0.2,п.п. к 2024,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,passenger_turnover,total,284.43,млрд пассажиро-км,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_rank,international,1,Аэрофлот,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_rank,international,2,Уральские авиалинии,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_rank,international,3,Azur Air,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_rank,domestic,1,Аэрофлот,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_rank,domestic,2,Победа,observation
+S03,data/raw/market/S03__rosaviation_passengers_2025.html,HTML img 13; инфографика,2025,airline_rank,domestic,3,S7 (Сибирь),observation
