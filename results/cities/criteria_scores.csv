@@ -1,0 +1,21 @@
+city,criterion,value,unit,period,comparison_period,score,weight,status,formula,sources,value_qualifier,basis
+Омск,size,1629761.0,person,2025,,27.16268333333333,0.75,observed_or_derived,"min(100,100*P/6000000)",S23: data/processed/airports/metrics.csv:2; lines 3-3 (core:2),reported,see report
+Омск,growth,-5.577426566992793,percent,2025,2024,22.112867165036036,0.25,observed_or_derived,"clip(5*(growth+10),0,100)",S23: data/processed/airports/metrics.csv:2; lines 3-3 (core:2) + S24: data/processed/airports/metrics.csv:15; lines 6-6 (core:5),,see report
+Уфа,size,4929715.0,person,2025,,82.16191666666667,0.75,observed_or_derived,"min(100,100*P/6000000)",S26: data/processed/airports/metrics.csv:33; lines 4-4 (core:23),reported,see report
+Уфа,growth,4.0,percent,2025,2024,70.0,0.25,observed_or_derived,"clip(5*(growth+10),0,100)",S26: data/processed/airports/metrics.csv:36; lines 12-12 (core:26),,see report
+Тюмень,size,2760338.0,person,2025,,46.005633333333336,0.75,observed_or_derived,"min(100,100*P/6000000)",S28: data/processed/airports/metrics.csv:41; lines 9-9 (core:31),reported,see report
+Тюмень,growth,,percent,2025,2024,,0.25,missing,"clip(5*(growth+10),0,100)",,,see report
+Красноярск,size,4263566.0,person,2025,,71.05943333333333,0.75,observed_or_derived,"min(100,100*P/6000000)",S31: data/processed/airports/metrics.csv:58; lines 11-11 (core:48),reported,see report
+Красноярск,growth,,percent,2025,2024,,0.25,missing,"clip(5*(growth+10),0,100)",,,see report
+Саратов,size,1064000.0,person,2025,,17.733333333333334,0.75,observed_or_derived,"min(100,100*P/6000000)",S34: data/processed/airports/metrics.csv:104; lines 1-1 (core:94),reported,see report
+Саратов,growth,,percent,2025,2024,,0.25,missing,"clip(5*(growth+10),0,100)",,,see report
+Оренбург,size,951000.0,person,2025,,15.85,0.75,observed_or_derived,"min(100,100*P/6000000)",S35: data/processed/airports/metrics.csv:110; lines 1-1 (core:100),greater_than,published threshold as point
+Оренбург,growth,,percent,2025,2024,,0.25,missing,"clip(5*(growth+10),0,100)",,,see report
+Самара,size,3570000.0,person,2025,,59.5,0.75,observed_or_derived,"min(100,100*P/6000000)",S36: data/processed/airports/metrics.csv:118; lines 1-1 (core:108),reported,see report
+Самара,growth,0.0,percent,2025,2024,50.0,0.25,observed_or_derived,"clip(5*(growth+10),0,100)",S36: data/processed/airports/metrics.csv:118; lines 1-1 (core:108) + S37: data/processed/airports/metrics.csv:137; lines 1-1 (core:119),,see report
+Казань,size,5384816.0,person,2025,,89.74693333333333,0.75,observed_or_derived,"min(100,100*P/6000000)",S38: data/processed/airports/metrics.csv:152; lines 176-176 (core:129),reported,see report
+Казань,growth,0.3,percent,2025,2024,51.5,0.25,observed_or_derived,"clip(5*(growth+10),0,100)",S38: data/processed/airports/metrics.csv:153; lines 176-176 (core:130),,see report
+Нижний Новгород,size,1400000.0,person,2025,,23.333333333333332,0.75,observed_or_derived,"min(100,100*P/6000000)",S39: data/processed/airports/metrics.csv:154; lines 1-1 (core:131),greater_than,published threshold as point
+Нижний Новгород,growth,,percent,2025,2024,,0.25,missing,"clip(5*(growth+10),0,100)",,,see report
+Минеральные Воды,size,4600000.0,person,2025,,76.66666666666667,0.75,observed_or_derived,"min(100,100*P/6000000)",S41: data/processed/airports/metrics.csv:183; lines 4-4 (core:150),reported,see report
+Минеральные Воды,growth,-4.6,percent,2025,2024,27.0,0.25,observed_or_derived,"clip(5*(growth+10),0,100)",S41: data/processed/airports/metrics.csv:184; lines 4-4 (core:151),,see report
