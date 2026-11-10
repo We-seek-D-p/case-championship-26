@@ -1,0 +1,3 @@
+source_id,source_url,source_locator,year,geography,metric,reported_count,unit,qualifier,scope,record_kind,limitations
+S05,https://mintrans.gov.ru/file/557797,PDF physical page 5,2025,Россия,domestic_flights_performed,645000,flights,greater_than,Все внутренние рейсы российских авиакомпаний,published_official_aggregate,Опубликовано «более 645 тыс.»; точное значение и маршруты не раскрыты
+S05,https://mintrans.gov.ru/file/557797,PDF physical page 5,2025,Россия,domestic_flights_bypassing_moscow,351000,flights,published_rounded_thousands,"Внутренние рейсы, минуя Москву; подмножество всех внутренних рейсов",published_official_aggregate,Округлённое число; НЕ прибавлять к общему количеству; разбивки по маршрутам нет
