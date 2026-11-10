@@ -1,0 +1,10 @@
+hypothesis,day,tail,route_id,departure_base_h,arrival_base_h,departure_base_clock,arrival_base_clock,roundtrip_block_h,origin,destination,status
+H2,1,1,H2-07,6.0,13.95,06:00,13:57,7.2,Екатеринбург,Минеральные Воды,synthetic_rotation
+H2,2,1,H2-07,6.0,13.95,06:00,13:57,7.2,Екатеринбург,Минеральные Воды,synthetic_rotation
+H2,3,1,H2-07,6.0,13.95,06:00,13:57,7.2,Екатеринбург,Минеральные Воды,synthetic_rotation
+H2,4,1,H2-01,6.0,10.75,06:00,10:45,4.0,Екатеринбург,Омск,synthetic_rotation
+H2,4,1,H2-02,11.75,16.5,11:45,16:30,4.0,Екатеринбург,Саратов,synthetic_rotation
+H2,5,1,H2-01,6.0,10.75,06:00,10:45,4.0,Екатеринбург,Омск,synthetic_rotation
+H2,5,1,H2-02,11.75,16.5,11:45,16:30,4.0,Екатеринбург,Саратов,synthetic_rotation
+H2,6,1,H2-01,6.0,10.75,06:00,10:45,4.0,Екатеринбург,Омск,synthetic_rotation
+H2,7,1,H2-02,6.0,10.75,06:00,10:45,4.0,Екатеринбург,Саратов,synthetic_rotation
