@@ -6,6 +6,7 @@ import json
 import math
 import re
 import sys
+from statistics import geometric_mean
 from collections import defaultdict
 from pathlib import Path
 
@@ -49,18 +50,24 @@ CASES = {
                      existing_displacement=.35, new_displacement=.15, transfer_displacement=.30,
                      transfer_demand=.55, weeks_2027=4, ramp_2027=.50, ramp_2028=.90, start='2027-12-01'),
 }
-POLICY = dict(seats=100, added_roundtrips_week=3, weeks_2028=52,
+POLICY = dict(seats=100, H1_added_roundtrips_week=3, H2_added_roundtrips_week=2, weeks_2028=52,
               destination_turn_h=.75, base_turn_h=1., max_block_day=10.5,
               max_elapsed_day=14., spare_aircraft=1, fixed_aircraft_rub_year=75_000_000,
               variable_rub_block_h=130_000, airport_rub_departure=20_000,
               H1_fixed_rub_year=120_000_000, H2_fixed_rub_year=20_000_000,
               H1_startup_rub=150_000_000, H2_startup_rub=20_000_000,
-              transfer_fare_factor=.75)
+              transfer_fare_factor=.75, common_capture=.40)
 
 
 def read(p):
     with (ROOT / p).open(encoding='utf-8-sig', newline='') as f:
-        return [dict(r, csv_file=p, csv_row=i) for i, r in enumerate(csv.DictReader(f), 2)]
+        reader=csv.DictReader(f); assert reader.fieldnames
+        rows=[]
+        while True:
+            line=reader.line_num+1; r=next(reader,None)
+            if r is None:break
+            rows.append(dict(r,csv_file=p,csv_row=line))
+        return rows
 
 
 def write(name, rows):
@@ -80,7 +87,15 @@ def clock(hours):
     return f'{minutes // 60:02}:{minutes % 60:02}'
 
 
-def inputs():
+def great_circle_km(lon1,lat1,lon2,lat2):
+    """Geographic screen only; rounded city coordinates, not flown distance."""
+    x1,y1,x2,y2=map(math.radians,(lon1,lat1,lon2,lat2))
+    a=math.sin((y2-y1)/2)**2+math.cos(y1)*math.cos(y2)*math.sin((x2-x1)/2)**2
+    return 6371*2*math.asin(math.sqrt(a))
+
+
+def inputs(demand_method='common'):
+    catalog={r['source_id']:r for r in read('data/source_manifest.csv')}
     facts = read('data/processed/core/route_passengers.csv')
     routes = read('data/processed/core/current_routes.csv')
     market = read('data/processed/core/market.csv')
@@ -104,7 +119,8 @@ def inputs():
             existing=any(r['airline']=='Red Wings' for r in evidence)
             records.append(dict(route_id=f'{h}-{n:02}', hypothesis=h, origin=base,destination=dest,
                                 block_h_oneway=block, fare_rub_oneway=fare, lon=lon,lat=lat,
-                                added_roundtrips_week=3, rw_evidence=existing,
+                                great_circle_km=great_circle_km(55.97 if h=='H1' else 60.60,54.74 if h=='H1' else 56.84,lon,lat),
+                                added_roundtrips_week=POLICY[h+'_added_roundtrips_week'], rw_evidence=existing,
                                 baseline_frequency='not_assumed; addition_only',
                                 analog_passengers=float(analog['passengers']),analog_period=analog['period'],
                                 analog_unit=analog['unit'],analog_pair=analog['origin']+' — '+analog['destination'],
@@ -120,8 +136,26 @@ def inputs():
         fact_rows.append(dict(entity=r.get('entity',r.get('origin','')+' — '+r.get('destination','')),
                               value=r.get('passengers',r.get('value')),unit=r['unit'],period=r['period'],
                               value_qualifier=r['value_qualifier'],source_id=r['source_id'],source_file=r['source_file'],
-                              source_row=r['source_row'],source_locator=r['source_locator'],source_url=r['source_url'],
+                              source_row=r['source_row'],source_locator=r['source_locator'],source_url=catalog[r['source_id']]['landing_url'],
+                              source_ref=f"../../data/SOURCE_MANIFEST.md#{r['source_id'].lower()}",
                               core_file=r['csv_file'],core_row=r['csv_row'],limitations=r['limitations']))
+    if demand_method=='common':
+        # A neutral scenario anchor, NOT an estimate of unserved O&D. The same
+        # two observed lines and coefficient apply to every local market.
+        pool=[r for r in facts if r['origin']=='Омск' and r['destination'] in ('Казань','Новосибирск') and r['period']=='2025']
+        anchor=geometric_mean(float(r['passengers']) for r in pool)
+        for r in records:
+            r['legacy_local_target']=r['annual_local_target']
+            for key in tuple(r):
+                if key.startswith('analog_') or key=='marginal_capture':r['legacy_'+key]=r.pop(key)
+            r['demand_method']='common geometric midpoint of S23 Omsk-Kazan and Omsk-Novosibirsk; scenario, not O&D'
+            r['common_analog_passengers']=anchor
+            r['common_anchor_status']='calculated geometric midpoint of two observed line volumes, not another observation'
+            r['common_capture']=POLICY['common_capture']
+            r['annual_local_target']=anchor*POLICY['common_capture']
+            r['local_target_status']='scenario; before seat cap, ramp and own displacement'
+            r['input_status']='legacy analogs are observed line volumes; common anchor is calculated; target, capture, fare, block time, frequency and coordinates are assumptions'
+            r['common_evidence_refs']=json.dumps([{k:p[k] for k in ('source_id','source_file','source_row','source_locator','source_url','passengers','period','unit')} for p in pool],ensure_ascii=False)
     write('fact_references.csv',fact_rows)
     return records, float(rw['value']),float(national['value'])*1e6
 
@@ -177,11 +211,11 @@ def rotations(records):
     return sorted(result,key=lambda r:(r['hypothesis'],r['day'],r['tail'],r['departure_base_h']))
 
 
-def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_factor=1., block_cost=None):
+def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_factor=1., block_cost=None, full_network=False):
     c=CASES[case]; weeks=POLICY['weeks_2028'] if year==2028 else c['weeks_2027']
     ramp=c['ramp_2028'] if year==2028 else c['ramp_2027']
     # Three-route H2 pilot in 2027; all ten routes in 2028.
-    effective=[r for r in records if year==2028 or r['hypothesis']=='H1' or
+    effective=[r for r in records if year==2028 or full_network or r['hypothesis']=='H1' or
                r['destination'] in ('Омск','Саратов','Минеральные Воды')]
     operating_rot=rot if year==2028 else rotations(effective)
     output=[]; transfers=[]
@@ -203,7 +237,7 @@ def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_facto
         # Direction with only one weekly connection limits total at symmetric
         # directional demand: no more than 2*100*weeks at the load ceiling.
         p=min(target,*(2*weeks*(POLICY['seats']*c['load']-r['local_segments']/(r['incremental_departures'])) for r in (ra,rb)))
-        assert p>=0
+        p=max(0.,p)
         net=p*(1-c['transfer_displacement'])
         revenue=0.
         for r,inp in ((ra,a),(rb,b)):
@@ -234,7 +268,7 @@ def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_facto
                             block_hours=block,departures=departures,active_aircraft=active,reserve_aircraft=POLICY['spare_aircraft'],total_aircraft=fleet,
                             net_segments_per_aircraft=net/fleet,variable_cost_rub=variable,fixed_cost_rub=fixed,startup_rub=startup,
                             contribution_rub=revenue-variable-fixed-startup,
-                            break_even_fare_multiplier=(variable+fixed+startup)/revenue,
+                            break_even_fare_multiplier=(variable+fixed+startup)/revenue if revenue else None,
                             period_unit='calendar year scenario; RUB nominal planning prices; passengers counted as segments'))
     return output,summary,transfers
 
@@ -255,7 +289,7 @@ def main():
         if k=='max_elapsed_day':return 'hours/aircraft/day'
         if k.endswith('_h'):return 'hours/turn'
         if 'weeks' in k:return 'weeks'
-        if k=='added_roundtrips_week':return 'roundtrips/route/week'
+        if k.endswith('added_roundtrips_week'):return 'roundtrips/route/week'
         if k=='spare_aircraft':return 'aircraft'
         if k=='seats':return 'seats/departure'
         if k=='start':return 'date YYYY-MM-DD'
@@ -277,6 +311,7 @@ def main():
         sens += [dict(test=name,fare_factor=f,demand_factor=d,block_cost_rub_h=cost,**r) for r in ss]
     write('sensitivity.csv',sens)
     validate(records,rot,outputs,summaries,transfers)
+    controls(records,rw,market)
     figures(records,summaries)
     report(records,rot,summaries,sens,rw,market)
     for r in summaries: print(r['hypothesis'],r['scenario'],r['year'],round(r['net_passenger_segments']),round(r['incremental_revenue_rub']/1e6,1),r['total_aircraft'],round(r['contribution_rub']/1e6,1))
@@ -321,7 +356,7 @@ def figures(records,summaries):
         ax.set(xlim=(38,101),ylim=(41,61),xlabel='Долгота, ° в.д.',ylabel='Широта, ° с.ш.',title=h+': планируемые пары')
         ax.grid(alpha=.2)
     fig.suptitle('Схематическая карта вариантов роста Red Wings; 2027–2028')
-    fig.text(.04,.02,'Источник: results/strategy/route_assumptions.csv. Координаты округлены как допущение; линии не являются трассами полёта.\nH2: 3 дополнительных оборота/неделю на каждой из 10 пар. H1: 3 оборота/неделю на каждой из 8 пар.',fontsize=9)
+    fig.text(.04,.02,'Источник: results/strategy/route_assumptions.csv. Координаты округлены как допущение; линии не являются трассами полёта.\nH2: 2 дополнительных оборота/неделю на каждой из 10 пар. H1: 3 оборота/неделю на каждой из 8 пар.',fontsize=9)
     fig.tight_layout(rect=(0,.08,1,.95));fig.savefig(FIG/'strategy_route_map.png',dpi=160);plt.close(fig)
     fig,ax=plt.subplots(figsize=(9,5))
     rr=[r for r in summaries if r['year']==2028]
@@ -330,304 +365,247 @@ def figures(records,summaries):
     ax.bar_label(bars,fmt='%.1f');ax.set_ylabel('Дополнительные пассажиро-сегменты, тыс. за 52 недели');ax.set_title('Сценарный эффект 2028 года после вычета замещения')
     fig.text(.05,.02,'Источник: hypothesis_comparison.csv. Сценарные оценки, не наблюдаемый O&D.',fontsize=9)
     fig.tight_layout(rect=(0,.06,1,1));fig.savefig(FIG/'strategy_comparison.png',dpi=160);plt.close(fig)
+    from matplotlib.lines import Line2D
+    fig,ax=plt.subplots(figsize=(12,7));lon,lat=60.60,56.84
+    offsets={'Омск':(8,8),'Саратов':(-72,-14),'Нижний Новгород':(-92,9),
+             'Оренбург':(-65,-22),'Самара':(-50,10),'Абакан':(10,10),
+             'Минеральные Воды':(7,-23),'Новокузнецк':(8,-16),'Томск':(8,9),'Ставрополь':(-68,10)}
+    for r in (r for r in records if r['hypothesis']=='H2'):
+        ax.plot([lon,r['lon']],[lat,r['lat']],color='#b51f3b',lw=1.8,ls='-' if r['rw_evidence'] else '--',alpha=.8)
+        ax.scatter(r['lon'],r['lat'],s=35,c='#263746',zorder=4)
+        ax.annotate(r['destination'],(r['lon'],r['lat']),xytext=offsets[r['destination']],textcoords='offset points',fontsize=10)
+    ax.scatter(lon,lat,s=90,marker='s',c='#b51f3b',zorder=5)
+    ax.annotate('Екатеринбург\nсуществующая база',(lon,lat),xytext=(0,18),ha='center',textcoords='offset points',weight='bold',fontsize=12)
+    ax.set(xlim=(38,98),ylim=(41,61),xlabel='Долгота, ° в.д.',ylabel='Широта, ° с.ш.',title='H2: десять прямых пар · программа 2028 года')
+    ax.grid(alpha=.15);ax.spines[['top','right']].set_visible(False)
+    ax.legend(handles=[Line2D([0],[0],color='#b51f3b',label='Есть свидетельство Red Wings; добавляем частоты'),Line2D([0],[0],color='#b51f3b',ls='--',label='Нет свидетельства в выборке; статус требует проверки')],loc='lower right',fontsize=9)
+    fig.text(.08,.035,'План: +2 оборота/неделю на пару; SJ-100, 2 рабочих + 1 резерв. Линии — проект, не трассы полёта.\nИсточник: results/strategy/route_assumptions.csv; координаты округлены. Историческое свидетельство не доказывает выполнение сегодня.',fontsize=9)
+    fig.tight_layout(rect=(0,.09,1,1))
+    fig.savefig(FIG/'selected_route_map.png',dpi=180)
+    fig.savefig(ROOT/'submission/route-map.pdf')
+    plt.close(fig)
+    route_pool_figure()
 
+
+def route_pool_figure():
+    """График исследовательского пула из сохранённой таблицы маршрутов."""
+    rows=read('results/routes/route_candidates.csv')
+    categories=['passengers_and_frequency','passengers_only','frequency_only',
+                'single_date_only','relative_or_qualitative_only']
+    labels=['Пассажиры и частота','Только пассажиры','Только частота',
+            'Только одиночная дата','Относительные / качественные сведения']
+    plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10})
+    fig,ax=plt.subplots(figsize=(11,6.2))
+    for h,shift,color in [('H1',-.18,'#346989'),('H2',.18,'#b76a37')]:
+        values=[sum(r['hypothesis']==h and r['coverage_class']==c for r in rows) for c in categories]
+        bars=ax.barh([i+shift for i in range(len(categories))],values,height=.33,color=color,label=h)
+        ax.bar_label(bars,padding=4)
+    ax.set_yticks(range(len(categories)),labels)
+    ax.invert_yaxis()
+    ax.set_xlim(0,max(sum(r['hypothesis']==h and r['coverage_class']==c for r in rows)
+                      for h in ('H1','H2') for c in categories)+1)
+    ax.xaxis.set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
+    ax.set_xlabel('Число пар городов; категории не пересекаются')
+    ax.set_title('Типы данных в исследовательском пуле маршрутов')
+    ax.grid(axis='x',alpha=.2);ax.set_axisbelow(True);ax.legend(loc='lower right')
+    fig.text(.03,.025,'Источник: results/routes/route_candidates.csv. Исследовательский пул, 10.11.2026; частота — опубликованный план.',fontsize=9)
+    fig.tight_layout(rect=(0,.07,1,1))
+    FIG.mkdir(parents=True,exist_ok=True)
+    fig.savefig(FIG/'route_evidence_coverage.png',dpi=160);plt.close(fig)
+
+def controls(records,rw,market):
+    """Counterfactuals separate analog, fleet, timing and cost effects."""
+    import copy
+    rows=[]
+    for design in ('legacy_3RT','common_3RT','selected_2RT','matched_block_116h','low_analog','high_analog','equal_displacement','zero_transfers','H1_demand_up25_H2_down25'):
+        rr=copy.deepcopy(records)
+        for r in rr:
+            h=r['hypothesis']
+            if design=='legacy_3RT':r['annual_local_target']=r['legacy_local_target']
+            if design in ('legacy_3RT','common_3RT') and h=='H2':r['added_roundtrips_week']=3
+            if design=='matched_block_116h' and h=='H2' and r['destination'] in ('Омск','Саратов','Нижний Новгород','Оренбург'):r['added_roundtrips_week']=3
+            if design in ('low_analog','high_analog'):r['annual_local_target']=(27510 if design=='low_analog' else 106309)*POLICY['common_capture']
+            if design=='H1_demand_up25_H2_down25':r['annual_local_target']*=1.25 if h=='H1' else .75
+        saved=copy.deepcopy(CASES)
+        try:
+            if design=='equal_displacement':
+                for c in CASES.values():c['new_displacement']=c['existing_displacement']
+            if design=='zero_transfers':
+                for c in CASES.values():c['transfer_demand']=0
+            rot=rotations(rr)
+            for case in CASES:
+                _,ss,_=calculate(rr,rot,rw,market,case,2028)
+                rows.extend(dict(control=design,**s) for s in ss)
+        finally:
+            CASES.clear();CASES.update(saved)
+    # Same full launch and resource basis in 2027; main comparison retains pilot.
+    for c in CASES:
+        _,ss,_=calculate(records,rotations(records),rw,market,c,2027,full_network=True)
+        rows.extend(dict(control='same_full_launch_2027',**s) for s in ss)
+    write('controlled_comparison.csv',rows)
+    stress=[]
+    for case in CASES:
+        for name,f,d,cost,allcost,active,marketfactor in [
+            ('reference',1,1,130000,1,1,1),('combined_shock',.8,.75,160000,1,1,1),
+            ('all_costs_plus25',1,1,130000,1.25,1,1),('H2_fare_minus20',.8,1,130000,1,1,1),
+            ('delivery_July2028',1,1,130000,1,.5,1),('market_plus5',1,1,130000,1,1,1.05),
+            ('market_minus5',1,1,130000,1,1,.95),('no_aircraft_2028',1,1,130000,1,0,1)]:
+            _,ss,_=calculate(records,rotations(records),rw,market,case,2028,
+                                 fare_factor=f if name!='H2_fare_minus20' else 1,demand_factor=d,block_cost=cost)
+            for s in ss:
+                if name=='H2_fare_minus20' and s['hypothesis']=='H2':s['incremental_revenue_rub']*=f
+                # Contractual annual fixed obligations remain in a delivery shock;
+                # zero aircraft case incurs committed startup, but no aircraft rent.
+                if active<1:
+                    for k in ('net_passenger_segments','gross_segments','net_oneway_journeys','transfer_net_journeys','incremental_revenue_rub','block_hours','departures','variable_cost_rub'):s[k]*=active
+                if name=='no_aircraft_2028':
+                    s['fixed_cost_rub']=0;s['startup_rub']=POLICY[s['hypothesis']+'_startup_rub']
+                elif name=='delivery_July2028':s['startup_rub']=POLICY[s['hypothesis']+'_startup_rub']
+                costs=allcost*(s['variable_cost_rub']+s['fixed_cost_rub']+s['startup_rub'])
+                s['contribution_rub']=s['incremental_revenue_rub']-costs
+                s['share_after_percent']=100*(rw+s['net_passenger_segments'])/(market*marketfactor)
+                s['share_delta_pp']=s['share_after_percent']-100*rw/market
+                stress.append(dict(stress=name,market_factor=marketfactor,active_year_fraction=active,total_cost_rub=costs,**s))
+    write('stress_tests.csv',stress)
+    _,baseline,_=calculate(records,rotations(records),rw,market,'base',2028)
+    _,cautious,_=calculate(records,rotations(records),rw,market,'cautious',2028)
+    lo=records[0]['annual_local_target'];hi=106309*POLICY['common_capture']
+    for _ in range(60):
+        midpoint=(lo+hi)/2
+        trial=[dict(r,annual_local_target=midpoint) for r in records]
+        _,s,_=calculate(trial,rotations(trial),rw,market,'base',2028)
+        if s[0]['contribution_rub']>s[1]['contribution_rub']:hi=midpoint
+        else:lo=midpoint
+    write('decision_thresholds.csv',[
+        dict(parameter='H2_only_fare_multiplier_equal_H1_base',value=(baseline[0]['contribution_rub']+baseline[1]['variable_cost_rub']+baseline[1]['fixed_cost_rub'])/baseline[1]['incremental_revenue_rub'],unit='multiplier',condition='H1 base unchanged; H2 passengers and costs unchanged'),
+        dict(parameter='common_local_target_equal_cash_base',value=(lo+hi)/2,unit='segments/route/year before capacity and displacement',condition='both hypotheses same local target; transfer demand fixed; base 2028'),
+        dict(parameter='H2_cautious_block_cost_zero_cash',value=130000+cautious[1]['contribution_rub']/cautious[1]['block_hours'],unit='RUB/block-hour',condition='cautious 2028; other assumptions unchanged')])
 
 def report(records,rot,ss,sens,rw,market):
-    def row(r):
-        return [r['hypothesis'],CASES[r['scenario']]['label'],r['year'],f"{r['net_passenger_segments']:,.0f}",f"{r['incremental_revenue_rub']/1e6:.1f}",f"{r['share_delta_pp']:.3f}",r['total_aircraft'],f"{r['contribution_rub']/1e6:.1f}"]
-    summary=table(['Вариант','Сценарий','Год','Доп. сегменты, чел.','Доп. выручка, млн ₽','Прирост доли, п.п.','Бортов с резервом','Условный результат, млн ₽'],[row(r) for r in ss])
-    route_table=table(['Вариант','Пара','Блок-часов в одну сторону*','Тариф*, ₽','Местная цель*, чел./год','Доп. оборотов/нед.'],[[r['hypothesis'],r['origin']+' — '+r['destination'],r['block_h_oneway'],r['fare_rub_oneway'],round(r['annual_local_target']),3] for r in records])
-    fleet=table(['Вариант','Блок-ч/нед.','Активных','Резерв','Всего','Оборотов/нед.'],[[h,round(sum(r['roundtrip_block_h'] for r in rot if r['hypothesis']==h),1),max(r['tail'] for r in rot if r['hypothesis']==h),1,max(r['tail'] for r in rot if r['hypothesis']==h)+1,sum(r['hypothesis']==h for r in rot)] for h in ('H1','H2')])
-    sensitivity=table(['Изменение к базовому 2028','H1: результат, млн ₽','H2: результат, млн ₽'],[[name]+[f"{next(r['contribution_rub'] for r in sens if r['test']==name and r['hypothesis']==h)/1e6:.1f}" for h in ('H1','H2')] for name in dict.fromkeys(r['test'] for r in sens)])
-    b1=next(r for r in ss if (r['hypothesis'],r['scenario'],r['year'])==('H1','base',2028))
-    b2=next(r for r in ss if (r['hypothesis'],r['scenario'],r['year'])==('H2','base',2028))
-    c2=next(r for r in ss if (r['hypothesis'],r['scenario'],r['year'])==('H2','cautious',2028))
-    threshold_cost=130000+c2['contribution_rub']/c2['block_hours']
-    reversal=(b1['contribution_rub']+b2['variable_cost_rub']+b2['fixed_cost_rub'])/b2['incremental_revenue_rub']
-    body=f'''# Решение кейса: прямые рейсы из Екатеринбурга
+    def get(h,c='base',y=2028):return next(r for r in ss if (r['hypothesis'],r['scenario'],r['year'])==(h,c,y))
+    b1,b2,c2=get('H1'),get('H2'),get('H2','cautious')
+    summary=table(['Гипотеза','Сценарий','Год','Доп. сегменты, тыс.','Выручка, млн ₽','Δ доли, п.п.','Бортов с резервом','Результат, млн ₽'],[[r['hypothesis'],CASES[r['scenario']]['label'],r['year'],f"{r['net_passenger_segments']/1000:.1f}",f"{r['incremental_revenue_rub']/1e6:.0f}",f"{r['share_delta_pp']:.3f}",r['total_aircraft'],f"{r['contribution_rub']/1e6:.0f}"] for r in ss])
+    body=f'''# Стратегия Red Wings
 
-**Выбираем H2: десять прямых региональных линий из Екатеринбурга с добавлением частот.**
-Это сценарное инвестиционное решение: H2 использует существующую базу, допускает
-поэтапный запуск и отказ от слабой пары. H1 требует новой инфраструктуры и опирается
-на не подтверждённые O&D стыковки. Расчёт ниже не превращает допущения в прогноз.
-При отрицательном результате в осторожном сценарии полную сеть нельзя запускать
-автоматически: сначала пилот и проверка порогов. Выбранная стратегия — H2, а не
-безусловное обязательство выполнять все частоты при любых тарифах и затратах.
+**Выбираем H2: десять прямых пар из Екатеринбурга, по два дополнительных оборота в неделю.**
+Для полной сети нужны два рабочих SJ-100 и один резервный. В 2027 году начинаем
+с трёх пар — Омск, Саратов и Минеральные Воды — после фактической передачи самолётов.
 
-## Сравнение
+В 2028 H2 даёт {b2['net_passenger_segments']/1000:.1f} тыс. дополнительных сегментов
+и {b2['incremental_revenue_rub']/1e9:.2f} млрд ₽ выручки в базовом сценарии;
+{c2['net_passenger_segments']/1000:.1f} тыс. и {c2['incremental_revenue_rub']/1e9:.2f} млрд ₽ — в осторожном.
+H1 даёт больше сегментов, но уступает по денежному результату обоих сценариев.
+При выборе мы отдаём приоритет осторожной экономике и возможности ограничиться пилотом.
+
+## Обе гипотезы
+
+H1 — новая база в Уфе, восемь плеч и четыре пересадочные связки.
+H2 — десять прямых пар из существующей базы Екатеринбург.
 
 {summary}
 
-Выручка — дополнительная билетная выручка после вычета замещения собственных рейсов,
-в условных номинальных рублях планирования. Не включает субсидии, ancillary и НДС-модель.
-Условный результат — выручка минус заданные ниже расходы, включая стартовые затраты
-только в 2027 году; это не бухгалтерская прибыль, NPV или доказанная окупаемость.
-Полная детализация: [таблица сравнения](../results/strategy/hypothesis_comparison.csv).
-В 2027 у H2 рассчитан пилот трёх пар (Омск, Саратов, Минеральные Воды),
-а в 2028 — все десять. H1 рассчитана как запуск восьми плеч нового хаба.
-Это разные траектории запуска, не равные по масштабу проекты первого квартала работы.
+Результат — дополнительная билетная выручка минус расходы программы, включая
+резерв и запуск. Это не чистая прибыль. Субсидии и дополнительные услуги не включены.
+В 2027 у H2 пилот трёх пар, у H1 полный запуск: их первый год различается по масштабу.
+В 2028 обе полные программы используют три самолёта с резервом.
 
-В базовом 2028 H2 даёт {b2['net_segments_per_aircraft']/1000:.1f} тыс. дополнительных
-сегментов на борт с резервом против {b1['net_segments_per_aircraft']/1000:.1f} тыс. у H1.
-Это разные бюджеты: H2 требует на один самолёт больше. В осторожном варианте H1
-имеет чуть больше сегментов на борт (33,8 против 31,8 тыс.), но хуже условный
-денежный результат. Выбор не основан на абсолютном объёме без учёта ресурса.
+## Данные и спрос
 
-![Сценарное сравнение](figures/strategy_comparison.png)
+Входы: [data/processed/](../data/processed/README.md).
+Публикации: [каталог источников](../data/SOURCE_MANIFEST.md).
+[S08](../data/SOURCE_MANIFEST.md#s08): 2,7 млн пассажиров Red Wings за 2025 год;
+[S03](../data/SOURCE_MANIFEST.md#s03): 108,85 млн пассажиров российских авиакомпаний.
 
-## Факты и основа расчёта
+Для обеих H взят одинаковый сценарный ориентир по двум линиям
+[S23](../data/SOURCE_MANIFEST.md#s23), 2025 год: Омск—Казань — 27 510 пассажиров,
+Омск—Новосибирск — 106 309. Геометрическое среднее ×40% даёт около 21,6 тыс.
+местных сегментов на пару в год до ограничения креслами и вычета своих продаж.
+40% — допущение команды; это не измеренный O&D выбранных пар.
+В прежнем варианте H1 и H2 получали разные аналоги; его расчёт сохранён в контрольной таблице.
 
-Использованы прежние core и маршрутный пул TASK-03A; нового аудита и сбора нет.
-Факты: Red Wings — {rw/1e6:.1f} млн пассажиров за 2025 год (S08, airlines/metrics.csv:5);
-рынок — {market/1e6:.2f} млн человек за 2025 год (S03, market/S03_image13.csv; provenance в core/market.csv).
-Исходная доля — {100*rw/market:.3f}%. ТЗ допускает оценки, определяет Екатеринбург
-как существующую базу и ожидает SJ-100 не ранее второй половины 2027 года.
-Это не подтверждение конкретных поставок Red Wings. Поставка нужного числа бортов — условие сценария.
-Факты с периодами, единицами и прямыми ссылками — [fact_references.csv](../results/strategy/fact_references.csv).
+Для пары: кресла = 2 × обороты в неделю × рабочие недели ×100.
+Продажи = минимум спроса с освоением и кресел с потолком загрузки.
+Затем вычитается перенос пассажиров с других рейсов Red Wings.
 
-Аналоги местного спроса — наблюдаемые потоки линий 2025 года: Омск — Новосибирск
-106 309 человек (S23, airports/metrics.csv:8), Омск — Казань 27 510 (S23:13),
-Самара — Минеральные Воды 47 000 (S36:127, период по содержанию с прежней оговоркой),
-Екатеринбург — Минеральные Воды 211 000 (S40:174). Это не конечный O&D.
-Для каждой пары исходный CSV, строка, локатор и коэффициенты записаны в
-[route_assumptions.csv](../results/strategy/route_assumptions.csv).
+| Параметр | Базовый | Осторожный |
+|---|---:|---:|
+| Спрос относительно ориентира | 100% | 75% |
+| Потолок загрузки | 85% | 72% |
+| Тариф относительно базового | 100% | 90% |
+| Освоение полной программы 2028 | 100% | 90% |
+| Свои пассажиры на парах Red Wings | 20% | 35% |
+| Свои пассажиры на остальных парах | 8% | 15% |
 
-Свидетельство Red Wings хотя бы в одном направлении/старом анонсе трактуется
-консервативно как существующая линия: её полный поток не засчитывается. H2 включает
-семь пар из прежнего пула плюс Новокузнецк и Томск из уже имеющегося S19 и
-Ставрополь из S18; вместо непроверенных ротаций Самара — Минеральные Воды и
-Омск — Новосибирск используются пары непосредственно из базы. На всех парах
-моделируются только **+3 оборота/неделю**, существующие частоты не восстанавливаются.
-Отсутствие Red Wings в выборке для Минеральных Вод или новых плеч Уфы не доказывает
-их новизну: предусмотрен вычет замещения и чувствительность спроса.
+На всех парах H2 считаются только добавленные частоты. Загрузка нового рейса
+сама по себе не доказывает прирост: на пилоте сравниваем все продажи компании
+на паре с сопоставимым сезоном, включая прежние частоты и собственные пересадки.
 
-## Сеть и спрос: все значения со звёздочкой — допущения
+## Пересадки и доля рынка
 
-{route_table}
+H1 соединяет через Уфу Нижний Новгород—Красноярск, Саратов—Абакан,
+Самару—Новосибирск и Минеральные Воды—Омск. В каждой связке две стыковки
+одного направления и одна обратного в неделю; время стыка — 60 минут.
+Местные продажи имеют приоритет, редкое направление ограничивает трансфер.
 
-В H1 новые плечи кроме Уфа — Красноярск расширяют исследовательский пул по аналогии;
-это проектируемые пары, а не обнаруженные действующие рейсы. Уфа — Екатеринбург
-исключена: для нового хаба важнее западный подвоз, а не перенос работы существующей базы.
-Плановые обратные сегменты здесь заданы явно как часть проекта; они не добавлены в фактическую core.
+Одна поездка занимает два кресла на разных сегментах и приносит один сквозной
+билет: 75% суммы тарифов двух плеч. Цель связки — 27 510 ×35% поездок в год;
+осторожно — ×0,55. Собственное замещение пересадок — 15%/30%.
+Предполагается, что перенесённые свои поездки тоже занимали два сегмента.
+[Расчёт пересадок](../results/strategy/transfer_scenarios.csv).
 
-Местная годовая цель = поток аналога × масштаб × доля захвата дополнительной ёмкостью.
-H2: за основу обычно взяты 106 309 человек; масштаб 0,75–1,0 и захват 27–30%,
-для Минеральных Вод — собственный наблюдаемый поток ×16%. H1: менее крупный аналог
-27 510 человек ×масштаб 0,9–1,2 ×60%; для Минеральных Вод — 47 000 ×45%.
-Разница отражает гипотезу: добавочные частоты зрелой базы способны привлечь больше
-местных поездок, чем новая база. Это уязвимое допущение; тест ±25% спроса приведён ниже.
-Коэффициенты не оценены регрессией; они задают проверяемые коммерческие цели,
-а не доказывают наличие необслуженного рынка. Верхний предел загрузки также не является измеренным спросом.
+Прирост доли = дополнительные перевезённые сегменты /108,85 млн ×100 п.п.
+Это сравнение на фиксированном рынке 2025 года. Сегменты и поездки не означают
+уникальных людей. Аэропортовый поток не используется в знаменателе.
+В таблицах также есть растущий знаменатель и изменение рынка на ±5%.
 
-В базовом сценарии: 100 кресел, верх загрузки 85%, вычет перемещения с собственных
-рейсов 20% на существующих линиях и 8% на остальных. Осторожный: местная цель ×0,75,
-верх загрузки 72%, тариф ×0,90, вычет 35% и 15%. Для 2028 осторожного дополнительно
-применён коэффициент освоения 0,90; базовый год — 1,0. Эти понижения применяются вместе.
-Перемещение с рейсов конкурентов считается приростом Red Wings, с собственных — вычитается.
-Тарифы 7–16,5 тыс. ₽ на сегмент — допущения по длине плеча, не извлечённые цены продажи;
-это реализованный билетный доход на занятого пассажира в условном учёте модели.
+## Флот и расходы
 
-## Как учтены пересадки H1
+H1: 116,4 блок-ч/неделю; H2: 100,8. Обе сети: два рабочих борта и один резерв.
+В контрольном варианте H2 с третьим оборотом на четырёх коротких парах —
+116,2 блок-ч/неделю при том же флоте. Три оборота на всех десяти парах требуют
+четырёх бортов с резервом и ухудшают осторожную экономику.
 
-Четыре пары конечных городов: Нижний Новгород — Красноярск, Саратов — Абакан,
-Самара — Новосибирск, Минеральные Воды — Омск, все через Уфу. В каждой связке
-три стыковки в неделю: две одного направления и одна обратного. В модели направления
-спроса симметричны; более редкое направление ограничивает общий объём. Стыковка
-60 минут, минимум в допущениях 60 минут; это требует сквозного билета/багажа и
-согласования MCT аэропортом. Наличие такого сервиса сейчас не заявляется.
+[Недельные ротации](../results/strategy/weekly_rotations.csv): возврат в базу
+на ночь, до 10,5 блок-ч и 14 часов занятости борта в день; оборот на конце
+45 минут, в базе — 60 минут. Внутри программы пустые подлёты не требуются.
+Дальность с загрузкой, слоты, ТО и сменные экипажи согласуются до продажи билетов.
+Расчётный резерв не гарантирует выполнение при нескольких длительных отказах.
 
-Цель одной связки = 27 510 ×35% = 9 628,5 поездки в год до ограничений ёмкости.
-В осторожном варианте ×0,55; вычет собственного замещения 15% / 30% соответственно.
-Каждая поездка занимает кресло на обоих сегментах; местные пассажиры распределяются
-равномерно по направлениям/дням. Модель ограничивает трансфер остатком обоих плеч
-и ёмкостью более редкого направления. Это требует отдельной проверки сезонного пика.
-В осторожном сценарии фактически размещённых пересадок может быть больше, чем в
-базовом: снижение местной загрузки освобождает кресла на редких стыковках.
-Это эффект приоритета местных пассажиров в алгоритме, не рост измеренного спроса.
-Сквозной тариф = 75% суммы двух сегментных тарифов. Выручка распределяется по плечам
-пропорционально тарифам и учитывается один раз на поездку. Подробности —
-[transfer_scenarios.csv](../results/strategy/transfer_scenarios.csv).
+Расходы — допущения: 130 тыс. ₽/блок-ч, 20 тыс. ₽/вылет,
+75 млн ₽/борт/год. База H1 — 120 млн ₽/год и 150 млн ₽ запуска;
+расширение H2 — 20 млн ₽/год и 20 млн ₽ запуска. Амортизация поверх лизинга
+не добавлена. Годовые фиксированные расходы при обычном запуске пропорциональны
+активным неделям; стресс задержки сохраняет годовые обязательства.
 
-В доле рынка используется прирост перевезённых пассажиро-сегментов (пересадочный
-пассажир занимает два рейса), а число односторонних поездок дано отдельно. Допущение
-сопоставимости с авиакомпанейской статистикой отмечено явно; аэропортовые итоги
-не подставляются в знаменатель. Нельзя подавать сегменты как уникальных людей.
-Прирост доли = ΔP /108,85 млн ×100 п.п. Это фиксированный рынок 2025 года как
-контрольный сценарий, не прогноз 2028. В CSV также есть вариант знаменателя
-108,85 млн + ΔP: весь прирост считается расширением рынка. Рост рынка на 5% при
-неизменной исходной доле уменьшает показанный добавочный эффект в п.п. в 1,05 раза.
+## Когда выбрать H1 или отложить запуск
 
-## Обороты, флот и сроки
+Базовый результат H1 — {b1['contribution_rub']/1e6:.0f} млн ₽, H2 — {b2['contribution_rub']/1e6:.0f} млн ₽.
+Разрыв невелик: снижение только тарифа H2 примерно на 2% меняет денежный выбор.
+Единый местный ориентир около 22,2 тыс. сегментов на пару вместо 21,6 тыс.
+также выводит H1 вперёд в базе. На высоком общем аналоге H1 лучше в обоих сценариях.
+Её преимущества — больший объём и дополнительные пересадочные связи;
+цена — новая база и зависимость от стыковок.
 
-{fleet}
+На низком аналоге осторожно убыточны обе H. Совместный шок тарифа −20%, спроса
+−25% и блок-часа 160 тыс. ₽ также может сделать обе программы убыточными.
+Тогда сокращаем частоты или переносим запуск. При задержке до июля 2028
+поток и переменные расходы сокращаются вдвое, фиксированные годовые расходы
+сохраняются; без самолётов пассажирский эффект равен нулю.
 
-Недельные плановые обороты сохранены в [weekly_rotations.csv](../results/strategy/weekly_rotations.csv).
-Таблица флота выше относится к полной сети 2028 года. Пилот H2 2027 года требует
-один работающий борт и один резервный; план — [pilot_2027_rotations.csv](../results/strategy/pilot_2027_rotations.csv).
-Все времена в единой шкале часов базы; первый вылет не раньше 06:00, окончание
-не позднее 20:00. Блок-время задано симметричным по направлениям с запасом как
-сценарная инженерная оценка; его не вычисляли вычитанием местных часов расписания.
-На удалённом конце 45 минут, между оборотами в базе 60 минут. Ограничения на
-воздушное судно: до 10,5 блок-часа и 14 часов занятости в день. Это не норма рабочего
-времени одного экипажа: длинные дни требуют сменных экипажей. Каждый борт возвращается
-на ночь; резерв — ещё один SJ-100 сверх выполняющих программу. Резерв не генерирует
-выручку, но его содержание включено. Свободные часы существующего парка не присвоены.
-Потребность — отдельный ресурс нового проекта, не весь флот Red Wings и не число
-фактически заказанных самолётов. Резерв не позволяет обещать выполнение при любой
-серии отказов; календарь ТО, ограничения аэродромов, дальность с резервом топлива
-и допуск конкретной модификации SJ-100 остаются предпусковыми проверками.
+[Контрольные сравнения](../results/strategy/controlled_comparison.csv),
+[стрессы](../results/strategy/stress_tests.csv),
+[пороги смены решения](../results/strategy/decision_thresholds.csv).
 
-H1: связки выполняются на чередующихся днях; первый оборот подвозит в Уфу,
-второй вывозит. Поэтому не предполагаются ежедневные стыковки всех со всеми.
-H2: алгоритм размещает дополнительные обороты по дням и бортам, проверяя названные
-пределы. Он даёт допустимый план, не математически доказанный минимум флота.
-Обеим гипотезам предоставлен одинаковый резерв и одинаковые нормативы.
+## Материалы и запуск
 
-Запуск базового варианта — 01.10.2027, 13 рабочих недель, освоение спроса 65%.
-Осторожного — 01.12.2027, четыре недели, освоение 50%. Это плановые даты после
-второй половины 2027 года, условные на поставке и допусках. Оба варианта используют
-52 недели в 2028 году: оставшиеся календарные дни не монетизируются. Полная сеть
-требует весь указанный ресурс к 2028 году; в 2027 H2 начинает с двух бортов с резервом.
-Сдвиг на 01.01.2028 обнуляет эффект 2027 при сохранении предпусковых затрат;
-каждый потерянный рабочий месяц 2028 сокращает поток примерно на 1/12 при прочих равных.
+[Маршруты с источником и ресурсом](../submission/routes.md),
+[дорожная карта и конкуренты](09-launch-roadmap.md),
+[PDF для защиты](../submission/README.md).
 
-![Карта вариантов](figures/strategy_route_map.png)
-
-## Затраты и чувствительность решения
-
-Все расходы — диапазонные предположения для сравнения, не котировки поставщиков:
-130 тыс. ₽/блок-час (топливо, переменное ТО и переменная часть экипажей),
-20 тыс. ₽/вылет (аэропорт/обслуживание), 75 млн ₽/самолёт/год (лизинг, страхование,
-фиксированные расходы самолёта). Дополнительные фиксированные расходы базы:
-H1 120 млн ₽/год, H2 20 млн ₽/год; включают местный персонал/сменные экипажи,
-планирование и инфраструктуру. Разовые затраты H1 150 млн ₽, H2 20 млн ₽ в год запуска.
-Годовые фиксированные расходы в расчёте пропорциональны активным неделям: это
-предположение о поэтапных договорах, не гарантированная экономия при задержке.
-Налоги, дисконтирование, финансирование, разница капитализированных и текущих
-расходов не моделируются; амортизация отдельно не добавляется поверх лизинга.
-
-{sensitivity}
-
-В осторожном H2 результат 2028 обнуляется примерно при {threshold_cost/1000:.1f} тыс. ₽/блок-час
-вместо 130 тыс. при остальных прежних условиях, либо при снижении осторожного
-тарифа ещё на {(1-c2['break_even_fare_multiplier'])*100:.1f}%. Эти изменения нельзя
-складывать независимо: одновременный шок потребует меньшего отклонения каждого.
-Если тарифы только H2 окажутся ниже базового плана более чем на {(1-reversal)*100:.1f}%,
-а все условия H1 сохранятся базовыми, H1 обойдёт H2 по условному результату.
-Это конкретная граница пересмотра, а не утверждение безусловного превосходства H2.
-
-Пороговый множитель реализованного тарифа для каждого сценария включён в CSV
-(`break_even_fare_multiplier`). Он показывает тариф для покрытия принятых расходов
-при неизменном объёме, а не рыночную возможность повысить цену без потери пассажиров.
-Снижение спроса уменьшает доходы, но не расходы уже выставленного расписания.
-Выбор H2 основан на меньшей зависимости от стыковок и новой базы и более сильном
-добавочном эффекте; положительная выручка не доказывает окупаемость. Если
-осторожный вариант убыточен, это основание ограничить обязательства пилотом,
-пересмотреть частоты/цены или отложить расширение, сохранив выбор H2.
-Субсидии не использованы как условие прибыльности. Сравнение не оптимизирует все
-возможные сети: это решение между двумя конкретными воспроизводимыми проектами.
-
-## План реализации и правило остановки
-
-- До конца 2026: согласовать коммерческие цели, поставочный сценарий и резерв;
-  запросить условия аэропортов/лизинга. Это действия внедрения, не новый сбор для текущего расчёта.
-- I полугодие 2027: подготовить дополнительные экипажи и продажи, проверить дальность,
-  обороты и договоры по выбранным парам. Без готовых бортов рейсы не обещать.
-- С октября 2027 при поставке: пилот на трёх парах — Омск, Саратов, Минеральные Воды;
-  8–12 недель контроля. При декабрьском старте контроль продолжается в I квартале 2028.
-- 2028: разворачивать все десять пар только при покрытии фактических дополнительных
-  расходов. На слабых парах менять сезонность/частоту, а не открывать новую базу.
-- Еженедельно: дополнительные пассажиры с вычетом переноса собственных продаж,
-  реализованный тариф, загрузка, выполненные блок-часы и расходы. За 8 недель
-  отрицательного операционного вклада пары — пересмотр, при отсутствии улучшения
-  за следующие 4 недели — снятие добавленных частот. Числа 8/4 недели — управленческое допущение.
-
-## Воспроизводимость
-
-`uv run --frozen --no-sync python scripts/compare_growth_strategies.py` (Python 3.14).
-Исходники не меняются, сеть не используется. Параметры — [assumptions.csv](../results/strategy/assumptions.csv),
-экспорт параметров генерируется из констант скрипта; для нового расчёта менять их в коде,
-а не редактировать выходной CSV.
-расчёты по парам — [route_scenarios.csv](../results/strategy/route_scenarios.csv),
-чувствительность — [sensitivity.csv](../results/strategy/sensitivity.csv).
-Скрипт проверяет частоты каждого плеча, отсутствие перекрытий бортов, обороты,
-лимиты занятости/блок-часов, баланс трансферных кресел и согласование выручки.
-Округление применяется только для показа; дробные пассажиры — математическое
-ожидание сценария, не точные люди. Паспорт следует структуре локального шаблона,
-неизвестные сведения о составе команды и контактах явно оставлены для заполнения.
+Расчёт: `uv run --frozen --no-sync python scripts/compare_growth_strategies.py`.
+Проверка арифметики и ротаций: `uv run --frozen --no-sync python scripts/check_strategy.py`.
 '''
     (ROOT/'analysis/08-strategy-decision.md').write_text(body,encoding='utf-8')
-    selected=[r for r in ss if r['hypothesis']=='H2']
-    passport=f'''# Паспорт предложения: прямые региональные рейсы Red Wings
-
-Кейс 5 «Новый хаб или прямые рейсы?». Выбор: **H2, Екатеринбург, 10 пар**.
-Команда и контакт представителя: не предоставлены; заполняются участниками перед сдачей.
-
-## 1. Команда и роли
-Состав и личные роли не предоставлены. ChatGPT/Codex использован как помощник
-анализа и программирования; ответственность за решение и защиту несёт команда.
-
-## 2. Проблема
-На стагнирующем рынке Red Wings нужно увеличить долю при ограниченном новом флоте.
-Новый хаб требует инфраструктуры и пересадочного спроса, который пока не измерен.
-
-## 3. Решение и пользователи
-Предлагаем добавлять частоты прямых региональных рейсов из существующей базы
-Екатеринбург. Результат предназначен команде кейса и экспертам для выбора стратегии
-и ограничения обязательств при неопределённой поставке SJ-100.
-
-## 4. Проверка
-Сопоставлены H1 — новый хаб в Уфе (8 плеч) и H2 — 10 прямых пар из Екатеринбурга.
-Проверены сценарии 2027/2028, обороты с ночным возвратом, резервный борт,
-ограничения ёмкости и чувствительность выручки/затрат.
-
-## 5. Данные
-Факты: S08 — 2,7 млн пассажиров Red Wings за 2025 год; S03 — 108,85 млн пассажиров
-рынка за 2025 год; S19/S20/S17/S18 — опубликованные маршрутные свидетельства;
-S23/S36/S40 — потоки линий 2025 года. Источники с локаторами — в таблицах приложения.
-Синтетика команды: захват дополнительного спроса по аналогам, тарифы, блок-времена,
-частоты, загрузка, замещение, затраты и даты поставок. Это сценарии, не факты и не O&D-прогноз.
-
-## 6. Метод
-Пассажиры = min(доступные кресла × верх загрузки; цель по аналогу ×освоение), затем
-вычитается перенос собственных пассажиров. Для H1 добавлены только четыре
-стыковочные пары с ограничениями обоих плеч. Выручка — нетто-пассажиры ×тариф;
-прирост доли — дополнительные сегменты /108,85 млн ×100 п.п.
-Связь с учёбой: программирование (Python, CSV), моделирование, арифметика долей,
-задача размещения оборотов. Статус прохождения дисциплин командой не предоставлен.
-
-## 7. Результат и приложения
-{table(['Сценарий','Год','Доп. сегменты','Выручка, млн ₽','Δ доли, п.п.','Самолётов'],[[CASES[r['scenario']]['label'],r['year'],round(r['net_passenger_segments']),round(r['incremental_revenue_rub']/1e6,1),round(r['share_delta_pp'],3),r['total_aircraft']] for r in selected])}
-
-Выбрана H2: готовая база, гибкий запуск и меньшая зависимость от непроверенных
-стыковок. В 2027 рассчитан пилот трёх пар, в 2028 полная программа десяти. Положительная
-выручка не означает прибыль: условные расходы и осторожный результат приведены в отчёте.
-Приложения: [сравнение](../analysis/08-strategy-decision.md),
-[таблицы](strategy/hypothesis_comparison.csv), [карта](../analysis/figures/strategy_route_map.png),
-[код](../scripts/compare_growth_strategies.py). Запуск: `uv run --frozen --no-sync python scripts/compare_growth_strategies.py`.
-
-## 8. Ограничения
-Нет измеренного O&D, подтверждённых поставок, коммерческих тарифов и контрактных
-затрат. Недельный план не подтверждает слоты, дальность и допуски экипажей.
-Риск пересмотра решения показывается сценариями и чувствительностью. При слабых
-продажах или задержке самолётов полную программу не запускать.
-
-## 9. Дорожная карта
-Конец 2026: согласование допущений и поставок. I полугодие 2027: договоры,
-экипажи и технические проверки. С октября 2027, после поставки: пилот Омск,
-Саратов, Минеральные Воды на 8–12 недель. В 2028: расширение до 10 пар только
-при подтверждении спроса и покрытия фактических дополнительных затрат.
-Доработка — реальные тарифы/расходы; практическая проверка — продажи и исполнение
-пилота; применение — еженедельный пересмотр дополнительных частот коммерческой службой.
-
-## 10. Вопросы экспертам
-Какие условия поставок/резерва допустимы для планирования 2027 года?
-Какие затраты базы и блок-часа реалистичны для принятия инвестиционного решения?
-Достаточен ли предложенный пилот для проверки дополнительности спроса?
-'''
-    passport=re.sub(r'(?m)^(#{1,6} .+)\n(?!\n)',r'\1\n\n',passport)
-    (ROOT/'results/project-passport.md').write_text(passport,encoding='utf-8')
 
 
-if __name__=='__main__':
-    main()
+if __name__=='__main__':main()

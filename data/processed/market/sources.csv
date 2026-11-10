@@ -1,8 +1,8 @@
-source_id,raw_path,sha256
-S02,data/raw/market/S02__rosaviation_form_12ga.html,eb0feaa2c36213e9a994b193646346fdce25b003adba37e2112dab56e90ce1ed
-S03,data/raw/market/S03__rosaviation_passengers_2025.html,6173bfece50a0ea9ab9b65b0ba3ce5d8b9ea3117f4f819638da0c8b465532fb2
-S05,data/raw/market/S05__mintrans_report_2025.pdf,7726bc27211e6a2f89181cfa66214df4fbbc37401d3e5beb321f3ca1c31595cc
-S06,data/raw/market/S06__rasshirenie_geografii_poletov_prioritet_rossiyskikh_aviape.html,06ade1a389194023e84bbc03c123576b339c14da135a9f61cbac671745600ec5
-S07,data/raw/market/S07__dmitriy_yadrov_dolozhil_glave_pravitelstva_o_rabote_aviats.html,d8dcfc3d332bb298cc31cd37b125c0ca676db602cbcd8220b070f1c7e74a7bac
-S70,data/raw/market/S70__itogi_grazhdanskoy_aviatsii_za_2023_god.html,84fbeae2fab4ecba20628952b8db73292d34bb462862a797af509ab216e9296c
-S71,data/raw/market/S71__passazhiropotok_rossiyskikh_aviakompaniy_v_2024_godu_vyros.html,0589390deca7651ef32a8687a8224104a4f03571836dc6dc96ba5beae653f047
+source_id,publisher,period,source_url,source_ref
+S02,Росавиация,2023–2024,https://www.favt.gov.ru/dejatelnost-vozdushnye-perevozki-stat-dannie/?from=old-site,../../SOURCE_MANIFEST.md#s02
+S03,Росавиация,2025,https://favt.gov.ru/novosti-novosti/?id=17763,../../SOURCE_MANIFEST.md#s03
+S05,Минтранс России,2025; планы до 2028,https://mintrans.gov.ru/file/557797,../../SOURCE_MANIFEST.md#s05
+S06,Минтранс России,2025,https://mintrans.gov.ru/press-center/news/12560,../../SOURCE_MANIFEST.md#s06
+S07,Росавиация,май–август 2026,https://www.favt.gov.ru/novosti-novosti/?id=19636,../../SOURCE_MANIFEST.md#s07
+S70,Росавиация,2023,https://special.favt.gov.ru/novosti-novosti/?id=11187,../../SOURCE_MANIFEST.md#s70
+S71,Росавиация,2024,https://www.favt.gov.ru/novosti-rossii/?id=14454,../../SOURCE_MANIFEST.md#s71

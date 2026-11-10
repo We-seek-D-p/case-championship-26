@@ -1,8 +1,8 @@
-# Данные
+# Данные Red Wings
 
-- [SOURCE_MANIFEST.md](SOURCE_MANIFEST.md) — человекочитаемые таблицы загрузки всех 71 источников DR-01.
-- [source_manifest.csv](source_manifest.csv) — ID, издатель, ссылки, оригинальное имя, **точное имя файла для сохранения**, путь и статус.
-- [raw/](raw/README.md) — исходники издателей, пока **не загружены**.
-- [processed/](processed/README.md) — будущие нормализованные таблицы, пока пусто.
+[processed/](processed/README.md) — подготовленные и проверенные данные проекта.
+[SOURCE_MANIFEST.md](SOURCE_MANIFEST.md) — публикации, периоды и ссылки по `source_id`.
+[source_manifest.csv](source_manifest.csv) — тот же каталог для кода.
 
-S01 — локальный оригинальный кейс в `case/`. S04 и S42 — HTML-каталоги; для числовых CSV/XLSX нужны отдельные обнаруженные ссылки и записи. Отчётные значения Deep Research не считаются первичными файлами.
+Исходные показатели находятся в `processed/`, параметры сценариев — в
+[results/strategy/](../results/strategy/). Таблицы содержат единицы измерения и периоды.
