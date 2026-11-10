@@ -6,4 +6,10 @@ __pycache__/
 .mypy_cache/
 .DS_Store
 .idea/
-/data/raw
+
+# Locally captured source documents (may contain browser session metadata).
+/data/raw/**
+# Track only folder placeholders and instructions.
+!/data/raw/README.md
+!/data/raw/*/
+!/data/raw/*/.gitkeep
