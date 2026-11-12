@@ -3,6 +3,7 @@
 [processed/](processed/README.md) — подготовленные и проверенные данные проекта.
 [SOURCE_MANIFEST.md](SOURCE_MANIFEST.md) — публикации, периоды и ссылки по `source_id`.
 [source_manifest.csv](source_manifest.csv) — тот же каталог для кода.
+[airport_infrastructure_reference_notes.md](airport_infrastructure_reference_notes.md) — переданные пользователем фрагменты о развитии аэропортов; непроверенные источники и планы помечены.
 
 Исходные показатели находятся в `processed/`, параметры сценариев — в
 [results/strategy/](../results/strategy/). Таблицы содержат единицы измерения и периоды.
