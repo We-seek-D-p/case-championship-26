@@ -17,6 +17,7 @@ H1_startup_rub,150000000,RUB one-off,assumption,2027-2028
 H2_startup_rub,20000000,RUB one-off,assumption,2027-2028
 transfer_fare_factor,0.75,fraction 0..1,assumption,2027-2028
 common_capture,0.4,fraction 0..1,assumption,2027-2028
+transfer_capture,0.35,fraction 0..1,assumption,2027-2028
 base.label,Базовый,text,assumption,2027-2028
 base.demand,1.0,fraction 0..1,assumption,2027-2028
 base.load,0.85,fraction 0..1,assumption,2027-2028

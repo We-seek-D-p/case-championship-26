@@ -1,0 +1,282 @@
+{
+  "routes": {
+    "H1": [
+      {
+        "destination": "Нижний Новгород",
+        "block_h_oneway": 1.8,
+        "fare_rub_oneway": 9500,
+        "analog_multiplier": 1.1,
+        "marginal_capture": 0.6,
+        "lon": 44.0,
+        "lat": 56.33,
+        "route_id": "H1-01"
+      },
+      {
+        "destination": "Красноярск",
+        "block_h_oneway": 3.4,
+        "fare_rub_oneway": 15500,
+        "analog_multiplier": 1.2,
+        "marginal_capture": 0.6,
+        "lon": 92.87,
+        "lat": 56.01,
+        "route_id": "H1-02"
+      },
+      {
+        "destination": "Саратов",
+        "block_h_oneway": 1.6,
+        "fare_rub_oneway": 9000,
+        "analog_multiplier": 1.0,
+        "marginal_capture": 0.6,
+        "lon": 46.03,
+        "lat": 51.53,
+        "route_id": "H1-03"
+      },
+      {
+        "destination": "Абакан",
+        "block_h_oneway": 3.5,
+        "fare_rub_oneway": 15500,
+        "analog_multiplier": 0.9,
+        "marginal_capture": 0.6,
+        "lon": 91.43,
+        "lat": 53.72,
+        "route_id": "H1-04"
+      },
+      {
+        "destination": "Самара",
+        "block_h_oneway": 1.0,
+        "fare_rub_oneway": 7000,
+        "analog_multiplier": 1.1,
+        "marginal_capture": 0.6,
+        "lon": 50.15,
+        "lat": 53.2,
+        "route_id": "H1-05"
+      },
+      {
+        "destination": "Новосибирск",
+        "block_h_oneway": 2.9,
+        "fare_rub_oneway": 14000,
+        "analog_multiplier": 1.1,
+        "marginal_capture": 0.6,
+        "lon": 82.92,
+        "lat": 55.03,
+        "route_id": "H1-06"
+      },
+      {
+        "destination": "Минеральные Воды",
+        "block_h_oneway": 2.8,
+        "fare_rub_oneway": 13500,
+        "analog_multiplier": 1.0,
+        "marginal_capture": 0.45,
+        "lon": 43.13,
+        "lat": 44.21,
+        "route_id": "H1-07"
+      },
+      {
+        "destination": "Омск",
+        "block_h_oneway": 2.4,
+        "fare_rub_oneway": 12500,
+        "analog_multiplier": 1.1,
+        "marginal_capture": 0.6,
+        "lon": 73.37,
+        "lat": 54.99,
+        "route_id": "H1-08"
+      }
+    ],
+    "H2": [
+      {
+        "destination": "Омск",
+        "block_h_oneway": 2.0,
+        "fare_rub_oneway": 10500,
+        "analog_multiplier": 1.0,
+        "marginal_capture": 0.28,
+        "lon": 73.37,
+        "lat": 54.99,
+        "route_id": "H2-01"
+      },
+      {
+        "destination": "Саратов",
+        "block_h_oneway": 2.0,
+        "fare_rub_oneway": 11500,
+        "analog_multiplier": 0.9,
+        "marginal_capture": 0.28,
+        "lon": 46.03,
+        "lat": 51.53,
+        "route_id": "H2-02"
+      },
+      {
+        "destination": "Нижний Новгород",
+        "block_h_oneway": 2.1,
+        "fare_rub_oneway": 11500,
+        "analog_multiplier": 1.0,
+        "marginal_capture": 0.28,
+        "lon": 44.0,
+        "lat": 56.33,
+        "route_id": "H2-03"
+      },
+      {
+        "destination": "Оренбург",
+        "block_h_oneway": 1.6,
+        "fare_rub_oneway": 9000,
+        "analog_multiplier": 0.75,
+        "marginal_capture": 0.28,
+        "lon": 55.1,
+        "lat": 51.77,
+        "route_id": "H2-04"
+      },
+      {
+        "destination": "Самара",
+        "block_h_oneway": 2.1,
+        "fare_rub_oneway": 11000,
+        "analog_multiplier": 1.0,
+        "marginal_capture": 0.3,
+        "lon": 50.15,
+        "lat": 53.2,
+        "route_id": "H2-05"
+      },
+      {
+        "destination": "Абакан",
+        "block_h_oneway": 3.0,
+        "fare_rub_oneway": 15000,
+        "analog_multiplier": 0.9,
+        "marginal_capture": 0.27,
+        "lon": 91.43,
+        "lat": 53.72,
+        "route_id": "H2-06"
+      },
+      {
+        "destination": "Минеральные Воды",
+        "block_h_oneway": 3.6,
+        "fare_rub_oneway": 16500,
+        "analog_multiplier": 1.0,
+        "marginal_capture": 0.16,
+        "lon": 43.13,
+        "lat": 44.21,
+        "route_id": "H2-07"
+      },
+      {
+        "destination": "Новокузнецк",
+        "block_h_oneway": 2.7,
+        "fare_rub_oneway": 13500,
+        "analog_multiplier": 0.9,
+        "marginal_capture": 0.27,
+        "lon": 87.11,
+        "lat": 53.76,
+        "route_id": "H2-08"
+      },
+      {
+        "destination": "Томск",
+        "block_h_oneway": 2.6,
+        "fare_rub_oneway": 13500,
+        "analog_multiplier": 0.9,
+        "marginal_capture": 0.27,
+        "lon": 84.97,
+        "lat": 56.49,
+        "route_id": "H2-09"
+      },
+      {
+        "destination": "Ставрополь",
+        "block_h_oneway": 3.5,
+        "fare_rub_oneway": 16000,
+        "analog_multiplier": 1.0,
+        "marginal_capture": 0.27,
+        "lon": 41.97,
+        "lat": 45.04,
+        "route_id": "H2-10"
+      }
+    ]
+  },
+  "scenarios": {
+    "base": {
+      "label": "Базовый",
+      "demand": 1.0,
+      "load": 0.85,
+      "fare": 1.0,
+      "existing_displacement": 0.2,
+      "new_displacement": 0.08,
+      "transfer_displacement": 0.15,
+      "transfer_demand": 1.0,
+      "weeks_2027": 13,
+      "ramp_2027": 0.65,
+      "ramp_2028": 1.0,
+      "start": "2027-10-01"
+    },
+    "cautious": {
+      "label": "Осторожный",
+      "demand": 0.75,
+      "load": 0.72,
+      "fare": 0.9,
+      "existing_displacement": 0.35,
+      "new_displacement": 0.15,
+      "transfer_displacement": 0.3,
+      "transfer_demand": 0.55,
+      "weeks_2027": 4,
+      "ramp_2027": 0.5,
+      "ramp_2028": 0.9,
+      "start": "2027-12-01"
+    }
+  },
+  "policy": {
+    "seats": 100,
+    "H1_added_roundtrips_week": 3,
+    "H2_added_roundtrips_week": 2,
+    "weeks_2028": 52,
+    "destination_turn_h": 0.75,
+    "base_turn_h": 1.0,
+    "max_block_day": 10.5,
+    "max_elapsed_day": 14.0,
+    "spare_aircraft": 1,
+    "fixed_aircraft_rub_year": 75000000,
+    "variable_rub_block_h": 130000,
+    "airport_rub_departure": 20000,
+    "H1_fixed_rub_year": 120000000,
+    "H2_fixed_rub_year": 20000000,
+    "H1_startup_rub": 150000000,
+    "H2_startup_rub": 20000000,
+    "transfer_fare_factor": 0.75,
+    "common_capture": 0.4,
+    "transfer_capture": 0.35
+  },
+  "ufa_connections": [
+    {
+      "first": "H1-01",
+      "second": "H1-02",
+      "days": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "first": "H1-03",
+      "second": "H1-04",
+      "days": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "first": "H1-05",
+      "second": "H1-06",
+      "days": [
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "first": "H1-07",
+      "second": "H1-08",
+      "days": [
+        2,
+        5,
+        7
+      ]
+    }
+  ],
+  "pilot_routes_2027": [
+    "H2-01",
+    "H2-02",
+    "H2-07"
+  ]
+}

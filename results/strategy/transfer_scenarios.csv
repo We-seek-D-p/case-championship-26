@@ -1,17 +1,17 @@
 scenario,year,origin,via,destination,gross_oneway_journeys,net_journeys,net_revenue_rub,demand_basis,status
-base,2027,Нижний Новгород,Уфа,Красноярск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-base,2027,Саратов,Уфа,Абакан,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-base,2027,Самара,Уфа,Новосибирск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-base,2027,Минеральные Воды,Уфа,Омск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-base,2028,Нижний Новгород,Уфа,Красноярск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-base,2028,Саратов,Уфа,Абакан,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-base,2028,Самара,Уфа,Новосибирск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-base,2028,Минеральные Воды,Уфа,Омск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-cautious,2027,Нижний Новгород,Уфа,Красноярск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-cautious,2027,Саратов,Уфа,Абакан,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-cautious,2027,Самара,Уфа,Новосибирск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-cautious,2027,Минеральные Воды,Уфа,Омск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-cautious,2028,Нижний Новгород,Уфа,Красноярск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-cautious,2028,Саратов,Уфа,Абакан,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-cautious,2028,Самара,Уфа,Новосибирск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
-cautious,2028,Минеральные Воды,Уфа,Омск,0.0,0.0,0.0,"S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+base,2027,Нижний Новгород,Уфа,Красноярск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+base,2027,Саратов,Уфа,Абакан,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+base,2027,Самара,Уфа,Новосибирск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+base,2027,Минеральные Воды,Уфа,Омск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+base,2028,Нижний Новгород,Уфа,Красноярск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+base,2028,Саратов,Уфа,Абакан,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+base,2028,Самара,Уфа,Новосибирск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+base,2028,Минеральные Воды,Уфа,Омск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+cautious,2027,Нижний Новгород,Уфа,Красноярск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+cautious,2027,Саратов,Уфа,Абакан,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+cautious,2027,Самара,Уфа,Новосибирск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+cautious,2027,Минеральные Воды,Уфа,Омск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+cautious,2028,Нижний Новгород,Уфа,Красноярск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+cautious,2028,Саратов,Уфа,Абакан,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+cautious,2028,Самара,Уфа,Новосибирск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked
+cautious,2028,Минеральные Воды,Уфа,Омск,0.0,0.0,0.0,"S40 line passengers × assumed 0.35; proxy only, not Ufa transfer O&D",scenario; symmetric directional demand; capacity checked

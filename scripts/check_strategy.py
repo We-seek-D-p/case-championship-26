@@ -112,7 +112,7 @@ class SemanticTests(unittest.TestCase):
         import compare_growth_strategies as model
         records=read('results/strategy/route_assumptions.csv')
         for r in records:
-            for key in ('block_h_oneway','fare_rub_oneway','annual_local_target'):r[key]=float(r[key])
+            for key in ('block_h_oneway','fare_rub_oneway','annual_local_target','common_analog_passengers'):r[key]=float(r[key])
             r['added_roundtrips_week']=int(r['added_roundtrips_week'])
             r['rw_evidence']=r['rw_evidence']=='True'
         return model,records

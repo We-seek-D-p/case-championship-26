@@ -1,0 +1,18 @@
+{
+  "year": 2028,
+  "scenario": "cautious",
+  "fleet": 3,
+  "weeks": 26,
+  "fare_factor": 0.8,
+  "demand_factor": 0.5,
+  "policy": {
+    "variable_rub_block_h": 160000,
+    "H2_added_roundtrips_week": 1
+  },
+  "routes": {
+    "H2-01": {
+      "annual_local_target": 14000,
+      "fare_rub_oneway": 10500
+    }
+  }
+}

@@ -16,46 +16,12 @@ import matplotlib.pyplot as plt
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'results/strategy'
 FIG = ROOT / 'analysis/figures'
-# All coordinates, block times, fares and market multipliers below are planning
-# assumptions, not additional sources. Fare: RUB per passenger per one-way segment.
-# destination, block h, fare, analog multiplier, assumed marginal capture share, lon, lat
-H2 = [
-    ('Омск', 2.0, 10500, 1.0, .28, 73.37, 54.99),
-    ('Саратов', 2.0, 11500, .9, .28, 46.03, 51.53),
-    ('Нижний Новгород', 2.1, 11500, 1.0, .28, 44.00, 56.33),
-    ('Оренбург', 1.6, 9000, .75, .28, 55.10, 51.77),
-    ('Самара', 2.1, 11000, 1.0, .30, 50.15, 53.20),
-    ('Абакан', 3.0, 15000, .9, .27, 91.43, 53.72),
-    ('Минеральные Воды', 3.6, 16500, 1.0, .16, 43.13, 44.21),
-    ('Новокузнецк', 2.7, 13500, .9, .27, 87.11, 53.76),
-    ('Томск', 2.6, 13500, .9, .27, 84.97, 56.49),
-    ('Ставрополь', 3.5, 16000, 1.0, .27, 41.97, 45.04),
-]
-H1 = [
-    ('Нижний Новгород', 1.8, 9500, 1.1, .60, 44., 56.33),
-    ('Красноярск', 3.4, 15500, 1.2, .60, 92.87, 56.01),
-    ('Саратов', 1.6, 9000, 1.0, .60, 46.03, 51.53),
-    ('Абакан', 3.5, 15500, .9, .60, 91.43, 53.72),
-    ('Самара', 1.0, 7000, 1.1, .60, 50.15, 53.20),
-    ('Новосибирск', 2.9, 14000, 1.1, .60, 82.92, 55.03),
-    ('Минеральные Воды', 2.8, 13500, 1.0, .45, 43.13, 44.21),
-    ('Омск', 2.4, 12500, 1.1, .60, 73.37, 54.99),
-]
-CASES = {
-    'base': dict(label='Базовый', demand=1., load=.85, fare=1.,
-                 existing_displacement=.20, new_displacement=.08, transfer_displacement=.15,
-                 transfer_demand=1., weeks_2027=13, ramp_2027=.65, ramp_2028=1., start='2027-10-01'),
-    'cautious': dict(label='Осторожный', demand=.75, load=.72, fare=.90,
-                     existing_displacement=.35, new_displacement=.15, transfer_displacement=.30,
-                     transfer_demand=.55, weeks_2027=4, ramp_2027=.50, ramp_2028=.90, start='2027-12-01'),
-}
-POLICY = dict(seats=100, H1_added_roundtrips_week=3, H2_added_roundtrips_week=2, weeks_2028=52,
-              destination_turn_h=.75, base_turn_h=1., max_block_day=10.5,
-              max_elapsed_day=14., spare_aircraft=1, fixed_aircraft_rub_year=75_000_000,
-              variable_rub_block_h=130_000, airport_rub_departure=20_000,
-              H1_fixed_rub_year=120_000_000, H2_fixed_rub_year=20_000_000,
-              H1_startup_rub=150_000_000, H2_startup_rub=20_000_000,
-              transfer_fare_factor=.75, common_capture=.40)
+# Project defaults, editable independently of the calculation.
+CONFIG = json.loads((ROOT / 'data/model_parameters.json').read_text(encoding='utf-8'))
+POLICY = CONFIG['policy']
+CASES = CONFIG['scenarios']
+ROUTE_FIELDS = ('destination', 'block_h_oneway', 'fare_rub_oneway',
+                'analog_multiplier', 'marginal_capture', 'lon', 'lat')
 
 
 def read(p):
@@ -93,7 +59,7 @@ def great_circle_km(lon1,lat1,lon2,lat2):
     return 6371*2*math.asin(math.sqrt(a))
 
 
-def inputs(demand_method='common'):
+def inputs(demand_method='common', *, save_references=True):
     catalog={r['source_id']:r for r in read('data/source_manifest.csv')}
     facts = read('data/processed/core/route_passengers.csv')
     routes = read('data/processed/core/current_routes.csv')
@@ -103,8 +69,9 @@ def inputs(demand_method='common'):
     national = next(r for r in market if r['source_id']=='S03' and r['metric']=='airline_passengers'
                     and r['value']=='108.85')
     records=[]; used_facts={}
-    for h, base, rows in [('H1','Уфа',H1),('H2','Екатеринбург',H2)]:
-        for n,(dest,block,fare,mult,capture,lon,lat) in enumerate(rows,1):
+    for h, base in [('H1','Уфа'),('H2','Екатеринбург')]:
+        for route in CONFIG['routes'][h]:
+            dest,block,fare,mult,capture,lon,lat = (route[k] for k in ROUTE_FIELDS)
             # Analogs are published LINE volumes, not O&D. Cross-city scaling and
             # marginal capture are explicit judgments, not inferred observations.
             # Only one measured line volume is available from the selected base.
@@ -113,7 +80,7 @@ def inputs(demand_method='common'):
                           and r['destination']=='Минеральные Воды' and r['period']=='2025')
             evidence=[r for r in routes if {r['origin'],r['destination']}=={base,dest}]
             existing=any(r['airline']=='Red Wings' for r in evidence)
-            records.append(dict(route_id=f'{h}-{n:02}', hypothesis=h, origin=base,destination=dest,
+            records.append(dict(route_id=route['route_id'], hypothesis=h, origin=base,destination=dest,
                                 block_h_oneway=block, fare_rub_oneway=fare, lon=lon,lat=lat,
                                 great_circle_km=great_circle_km(55.97 if h=='H1' else 60.60,54.74 if h=='H1' else 56.84,lon,lat),
                                 added_roundtrips_week=POLICY[h+'_added_roundtrips_week'], rw_evidence=existing,
@@ -155,11 +122,18 @@ def inputs(demand_method='common'):
             r['local_target_status']='scenario; before seat cap, ramp and own displacement'
             r['input_status']='S40 is an observed line volume; its use as a common anchor is a scenario assumption, not measured demand; capture, fare, block time, frequency and coordinates are assumptions'
             r['common_evidence_refs']=json.dumps([{k:p[k] for k in ('source_id','source_file','source_row','source_locator','source_url','passengers','period','unit')} for p in pool],ensure_ascii=False)
-    write('fact_references.csv',fact_rows)
+    if save_references:
+        write('fact_references.csv',fact_rows)
     return records, float(rw['value']),float(national['value'])*1e6
 
 
-def rotations(records):
+def pilot_routes(records):
+    return [r for r in records if r['hypothesis'] == 'H1'
+            or r['route_id'] in CONFIG['pilot_routes_2027']]
+
+
+def rotations(records, *, policy=None):
+    policy = POLICY if policy is None else policy
     result=[]
     for h in ('H1','H2'):
         rr=[r for r in records if r['hypothesis']==h]
@@ -167,25 +141,25 @@ def rotations(records):
             # Four west/east (last pair south/east) bundles; three service days.
             # Each bundle has one feasible 60-min connection at Ufa. Alternating
             # order allows both journey directions across the weekly pattern.
-            days=[(0,2,4),(1,3,5),(0,3,6),(1,4,6)]
-            jobs=defaultdict(list)
-            for i in range(4):
-                for j,d in enumerate(days[i]):
-                    pair=rr[2*i:2*i+2]
-                    jobs[d].append(pair if j%2==0 else pair[::-1])
+            routes_by_id = {r['route_id']: r for r in rr}
+            jobs = defaultdict(list)
+            for connection in CONFIG['ufa_connections']:
+                pair = [routes_by_id[connection[key]] for key in ('first', 'second')]
+                for j, day in enumerate(connection['days']):
+                    jobs[day].append(pair if j % 2 == 0 else pair[::-1])
             for d, bundles in sorted(jobs.items()):
                 for tail,bundle in enumerate(bundles,1):
                     t=6.
-                    assert sum(2*r['block_h_oneway'] for r in bundle)<=POLICY['max_block_day']
+                    assert sum(2*r['block_h_oneway'] for r in bundle)<=policy['max_block_day']
                     for r in bundle:
-                        arrival=t+2*r['block_h_oneway']+POLICY['destination_turn_h']
-                        result.append(dict(hypothesis=h,day=d+1,tail=tail,route_id=r['route_id'],
+                        arrival=t+2*r['block_h_oneway']+policy['destination_turn_h']
+                        result.append(dict(hypothesis=h,day=d,tail=tail,route_id=r['route_id'],
                                            departure_base_h=t,arrival_base_h=arrival,
                                            departure_base_clock=clock(t),arrival_base_clock=clock(arrival),
                                            roundtrip_block_h=2*r['block_h_oneway'],
                                            origin=r['origin'],destination=r['destination'],status='synthetic_rotation'))
-                        t=arrival+POLICY['base_turn_h']
-                    assert t-POLICY['base_turn_h']-6<=POLICY['max_elapsed_day']
+                        t=arrival+policy['base_turn_h']
+                    assert t-policy['base_turn_h']-6<=policy['max_elapsed_day']
         else:
             # Greedy balance of marginal RTs over days/tails; explicit elapsed and
             # block limits. Does not assert optimality or slot/crew approval.
@@ -194,15 +168,17 @@ def rotations(records):
                 for _ in range(r['added_roundtrips_week']):
                     options=[]
                     for d in range(1,8):
-                        for tail in range(1,5):
+                        for tail in range(1, len(rr) + 1):
                             b=bins[d,tail]
-                            dur=2*r['block_h_oneway']+POLICY['destination_turn_h']+(POLICY['base_turn_h'] if b['elapsed'] else 0.)
-                            if (r['destination'] not in b['dest'] and b['elapsed']+dur<=POLICY['max_elapsed_day'] and b['block']+2*r['block_h_oneway']<=POLICY['max_block_day']
+                            dur=2*r['block_h_oneway']+policy['destination_turn_h']+(policy['base_turn_h'] if b['elapsed'] else 0.)
+                            if (r['destination'] not in b['dest'] and b['elapsed']+dur<=policy['max_elapsed_day'] and b['block']+2*r['block_h_oneway']<=policy['max_block_day']
                                 and not any(x['hypothesis']==h and x['day']==d and x['route_id']==r['route_id'] for x in result)):
                                 options.append((tail,max([bins[d,t]['elapsed'] for t in range(1,tail+1)]),d,dur))
+                    if not options:
+                        raise ValueError(f"Расписание не собрано для {r['route_id']}")
                     tail,_,d,dur=min(options)
-                    b=bins[d,tail]; start=6+b['elapsed']+(POLICY['base_turn_h'] if b['elapsed'] else 0.)
-                    end=start+2*r['block_h_oneway']+POLICY['destination_turn_h']
+                    b=bins[d,tail]; start=6+b['elapsed']+(policy['base_turn_h'] if b['elapsed'] else 0.)
+                    end=start+2*r['block_h_oneway']+policy['destination_turn_h']
                     result.append(dict(hypothesis=h,day=d,tail=tail,route_id=r['route_id'],departure_base_h=start,
                                        arrival_base_h=end,departure_base_clock=clock(start),arrival_base_clock=clock(end),
                                        roundtrip_block_h=2*r['block_h_oneway'],origin=r['origin'],destination=r['destination'],status='synthetic_rotation'))
@@ -210,16 +186,19 @@ def rotations(records):
     return sorted(result,key=lambda r:(r['hypothesis'],r['day'],r['tail'],r['departure_base_h']))
 
 
-def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_factor=1., block_cost=None, full_network=False):
-    c=CASES[case]; weeks=POLICY['weeks_2028'] if year==2028 else c['weeks_2027']
+def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_factor=1., block_cost=None, full_network=False, *,
+              policy=None, settings=None, weeks_override=None, include_startup=None):
+    policy = POLICY if policy is None else policy
+    c = CASES[case] if settings is None else settings
+    weeks = weeks_override if weeks_override is not None else (policy['weeks_2028'] if year == 2028 else c['weeks_2027'])
+    include_startup = year == 2027 if include_startup is None else include_startup
     ramp=c['ramp_2028'] if year==2028 else c['ramp_2027']
     # Three-route H2 pilot in 2027; all ten routes in 2028.
-    effective=[r for r in records if year==2028 or full_network or r['hypothesis']=='H1' or
-               r['destination'] in ('Омск','Саратов','Минеральные Воды')]
-    operating_rot=rot if year==2028 else rotations(effective)
+    effective = records if year == 2028 or full_network else pilot_routes(records)
+    operating_rot=rot if year==2028 else rotations(effective, policy=policy)
     output=[]; transfers=[]
     for r in effective:
-        cap=2*r['added_roundtrips_week']*weeks*POLICY['seats']
+        cap=2*r['added_roundtrips_week']*weeks*policy['seats']
         local=min(cap*c['load'],r['annual_local_target']*weeks/52*c['demand']*ramp*demand_factor)
         displacement=c['existing_displacement'] if r['rw_evidence'] else c['new_displacement']
         output.append(dict(hypothesis=r['hypothesis'],scenario=case,year=year,route_id=r['route_id'],
@@ -230,41 +209,43 @@ def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_facto
     byid={r['route_id']:r for r in output}
     # Assign a transfer trip to one of four actually connected bundles. Three
     # one-way connections/week (2 in one direction, 1 reverse). No all-to-all hub.
-    for i in range(4):
-        a,b=records[2*i:2*i+2]; ra,rb=byid[a['route_id']],byid[b['route_id']]
-        target=211000*.35*weeks/52*c['transfer_demand']*ramp*demand_factor
+    input_by_id = {r['route_id']: r for r in effective}
+    for connection in CONFIG['ufa_connections']:
+        a, b = (input_by_id[connection[key]] for key in ('first', 'second'))
+        ra, rb = byid[a['route_id']], byid[b['route_id']]
+        target=a['common_analog_passengers']*policy['transfer_capture']*weeks/52*c['transfer_demand']*ramp*demand_factor
         # Direction with only one weekly connection limits total at symmetric
         # directional demand: no more than 2*100*weeks at the load ceiling.
-        p=min(target,*(2*weeks*(POLICY['seats']*c['load']-r['local_segments']/(r['incremental_departures'])) for r in (ra,rb)))
+        p=min(target,*(2*weeks*(policy['seats']*c['load']-r['local_segments']/(r['incremental_departures'])) for r in (ra,rb)))
         p=max(0.,p)
         net=p*(1-c['transfer_displacement'])
         revenue=0.
         for r,inp in ((ra,a),(rb,b)):
-            rev=net*inp['fare_rub_oneway']*c['fare']*fare_factor*POLICY['transfer_fare_factor']
+            rev=net*inp['fare_rub_oneway']*c['fare']*fare_factor*policy['transfer_fare_factor']
             r['transfer_segments']+=p;r['net_segments']+=net;r['net_revenue_rub']+=rev;revenue+=rev
         transfers.append(dict(scenario=case,year=year,origin=a['destination'],via='Уфа',destination=b['destination'],
                               gross_oneway_journeys=p,net_journeys=net,net_revenue_rub=revenue,
-                              demand_basis='S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D',
+                              demand_basis=f"{a['common_source_id']} line passengers × assumed {policy['transfer_capture']:g}; proxy only, not Ufa transfer O&D",
                               status='scenario; symmetric directional demand; capacity checked'))
     summary=[]
     for h in ('H1','H2'):
         rr=[r for r in output if r['hypothesis']==h]
         weekly=[r for r in operating_rot if r['hypothesis']==h]
-        active=max(r['tail'] for r in weekly); fleet=active+POLICY['spare_aircraft']
+        active=max(r['tail'] for r in weekly); fleet=active+policy['spare_aircraft']
         block=sum(r['roundtrip_block_h'] for r in weekly)*weeks
         departures=sum(r['incremental_departures'] for r in rr)
-        variable=block*(block_cost or POLICY['variable_rub_block_h'])+departures*POLICY['airport_rub_departure']
-        fixed=(fleet*POLICY['fixed_aircraft_rub_year']+POLICY[h+'_fixed_rub_year'])*weeks/52
-        startup=POLICY[h+'_startup_rub'] if year==2027 else 0
+        variable=block*(policy['variable_rub_block_h'] if block_cost is None else block_cost)+departures*policy['airport_rub_departure']
+        fixed=(fleet*policy['fixed_aircraft_rub_year']+policy[h+'_fixed_rub_year'])*weeks/52
+        startup=policy[h+'_startup_rub'] if include_startup else 0
         net=sum(r['net_segments'] for r in rr); revenue=sum(r['net_revenue_rub'] for r in rr)
         journeys=sum(t['net_journeys'] for t in transfers) if h=='H1' else 0
-        summary.append(dict(hypothesis=h,scenario=case,year=year,weeks=weeks,start_date=c['start'] if year==2027 else '2028 planning year; 52 weeks',
+        summary.append(dict(hypothesis=h,scenario=case,year=year,weeks=weeks,start_date=('user-defined operating weeks; date unspecified' if weeks_override is not None else c['start'] if year==2027 else '2028 planning year'),
                             gross_segments=sum(r['local_segments']+r['transfer_segments'] for r in rr),
                             net_passenger_segments=net,net_oneway_journeys=net-journeys,
                             transfer_net_journeys=journeys,incremental_revenue_rub=revenue,
                             share_delta_pp=100*net/market,share_after_percent=100*(rw+net)/market,
                             share_delta_pp_denominator_plus_increment=100*(rw+net)/(market+net)-100*rw/market,
-                            block_hours=block,departures=departures,active_aircraft=active,reserve_aircraft=POLICY['spare_aircraft'],total_aircraft=fleet,
+                            block_hours=block,departures=departures,active_aircraft=active,reserve_aircraft=policy['spare_aircraft'],total_aircraft=fleet,
                             net_segments_per_aircraft=net/fleet,variable_cost_rub=variable,fixed_cost_rub=fixed,startup_rub=startup,
                             contribution_rub=revenue-variable-fixed-startup,
                             break_even_fare_multiplier=(variable+fixed+startup)/revenue if revenue else None,
@@ -277,7 +258,7 @@ def main():
     OUT.mkdir(parents=True,exist_ok=True);FIG.mkdir(parents=True,exist_ok=True)
     records,rw,market=inputs(); rot=rotations(records)
     write('route_assumptions.csv',records);write('weekly_rotations.csv',rot)
-    pilot=[r for r in records if r['hypothesis']=='H1' or r['destination'] in ('Омск','Саратов','Минеральные Воды')]
+    pilot = pilot_routes(records)
     write('pilot_2027_rotations.csv',[r for r in rotations(pilot) if r['hypothesis']=='H2'])
     def unit(k):
         if 'rub_year' in k:return 'RUB/year'
@@ -468,33 +449,58 @@ def controls(records,rw,market):
     write('stress_tests.csv',stress)
     _,baseline,_=calculate(records,rotations(records),rw,market,'base',2028)
     _,cautious,_=calculate(records,rotations(records),rw,market,'cautious',2028)
-    lo=records[0]['annual_local_target'];hi=211000*1.25*POLICY['common_capture']
-    for _ in range(60):
-        midpoint=(lo+hi)/2
-        trial=[dict(r,annual_local_target=midpoint) for r in records]
-        _,s,_=calculate(trial,rotations(trial),rw,market,'base',2028)
-        if s[0]['contribution_rub']>s[1]['contribution_rub']:hi=midpoint
-        else:lo=midpoint
+    rot = rotations(records)
+    def gap(target):
+        trial = [dict(r, annual_local_target=target) for r in records]
+        _, s, _ = calculate(trial, rot, rw, market, 'base', 2028)
+        return s[0]['contribution_rub'] - s[1]['contribution_rub']
+
+    # At fixed settings the cash gap is piecewise linear. All H1 routes
+    # have the same target and capacity, so their transfer limits coincide.
+    seats_at_load = POLICY['seats'] * CASES['base']['load']
+    weeks = POLICY['weeks_2028']
+    demand_scale = weeks / 52 * CASES['base']['demand'] * CASES['base']['ramp_2028']
+    transfer_target = (records[0]['common_analog_passengers'] * POLICY['transfer_capture']
+                       * weeks / 52 * CASES['base']['transfer_demand'] * CASES['base']['ramp_2028'])
+    breaks = {0.}
+    for row in records:
+        departures = 2 * row['added_roundtrips_week'] * weeks
+        breaks.add(departures * seats_at_load / demand_scale)
+        if row['hypothesis'] == 'H1':
+            breaks.add(max(0., departures * (seats_at_load - transfer_target / (2 * weeks))
+                           / demand_scale))
+    points = [(x, gap(x)) for x in sorted(breaks)]
+    roots = {x for x, delta in points if abs(delta) < 1e-6}
+    for (a, fa), (b, fb) in zip(points, points[1:]):
+        if fa * fb < 0:
+            roots.add(a - fa * (b - a) / (fb - fa))
+
     write('decision_thresholds.csv',[
         dict(parameter='H2_only_fare_multiplier_equal_H1_base',value=(baseline[0]['contribution_rub']+baseline[1]['variable_cost_rub']+baseline[1]['fixed_cost_rub'])/baseline[1]['incremental_revenue_rub'],unit='multiplier',condition='H1 base unchanged; H2 passengers and costs unchanged'),
-        dict(parameter='common_local_target_equal_cash_base',value=(lo+hi)/2,unit='segments/route/year before capacity and displacement',condition='both hypotheses same local target; transfer demand fixed; base 2028'),
+        *[dict(parameter='common_local_target_equal_cash_base',value=root,
+               unit='segments/route/year before capacity and displacement',
+               condition='both hypotheses same local target; transfer demand fixed; base 2028')
+          for root in sorted(roots)],
         dict(parameter='H2_cautious_block_cost_zero_cash',value=130000+cautious[1]['contribution_rub']/cautious[1]['block_hours'],unit='RUB/block-hour',condition='cautious 2028; other assumptions unchanged')])
 
 def report(records,rot,ss,sens,rw,market):
     def get(h,c='base',y=2028):return next(r for r in ss if (r['hypothesis'],r['scenario'],r['year'])==(h,c,y))
     b1,b2,c2=get('H1'),get('H2'),get('H2','cautious')
     summary=table(['Гипотеза','Сценарий','Год','Доп. сегменты, тыс.','Выручка, млн ₽','Δ доли, п.п.','Бортов с резервом','Результат, млн ₽'],[[r['hypothesis'],CASES[r['scenario']]['label'],r['year'],f"{r['net_passenger_segments']/1000:.1f}",f"{r['incremental_revenue_rub']/1e6:.0f}",f"{r['share_delta_pp']:.3f}",r['total_aircraft'],f"{r['contribution_rub']/1e6:.0f}"] for r in ss])
+    winner = max((get('H1', 'cautious'), c2), key=lambda r: r['contribution_rub'])
+    choice = (
+        'Полная сеть H1 из Уфы лидирует по денежному результату осторожного сценария 2028 года. '
+        'Екатеринбург остаётся вариантом ограниченного пилота 2027 года.'
+        if winner['hypothesis'] == 'H1' else
+        'Полная сеть H2 из Екатеринбурга лидирует по денежному результату осторожного сценария 2028 года.'
+    )
     body=f'''# Стратегия Red Wings
 
-**Выбираем H2: десять прямых пар из Екатеринбурга, по два дополнительных оборота в неделю.**
-Для полной сети нужны два рабочих SJ-100 и один резервный. В 2027 году начинаем
-с трёх пар — Омск, Саратов и Минеральные Воды — после фактической передачи самолётов.
+**{choice}**
 
-В 2028 H2 даёт {b2['net_passenger_segments']/1000:.1f} тыс. дополнительных сегментов
-и {b2['incremental_revenue_rub']/1e9:.2f} млрд ₽ выручки в базовом сценарии;
-{c2['net_passenger_segments']/1000:.1f} тыс. и {c2['incremental_revenue_rub']/1e9:.2f} млрд ₽ — в осторожном.
-H1 даёт больше сегментов, но уступает по денежному результату обоих сценариев.
-При выборе мы отдаём приоритет осторожной экономике и возможности ограничиться пилотом.
+Решение относится к заданным входам и зависит от проверки спроса и ресурсов.
+В 2027 году вариант H2 начинается с трёх пар после фактической передачи самолётов.
+Полные сети 2028 года сравниваем на одной шкале результата и доли.
 
 ## Обе гипотезы
 
@@ -636,8 +642,8 @@ H1: 116,4 блок-ч/неделю; H2: 100,8. В модели обеих пол
 Наличие самолётов и возможность общего резерва требуют согласования с Red Wings.
 
 В контрольном варианте H2 с третьим оборотом на четырёх коротких парах —
-116,2 блок-ч/неделю при том же флоте. Три оборота на всех десяти парах требуют
-четырёх бортов с резервом и ухудшают осторожную экономику.
+116,2 блок-ч/неделю при том же флоте. Для трёх оборотов на всех десяти парах число бортов и результат приведены
+в контрольном варианте common_3RT.
 
 [Недельные ротации](../results/strategy/weekly_rotations.csv): возврат в базу
 на ночь, до 10,5 блок-ч и 14 часов занятости борта в день; оборот на конце
@@ -651,17 +657,18 @@ H1: 116,4 блок-ч/неделю; H2: 100,8. В модели обеих пол
 не добавлена. Годовые фиксированные расходы при обычном запуске пропорциональны
 активным неделям; стресс задержки сохраняет годовые обязательства.
 
-## Когда выбрать H1 или отложить запуск
+## Когда меняется решение
 
 Базовый результат H1 — {b1['contribution_rub']/1e6:.0f} млн ₽, H2 — {b2['contribution_rub']/1e6:.0f} млн ₽.
-Разрыв невелик: снижение только тарифа H2 примерно на 2% меняет денежный выбор.
+Порог тарифа H2 при неизменных продажах и расходах приведён в таблице порогов ниже.
 Результат зависит от сценарного ориентира спроса и ограничений креслами;
-общий proxy не заменяет фактические данные по каждой паре. Её преимущества — больший объём и дополнительные пересадочные связи;
-цена — новая база и зависимость от стыковок.
+фактический спрос на каждой паре пока неизвестен. Для Уфы нужно отдельно проверить
+расходы на базирование и спрос на пересадки. При заполнении всех доступных кресел
+местными пассажирами пересадочный поток по формуле равен нулю.
 
-На низком аналоге осторожно убыточны обе H. Совместный шок тарифа −20%, спроса
-−25% и блок-часа 160 тыс. ₽ также может сделать обе программы убыточными.
-Тогда сокращаем частоты или переносим запуск. При задержке до июля 2028
+В таблице стрессов проверяем знак результата при совместном падении тарифа и спроса
+и росте расходов. Если результат становится отрицательным, проверяем меньшую
+программу или более поздний запуск. При задержке до июля 2028
 поток и переменные расходы сокращаются вдвое, фиксированные годовые расходы
 сохраняются; без самолётов пассажирский эффект равен нулю.
 

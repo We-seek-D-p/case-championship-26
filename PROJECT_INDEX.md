@@ -4,6 +4,8 @@
 
 ## С чего начать
 
+- [Модель по шагам](MODEL.md), [настройки](data/model_parameters.json), [калькулятор](scripts/simulate_strategy.py) и [текст двух слайдов](submission/model-slides.md).
+
 | Файл | Суть |
 |---|---|
 | [README.md](README.md) | Краткое изложение решения, ключевые числа и команды для воспроизведения расчётов. |
