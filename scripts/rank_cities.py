@@ -4,6 +4,7 @@ Outputs include the report. Empty cells remain unknown. Rank envelopes are
 adversarial bounds under missing criteria, not statistical confidence intervals.
 """
 import csv
+import math
 import sys
 from pathlib import Path
 
@@ -66,11 +67,25 @@ def table(headers, rows):
                      ['| ' + ' | '.join(str(v).replace('|', '/') for v in row) + ' |' for row in rows])
 
 
-def main():
-    assert sys.version_info[:2] == (3, 14), 'Use Python 3.14'
-    OUT.mkdir(parents=True, exist_ok=True)
-    FIG.mkdir(parents=True, exist_ok=True)
-    data = {k: read(k) for k in ('airports', 'route_passengers', 'current_routes', 'market')}
+def weighted_score(size, growth, weight):
+    coverage = weight + (1 - weight if growth is not None else 0)
+    numerator = weight * size + ((1 - weight) * growth if growth is not None else 0)
+    return (numerator / coverage if coverage else None), coverage
+
+
+def calculate_ranking(data, *, size_weight=WEIGHT, passenger_cap=CAP,
+                      growth_min=-10, growth_max=10, city_overrides=None):
+    """Use the same scoring rules for official tables and one-off scenarios."""
+    settings = (size_weight, passenger_cap, growth_min, growth_max)
+    if any(type(value) not in (int, float) or not math.isfinite(value) for value in settings):
+        raise ValueError('Веса и границы шкал должны быть конечными числами.')
+    if not 0 <= size_weight <= 1 or passenger_cap <= 0 or growth_min >= growth_max:
+        raise ValueError('Вес размера должен быть от 0 до 1, потолок потока больше 0, минимум роста ниже максимума.')
+    if not math.isfinite(growth_max - growth_min):
+        raise ValueError('Диапазон роста слишком велик.')
+    overrides = {} if city_overrides is None else city_overrides
+    if not isinstance(overrides, dict) or overrides.keys() - CITIES.keys():
+        raise ValueError('city_overrides должен содержать названия городов из списка.')
     airports = data['airports']
     inputs, scores, cities = [], [], []
     for city, airport in CITIES.items():
@@ -97,52 +112,78 @@ def main():
             assert previous['unit'] == 'person'
             growth = (float(total['value']) / float(previous['value']) - 1) * 100
             growth_refs = ref(total) + ' + ' + ref(previous)
-        s = min(100., float(total['value']) / CAP * 100)
-        g = None if growth is None else max(0., min(100., (growth + 10) * 5))
-        coverage = WEIGHT + (1 - WEIGHT if g is not None else 0)
-        point = (WEIGHT * s + ((1-WEIGHT)*g if g is not None else 0)) / coverage
-        # Lower/upper here are scenarios for unknown values, never imputed observations.
-        s_hi = 100. if total['value_qualifier'] == 'greater_than' else s
-        low = WEIGHT * s + ((1-WEIGHT)*g if g is not None else 0)
-        high = WEIGHT * s_hi + (1-WEIGHT)*(g if g is not None else 100)
+        change = overrides.get(city, {})
+        if not isinstance(change, dict) or change.keys() - {'passengers', 'growth'}:
+            raise ValueError(f'{city}: можно менять только passengers и growth.')
+        passengers = float(total['value'])
+        qualifier = total['value_qualifier']
+        size_refs = ref(total)
+        if 'passengers' in change:
+            passengers = change['passengers']
+            if type(passengers) is not int or passengers < 0:
+                raise ValueError(f'{city}: passengers должно быть неотрицательным целым числом.')
+            qualifier = 'scenario'
+            size_refs = 'Сценарная замена, исходное наблюдение: ' + size_refs
+        if 'growth' in change:
+            growth = change['growth']
+            if growth is not None and (type(growth) not in (int, float)
+                                       or not math.isfinite(growth) or growth < -100):
+                raise ValueError(f'{city}: growth задаётся в процентах от −100 или null.')
+            growth_refs = 'Сценарная замена. Исходное наблюдение: ' + (growth_refs or 'отсутствует')
+        size = min(100., passengers / passenger_cap * 100)
+        if growth is None:
+            growth_score = None
+        else:
+            bounded_growth = min(growth_max, max(growth_min, growth))
+            growth_score = 100 * ((bounded_growth - growth_min) / (growth_max - growth_min))
+        point, coverage = weighted_score(size, growth_score, size_weight)
+        size_hi = 100. if qualifier == 'greater_than' else size
+        known_growth = (1 - size_weight) * growth_score if growth_score is not None else 0
+        low = size_weight * size + known_growth
+        high = size_weight * size_hi + (known_growth if growth_score is not None else (1 - size_weight) * 100)
         codes = {r[k+'_iata'] for r in routes for k in ('origin', 'destination')
                  if r[k] == city and r[k+'_iata']}
         assert len(codes) <= 1
         limitations = []
-        if g is None:
+        if growth_score is None:
             limitations.append('нет годовой динамики')
             inputs.append(dict(city=city, input_role='growth_missing', metric='passengers_change',
                                period='2025', comparison_period='2024', value='',
                                limitations='Нет сопоставимого общего годового показателя'))
-        if total['value_qualifier'] == 'greater_than':
+        if qualifier == 'greater_than':
             limitations.append('поток — нижний порог; верх неизвестен')
         limitations.append('нет полной оценки конкуренции и пересадок')
-        for criterion, value, score, weight, sources in [
-            ('size', float(total['value']), s, WEIGHT, ref(total)),
-            ('growth', growth, g, 1-WEIGHT, growth_refs)]:
+        for criterion, value, score, weight, sources, field in [
+            ('size', passengers, size, size_weight, size_refs, 'passengers'),
+            ('growth', growth, growth_score, 1 - size_weight, growth_refs, 'growth')]:
+            formula = (f'min(100,100*P/{passenger_cap:g})' if criterion == 'size' else
+                       f'clip(100*(growth-({growth_min:g}))/({growth_max:g}-({growth_min:g})),0,100)')
+
+            if criterion == 'growth' and (growth_min, growth_max) == (-10, 10):
+                formula = 'clip(5*(growth+10),0,100)'
             scores.append(dict(city=city, criterion=criterion, value=value if value is not None else '',
                                unit='person' if criterion == 'size' else 'percent', period='2025',
                                comparison_period='' if criterion == 'size' else '2024',
                                score=score if score is not None else '', weight=weight,
-                               status='missing' if score is None else 'observed_or_derived',
-                               formula='min(100,100*P/6000000)' if criterion == 'size' else 'clip(5*(growth+10),0,100)',
-                               sources=sources, value_qualifier=total['value_qualifier'] if criterion == 'size' else '',
-                               basis='published threshold as point' if s_hi != s and criterion == 'size' else 'see report'))
+                               status='scenario' if field in change else 'missing' if score is None else 'observed_or_derived',
+                               formula=formula,
+                               sources=sources, value_qualifier=qualifier if criterion == 'size' else '',
+                               basis='published threshold as point' if size_hi != size and criterion == 'size' else 'see report'))
         cities.append(dict(city=city, airport=airport, iata=next(iter(codes), ''),
-                           passengers=float(total['value']), qualifier=total['value_qualifier'],
-                           growth=growth, size_score=s, growth_score=g, score=point,
+                           passengers=passengers, qualifier=qualifier,
+                           growth=growth, size_score=size, growth_score=growth_score, score=point,
                            coverage=coverage, score_low=low, score_high=high,
                            confidence='низкая: предварительный отбор', limitations='; '.join(limitations),
                            total=total, growth_refs=growth_refs, routes=routes))
-    cities.sort(key=lambda c: (-c['score'], c['city']))
+    cities.sort(key=lambda c: (c['score'] is None, -(c['score'] or 0), c['city']))
     for rank, c in enumerate(cities, 1):
-        c['rank'] = rank
+        c['rank'] = rank if c['score'] is not None else None
         c['new_hub_eligible'] = c['city'] not in ('Казань','Самара','Минеральные Воды')
         c['eligibility_basis'] = ('S10/S11: уже опорный аэропорт Red Wings; расширение не новая база' if not c['new_hub_eligible'] else 'не назван опорным в S11; статус базирования всё равно требует проверки')
         c['best_rank'] = 1 + sum(d['score_low'] > c['score_high'] for d in cities if d is not c)
         c['worst_rank'] = len(cities) - sum(d['score_high'] < c['score_low'] for d in cities if d is not c)
         for w in (.6, .9):
-            c[f'score_w{int(w*100)}'] = (w*c['size_score'] + ((1-w)*c['growth_score'] if c['growth_score'] is not None else 0))/(w+(1-w if c['growth_score'] is not None else 0))
+            c[f'score_w{int(w*100)}'], _ = weighted_score(c['size_score'], c['growth_score'], w)
     for w in (60, 90):
         for rank, c in enumerate(sorted(cities, key=lambda c: (-c[f'score_w{w}'], c['city'])), 1):
             c[f'rank_w{w}'] = rank
@@ -154,6 +195,19 @@ def main():
         for r in airports:
             if r['airport'] == airport:
                 inputs.append(dict(city=airport, input_role='reserve_or_benchmark', **r))
+    return inputs, scores, cities, market
+
+
+def core_city_data():
+    return {key: read(key) for key in ('airports', 'route_passengers', 'current_routes', 'market')}
+
+
+def main():
+    assert sys.version_info[:2] == (3, 14), 'Use Python 3.14'
+    OUT.mkdir(parents=True, exist_ok=True)
+    FIG.mkdir(parents=True, exist_ok=True)
+    data = core_city_data()
+    inputs, scores, cities, market = calculate_ranking(data)
     write_csv('city_inputs.csv', inputs)
     write_csv('criteria_scores.csv', scores)
     ranking = [{k: ('' if v is None else v) for k, v in c.items()

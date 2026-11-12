@@ -5,6 +5,7 @@ import math
 from pathlib import Path
 
 from compare_growth_strategies import CASES, POLICY, calculate, inputs, rotations
+from rank_cities import CAP, CITIES, WEIGHT, calculate_ranking, core_city_data
 
 
 def number(value, name, minimum, maximum=math.inf, *, integer=False):
@@ -107,20 +108,97 @@ def simulate(options):
     }
 
 
-def prompt():
+def simulate_cities(options):
+    settings = dict(size_weight=WEIGHT, passenger_cap=CAP, growth_min=-10, growth_max=10)
+    if options.keys() - (settings.keys() | {'city_overrides'}):
+        raise ValueError('Неизвестный параметр рейтинга городов.')
+    settings.update(options)
+    data = core_city_data()
+    _, criteria, cities, _ = calculate_ranking(data, **settings)
+    if options:
+        _, _, baseline, _ = calculate_ranking(data)
+        baseline_ranks = {row['city']: row['rank'] for row in baseline}
+    else:
+        baseline_ranks = {row['city']: row['rank'] for row in cities}
+    ranking = []
+    for row in cities:
+        entry = {key: value for key, value in row.items() if key not in ('total', 'growth_refs', 'routes')}
+        entry['baseline_rank'] = baseline_ranks[row['city']]
+        entry['places_gained'] = None if row['rank'] is None else entry['baseline_rank'] - row['rank']
+        ranking.append(entry)
+    ranked = [row for row in ranking if row['rank'] is not None]
+    return {
+        'settings': {**settings, 'growth_weight': 1 - settings['size_weight']},
+        'top_three': [r['city'] for r in ranked[:3]],
+        'top_three_new_base': [r['city'] for r in ranked if r['new_hub_eligible']][:3],
+        'ranking': ranking,
+        'criteria': criteria,
+    }
+
+
+def prompt(*, cities=False):
     options = {}
-    for key, label, convert in (
+    fields = (
+        ('size_weight', 'Вес размера, от 0 до 1 [0.75]', float),
+        ('passenger_cap', 'Поток, при котором размер даёт 100 баллов [6000000]', float),
+        ('growth_min', 'Рост для 0 баллов, % [-10]', float),
+        ('growth_max', 'Рост для 100 баллов, % [10]', float),
+    ) if cities else (
         ('year', 'Год [2028]', int),
         ('scenario', 'Сценарий base или cautious [base]', str),
         ('fleet', 'Доступно самолётов вместе с резервом [без ограничения]', int),
         ('weeks', 'Рабочих недель [по сценарию]', int),
         ('fare_factor', 'Множитель цен билетов, например 0.8 [1]', float),
         ('demand_factor', 'Множитель спроса, например 0.5 [1]', float),
-    ):
+    )
+    for key, label, convert in fields:
         raw = input(f'{label}: ').strip()
         if raw:
-            options[key] = convert(raw)
+            options[key] = convert(raw.replace(',', '.') if convert is float else raw)
+    if cities:
+        overrides = prompt_city_overrides()
+        if overrides:
+            options['city_overrides'] = overrides
     return options
+
+
+def prompt_city_overrides():
+    overrides = {}
+    names = list(CITIES)
+    print('Города: ' + ', '.join(f'{i}. {name}' for i, name in enumerate(names, 1)))
+    while True:
+        choice = input('Номер города для изменения [Enter — рассчитать]: ').strip()
+        if not choice:
+            return overrides
+        if not choice.isdecimal() or not 1 <= int(choice) <= len(names):
+            print('Введите номер из списка.')
+            continue
+        city = names[int(choice) - 1]
+        passengers = input(f'{city}: пассажиры за год [Enter — оставить]: ').strip()
+        growth = input('Годовой рост в % [Enter — оставить, ? — данных нет]: ').strip()
+        try:
+            change = {}
+            if passengers:
+                change['passengers'] = int(passengers)
+            if growth:
+                change['growth'] = None if growth == '?' else float(growth.replace(',', '.'))
+            if change:
+                overrides.setdefault(city, {}).update(change)
+        except ValueError:
+            print('Введите целое число пассажиров и числовой рост либо ?.')
+
+
+def print_city_ranking(result):
+    for row in result['ranking']:
+        city = row['city']
+        score = 'без балла' if row['score'] is None else f"{row['score']:.2f}"
+        growth = 'нет данных' if row['growth'] is None else f"{row['growth']:+.2f}%"
+        print(f"{row['rank'] or '—'}. {city}: {score}; рост {growth}; "
+              f"покрытие весов {row['coverage']:.0%}; диапазон балла "
+              f"{row['score_low']:.2f}–{row['score_high']:.2f}; "
+              f"место в стандарте {row['baseline_rank']}.")
+    print('Общая тройка: ' + (', '.join(result['top_three']) or 'нет оценки'))
+    print('Тройка для проверки новой базы: ' + (', '.join(result['top_three_new_base']) or 'нет оценки'))
 
 
 def main():
@@ -128,18 +206,25 @@ def main():
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--interactive', action='store_true', help='опрос в консоли')
     mode.add_argument('--scenario-file', type=Path, help='JSON с параметрами эксперимента')
+    parser.add_argument('--cities', action='store_true', help='рейтинг городов вместо расчёта рейсов')
     parser.add_argument('--output', type=Path, help='сохранить входы и результаты в JSON')
     args = parser.parse_args()
     try:
-        options = (prompt() if args.interactive else
+        options = (prompt(cities=args.cities) if args.interactive else
                    json.loads(args.scenario_file.read_text(encoding='utf-8')) if args.scenario_file else {})
-        result = simulate(options)
+        if not isinstance(options, dict):
+            raise ValueError('Файл сценария должен содержать объект JSON.')
+        result = simulate_cities(options) if args.cities else simulate(options)
         if args.output:
             with args.output.open('x', encoding='utf-8') as file:
                 json.dump(result, file, ensure_ascii=False, indent=2, allow_nan=False)
                 file.write('\n')
     except (OSError, ValueError, TypeError, AttributeError, EOFError) as error:
         parser.error(str(error))
+
+    if args.cities:
+        print_city_ranking(result)
+        return
 
     for plan in result['plans']:
         h, needed = plan['hypothesis'], plan['required_by_schedule']

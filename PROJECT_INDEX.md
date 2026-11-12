@@ -103,6 +103,7 @@
 
 | Файл | Суть |
 |---|---|
+| [scripts/simulate_strategy.py](scripts/simulate_strategy.py) | Калькулятор рейсов и рейтинга городов. [Режим городов](MODEL.md#режим-рейтинга-городов). |
 | [scripts/rank_cities.py](scripts/rank_cities.py) | Пересчитывает рейтинг городов и связанные графики/аналитику. |
 | [scripts/compare_growth_strategies.py](scripts/compare_growth_strategies.py) | Рассчитывает варианты H1/H2, сценарии, ресурс и маршрутные результаты. |
 | [scripts/check_strategy.py](scripts/check_strategy.py) | Независимые проверки арифметики и предметных ограничений модели. |

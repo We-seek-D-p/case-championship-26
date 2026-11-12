@@ -62,7 +62,7 @@ uv run --frozen --no-sync python scripts/compare_growth_strategies.py
 uv run --frozen --no-sync python scripts/check_strategy.py
 ```
 
-- `rank_cities.py` строит рейтинг городов и графики по сохранённым данным.
+- `rank_cities.py` строит рейтинг городов и графики по сохранённым данным. Для изменения весов и шкал запустите `uv run --frozen --no-sync python scripts/simulate_strategy.py --cities --interactive`. [Описание и пример](MODEL.md#режим-рейтинга-городов).
 - `compare_growth_strategies.py` рассчитывает оба варианта сети, сценарии, ротации и расходы.
 - `check_strategy.py` независимо сверяет арифметику, вместимость рейсов по направлениям, ротации и рейтинг, а также проверяет предметные граничные случаи. Для проверки готовых результатов достаточно только этой команды.
 

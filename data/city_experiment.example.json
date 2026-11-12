@@ -1,0 +1,6 @@
+{
+  "size_weight": 0.60,
+  "passenger_cap": 6000000,
+  "growth_min": -10,
+  "growth_max": 10
+}
