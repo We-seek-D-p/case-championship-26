@@ -6,7 +6,6 @@ import json
 import math
 import re
 import sys
-from statistics import geometric_mean
 from collections import defaultdict
 from pathlib import Path
 
@@ -108,13 +107,10 @@ def inputs(demand_method='common'):
         for n,(dest,block,fare,mult,capture,lon,lat) in enumerate(rows,1):
             # Analogs are published LINE volumes, not O&D. Cross-city scaling and
             # marginal capture are explicit judgments, not inferred observations.
-            if h=='H2':
-                analog = next(r for r in facts if r['destination']==('Минеральные Воды' if dest=='Минеральные Воды' else 'Новосибирск')
-                              and r['origin']==('Екатеринбург (Кольцово)' if dest=='Минеральные Воды' else 'Омск'))
-            else:
-                target = 'Минеральные Воды' if dest=='Минеральные Воды' else 'Казань'
-                analog = next(r for r in facts if r['destination']==target and
-                              r['origin']==('Самара (Курумоч)' if target=='Минеральные Воды' else 'Омск') and r['period']=='2025')
+            # Only one measured line volume is available from the selected base.
+            # Reuse it as a common scenario proxy, not as evidence for other pairs.
+            analog = next(r for r in facts if r['origin']=='Екатеринбург (Кольцово)'
+                          and r['destination']=='Минеральные Воды' and r['period']=='2025')
             evidence=[r for r in routes if {r['origin'],r['destination']}=={base,dest}]
             existing=any(r['airline']=='Red Wings' for r in evidence)
             records.append(dict(route_id=f'{h}-{n:02}', hypothesis=h, origin=base,destination=dest,
@@ -140,21 +136,24 @@ def inputs(demand_method='common'):
                               source_ref=f"../../data/SOURCE_MANIFEST.md#{r['source_id'].lower()}",
                               core_file=r['csv_file'],core_row=r['csv_row'],limitations=r['limitations']))
     if demand_method=='common':
-        # A neutral scenario anchor, NOT an estimate of unserved O&D. The same
-        # two observed lines and coefficient apply to every local market.
-        pool=[r for r in facts if r['origin']=='Омск' and r['destination'] in ('Казань','Новосибирск') and r['period']=='2025']
-        anchor=geometric_mean(float(r['passengers']) for r in pool)
+        # Single selected-base line observation used as a scenario proxy only;
+        # it does not establish demand on other local markets or O&D.
+        pool=[r for r in facts if r['origin']=='Екатеринбург (Кольцово)'
+              and r['destination']=='Минеральные Воды' and r['period']=='2025']
+        anchor=float(pool[0]['passengers'])
         for r in records:
             r['legacy_local_target']=r['annual_local_target']
             for key in tuple(r):
                 if key.startswith('analog_') or key=='marginal_capture':r['legacy_'+key]=r.pop(key)
-            r['demand_method']='common geometric midpoint of S23 Omsk-Kazan and Omsk-Novosibirsk; scenario, not O&D'
+            r['demand_method']='S40 Yekaterinburg-Mineralnye Vody 2025 line volume as common scenario proxy; not O&D'
             r['common_analog_passengers']=anchor
-            r['common_anchor_status']='calculated geometric midpoint of two observed line volumes, not another observation'
+            r['common_source_id']=pool[0]['source_id']
+            r['common_analog_pair']=pool[0]['origin']+' — '+pool[0]['destination']
+            r['common_anchor_status']='observed line volume reused as a scenario proxy, not demand on this route'
             r['common_capture']=POLICY['common_capture']
             r['annual_local_target']=anchor*POLICY['common_capture']
             r['local_target_status']='scenario; before seat cap, ramp and own displacement'
-            r['input_status']='legacy analogs are observed line volumes; common anchor is calculated; target, capture, fare, block time, frequency and coordinates are assumptions'
+            r['input_status']='S40 is an observed line volume; its use as a common anchor is a scenario assumption, not measured demand; capture, fare, block time, frequency and coordinates are assumptions'
             r['common_evidence_refs']=json.dumps([{k:p[k] for k in ('source_id','source_file','source_row','source_locator','source_url','passengers','period','unit')} for p in pool],ensure_ascii=False)
     write('fact_references.csv',fact_rows)
     return records, float(rw['value']),float(national['value'])*1e6
@@ -233,7 +232,7 @@ def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_facto
     # one-way connections/week (2 in one direction, 1 reverse). No all-to-all hub.
     for i in range(4):
         a,b=records[2*i:2*i+2]; ra,rb=byid[a['route_id']],byid[b['route_id']]
-        target=27510*.35*weeks/52*c['transfer_demand']*ramp*demand_factor
+        target=211000*.35*weeks/52*c['transfer_demand']*ramp*demand_factor
         # Direction with only one weekly connection limits total at symmetric
         # directional demand: no more than 2*100*weeks at the load ceiling.
         p=min(target,*(2*weeks*(POLICY['seats']*c['load']-r['local_segments']/(r['incremental_departures'])) for r in (ra,rb)))
@@ -245,7 +244,7 @@ def calculate(records, rot, rw, market, case, year, fare_factor=1., demand_facto
             r['transfer_segments']+=p;r['net_segments']+=net;r['net_revenue_rub']+=rev;revenue+=rev
         transfers.append(dict(scenario=case,year=year,origin=a['destination'],via='Уфа',destination=b['destination'],
                               gross_oneway_journeys=p,net_journeys=net,net_revenue_rub=revenue,
-                              demand_basis='S23 Omsk-Kazan 2025 27510 persons * assumed .35; seasonal/OD proxy',
+                              demand_basis='S40 Yekaterinburg-Mineralnye Vody 2025 211000 line passengers * assumed .35; proxy only, not Ufa transfer O&D',
                               status='scenario; symmetric directional demand; capacity checked'))
     summary=[]
     for h in ('H1','H2'):
@@ -424,7 +423,7 @@ def controls(records,rw,market):
             if design=='legacy_3RT':r['annual_local_target']=r['legacy_local_target']
             if design in ('legacy_3RT','common_3RT') and h=='H2':r['added_roundtrips_week']=3
             if design=='matched_block_116h' and h=='H2' and r['destination'] in ('Омск','Саратов','Нижний Новгород','Оренбург'):r['added_roundtrips_week']=3
-            if design in ('low_analog','high_analog'):r['annual_local_target']=(27510 if design=='low_analog' else 106309)*POLICY['common_capture']
+            if design in ('low_analog','high_analog'):r['annual_local_target']=(211000*(.75 if design=='low_analog' else 1.25))*POLICY['common_capture']
             if design=='H1_demand_up25_H2_down25':r['annual_local_target']*=1.25 if h=='H1' else .75
         saved=copy.deepcopy(CASES)
         try:
@@ -469,7 +468,7 @@ def controls(records,rw,market):
     write('stress_tests.csv',stress)
     _,baseline,_=calculate(records,rotations(records),rw,market,'base',2028)
     _,cautious,_=calculate(records,rotations(records),rw,market,'cautious',2028)
-    lo=records[0]['annual_local_target'];hi=106309*POLICY['common_capture']
+    lo=records[0]['annual_local_target'];hi=211000*1.25*POLICY['common_capture']
     for _ in range(60):
         midpoint=(lo+hi)/2
         trial=[dict(r,annual_local_target=midpoint) for r in records]
@@ -576,12 +575,12 @@ H2 — десять прямых пар из существующей базы �
 [S08](../data/SOURCE_MANIFEST.md#s08): 2,7 млн пассажиров Red Wings за 2025 год;
 [S03](../data/SOURCE_MANIFEST.md#s03): 108,85 млн пассажиров российских авиакомпаний.
 
-Для обеих H взят одинаковый сценарный ориентир по двум линиям
-[S23](../data/SOURCE_MANIFEST.md#s23), 2025 год: Омск—Казань — 27 510 пассажиров,
-Омск—Новосибирск — 106 309. Геометрическое среднее ×40% даёт около 21,6 тыс.
-местных сегментов на пару в год до ограничения креслами и вычета своих продаж.
-40% — допущение команды; это не измеренный O&D выбранных пар.
-В прежнем варианте H1 и H2 получали разные аналоги; его расчёт сохранён в контрольной таблице.
+Для единого сценарного ориентира использован поток линии Екатеринбург—Минеральные Воды
+за 2025 год: 211 000 пассажиров [S40](../data/SOURCE_MANIFEST.md#s40).
+Умножение на 40% даёт 84,4 тыс. сегментов на пару в год до ограничений;
+40% — допущение команды. Это не прогноз и не оценка O&D: поток одной линии
+используется только как сценарный proxy для сравнения, а не как доказательство
+спроса на остальных направлениях или в Уфе. Для запуска нужны данные по каждой паре.
 
 Для пары: кресла = 2 × обороты в неделю × рабочие недели ×100.
 Продажи = минимум спроса с освоением и кресел с потолком загрузки.
@@ -608,7 +607,7 @@ H1 соединяет через Уфу Нижний Новгород—Крас
 Местные продажи имеют приоритет, редкое направление ограничивает трансфер.
 
 Одна поездка занимает два кресла на разных сегментах и приносит один сквозной
-билет: 75% суммы тарифов двух плеч. Цель связки — 27 510 ×35% поездок в год;
+ билет: 75% суммы тарифов двух плеч. Цель связки — 211 000 ×35% поездок в год по тому же условному proxy;
 осторожно — ×0,55. Собственное замещение пересадок — 15%/30%.
 Предполагается, что перенесённые свои поездки тоже занимали два сегмента.
 [Расчёт пересадок](../results/strategy/transfer_scenarios.csv).
@@ -656,9 +655,8 @@ H1: 116,4 блок-ч/неделю; H2: 100,8. В модели обеих пол
 
 Базовый результат H1 — {b1['contribution_rub']/1e6:.0f} млн ₽, H2 — {b2['contribution_rub']/1e6:.0f} млн ₽.
 Разрыв невелик: снижение только тарифа H2 примерно на 2% меняет денежный выбор.
-Единый местный ориентир около 22,2 тыс. сегментов на пару вместо 21,6 тыс.
-также выводит H1 вперёд в базе. На высоком общем аналоге H1 лучше в обоих сценариях.
-Её преимущества — больший объём и дополнительные пересадочные связи;
+Результат зависит от сценарного ориентира спроса и ограничений креслами;
+общий proxy не заменяет фактические данные по каждой паре. Её преимущества — больший объём и дополнительные пересадочные связи;
 цена — новая база и зависимость от стыковок.
 
 На низком аналоге осторожно убыточны обе H. Совместный шок тарифа −20%, спроса

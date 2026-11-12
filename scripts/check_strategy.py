@@ -26,10 +26,12 @@ def main():
     rotations=read('results/strategy/weekly_rotations.csv')
     pilots=read('results/strategy/pilot_2027_rotations.csv')
     core=read('data/processed/core/route_passengers.csv')
-    anchors=[D(r['passengers']) for r in core if r['origin']=='Омск' and r['destination'] in ('Казань','Новосибирск') and r['period']=='2025']
-    target=(anchors[0]*anchors[1]).sqrt()*D('.4')
+    anchors=[D(r['passengers']) for r in core if r['origin']=='Екатеринбург (Кольцово)' and r['destination']=='Минеральные Воды' and r['period']=='2025']
+    assert len(anchors)==1 and anchors[0]==D('211000')
+    target=anchors[0]*D('.4')
     for r in inp.values():
         near(r['annual_local_target'],target)
+        assert r['common_source_id']=='S40' and r['common_analog_pair']=='Екатеринбург (Кольцово) — Минеральные Воды'
     for s in summary:
         h,c,y=s['hypothesis'],s['scenario'],s['year'];cautious=c=='cautious'
         ww=D(s['weeks']);load=D('.72' if cautious else '.85');demand=D('.75' if cautious else '1')

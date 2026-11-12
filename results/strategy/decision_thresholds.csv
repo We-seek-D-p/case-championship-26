@@ -1,4 +1,4 @@
 parameter,value,unit,condition
-H2_only_fare_multiplier_equal_H1_base,0.9791309444574803,multiplier,H1 base unchanged; H2 passengers and costs unchanged
-common_local_target_equal_cash_base,22195.772899540454,segments/route/year before capacity and displacement,both hypotheses same local target; transfer demand fixed; base 2028
-H2_cautious_block_cost_zero_cash,162186.71470766797,RUB/block-hour,cautious 2028; other assumptions unchanged
+H2_only_fare_multiplier_equal_H1_base,1.1599788971552776,multiplier,H1 base unchanged; H2 passengers and costs unchanged
+common_local_target_equal_cash_base,84400.0,segments/route/year before capacity and displacement,both hypotheses same local target; transfer demand fixed; base 2028
+H2_cautious_block_cost_zero_cash,167750.61050061052,RUB/block-hour,cautious 2028; other assumptions unchanged
