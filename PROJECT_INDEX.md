@@ -49,12 +49,24 @@
 | `data/processed/core/` | Четыре основные входные таблицы модели: `airports.csv` (показатели аэропортов), `route_passengers.csv` (потоки по линиям), `current_routes.csv` (маршруты и частоты), `market.csv` (рынок и перевозчики). |
 | `data/processed/airports/` | `attributes.csv`, `metrics.csv`, `relations.csv`, `sources.csv`: характеристики, показатели и связи аэропортов с источниками. |
 | `data/processed/airlines/` | `attributes.csv`, `fares.csv`, `metrics.csv`, `relations.csv`, `routes.csv`, `sources.csv`, `tariff_rules.csv`: флот, показатели, маршруты и тарифные сведения авиакомпаний. |
+| [data/processed/airlines/README.md](data/processed/airlines/README.md#статистика-аэрофлота-s72) | Описание S72: группа и авиакомпания Аэрофлот, январь 2014 — февраль 2025; поля, единицы, пропуски, исправление заголовка периода и сохранённые расхождения. Данные не включены в модель H1/H2. |
+| [data/processed/airlines/aeroflot_traffic_monthly.csv](data/processed/airlines/aeroflot_traffic_monthly.csv) | S72: абсолютные показатели отдельных месяцев, оба субъекта и три охвата перевозок. |
+| [data/processed/airlines/aeroflot_traffic_ytd.csv](data/processed/airlines/aeroflot_traffic_ytd.csv) | S72: абсолютные показатели с начала года; не суммировать с месячными. |
+| [data/processed/airlines/aeroflot_traffic_monthly_yoy.csv](data/processed/airlines/aeroflot_traffic_monthly_yoy.csv) | S72: опубликованные изменения отдельных месяцев к прошлому году; проценты, п.п. и кратности различаются. |
+| [data/processed/airlines/aeroflot_traffic_ytd_yoy.csv](data/processed/airlines/aeroflot_traffic_ytd_yoy.csv) | S72: опубликованные изменения накопленных показателей к прошлому году; расхождения с месячным блоком сохранены. |
 | `data/processed/flights/` | `russia_domestic_flights_2025.csv` и `scheduled_departures_winter_2026_27.csv`: опубликованные рейсы и варианты расписаний. Строка расписания не доказывает выполненный рейс. |
 | `data/processed/market/` | `articles.csv`, `S02.csv`, `S03_image13.csv`, `S05_pages.csv`, `sources.csv`: извлечённые отраслевые сведения и записи источников. |
 | `data/processed/schedules/` | `S19.csv` и `S20.csv`: сохранённые расписания из источников реестра. |
 | `data/raw/` | Локальные исходники, если они есть у владельца рабочего дерева. Каталог исключён из Git по правилам проекта; не публиковать и не добавлять в удалённый репозиторий. |
 
 ## Расчётные результаты — `results/`
+
+[Анализ Аэрофлота S72](analysis/13-aeroflot-benchmark.md) — масштаб, сезонность пассажиров и груза,
+коммерческие проверки для H2 и ограничения применения. Воспроизведение:
+[scripts/analyze_aeroflot_traffic.py](scripts/analyze_aeroflot_traffic.py), независимая проверка:
+[scripts/check_aeroflot_analysis.py](scripts/check_aeroflot_analysis.py).
+[results/aeroflot/README.md](results/aeroflot/README.md) описывает четыре расчётных CSV;
+[график сезонности](analysis/figures/aeroflot_seasonality.png) строится из этих данных.
 
 Таблицы в этом каталоге являются выходами расчётов; значения следует читать вместе с периодами, единицами и ограничениями в аналитике.
 
@@ -92,6 +104,7 @@
 | [scripts/rank_cities.py](scripts/rank_cities.py) | Пересчитывает рейтинг городов и связанные графики/аналитику. |
 | [scripts/compare_growth_strategies.py](scripts/compare_growth_strategies.py) | Рассчитывает варианты H1/H2, сценарии, ресурс и маршрутные результаты. |
 | [scripts/check_strategy.py](scripts/check_strategy.py) | Независимые проверки арифметики и предметных ограничений модели. |
+| [scripts/parse_aeroflot_traffic.py](scripts/parse_aeroflot_traffic.py) | Разбирает локальный XLS S72 в четыре CSV; `--check` сверяет готовую выгрузку без перезаписи. Команды — в README авиакомпаний; `xlrd==2.0.2` подключается временно через uv. |
 | [scripts/build_defense.py](scripts/build_defense.py) | Собирает PDF и таблицы сдачи по сохранённым результатам. Пересборка может перезаписать артефакты. |
 | [pyproject.toml](pyproject.toml), [uv.lock](uv.lock), [.python-version](.python-version) | Зависимости, lock-файл и версия Python проекта. |
 | [AGENTS.md](AGENTS.md) | Правила работы с данными, расчётами, отчётами и изменениями проекта. |

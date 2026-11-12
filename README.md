@@ -39,10 +39,16 @@
 - **[Сравнение Уфы и Екатеринбурга](analysis/08-strategy-decision.md)**, [рейтинг городов](analysis/06-city-ranking.md) и [план запуска](analysis/09-launch-roadmap.md).
 - **Расчёты:** [сводные результаты](results/strategy/hypothesis_comparison.csv), [параметры маршрутов](results/strategy/route_assumptions.csv), [допущения](results/strategy/assumptions.csv), [ротации пилота](results/strategy/pilot_2027_rotations.csv) и [полной программы](results/strategy/weekly_rotations.csv).
 - **[Источники данных](data/SOURCE_MANIFEST.md)** и [обработанные таблицы](data/processed/README.md).
+- **[Статистика Аэрофлота S72](data/processed/airlines/README.md#статистика-аэрофлота-s72)** — четыре CSV по группе и отдельной авиакомпании за январь 2014 — февраль 2025: месячные, накопленные и YoY-показатели. Справочная база для анализа масштаба, сезонности и загрузки; в модель H1/H2 не включена. В описании приведены ограничения и команды [парсера](scripts/parse_aeroflot_traffic.py).
 - **[Исследования с применением ИИ](research/README.md)** — отчёты и ссылки на использованные материалы; первоисточники приведены отдельно в каталоге данных.
 - **[Исходное задание](case/CASE_BRIEF.md)** и [комплект сдачи](submission/README.md).
 
 ## Как воспроизвести расчёты
+
+Справочное обоснование по Аэрофлоту — [сезонность и грузопоток для проверки H2](analysis/13-aeroflot-benchmark.md).
+Расчёты и происхождение чисел сохранены в [results/aeroflot/](results/aeroflot/README.md).
+Воспроизведение: `uv run --frozen --no-sync python scripts/analyze_aeroflot_traffic.py`;
+независимая сверка: `uv run --frozen --no-sync python scripts/check_aeroflot_analysis.py`.
 
 Нужны **Python 3.14** и **uv**. Зависимости описаны в `pyproject.toml` и зафиксированы в `uv.lock`; для первоначальной установки выполните `uv sync --frozen`.
 
