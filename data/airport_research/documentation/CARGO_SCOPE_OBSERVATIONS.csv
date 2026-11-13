@@ -1,0 +1,16 @@
+airport_iata,year,metric,value,unit,qualifier,observation_id,source_ids,source_locator,notes
+GOJ,2024,cargo_reported,1400,тонн,gt,B_R0217,B_GOJ24,"Основной текст, L76",
+GOJ,2024,freight_scope_unspecified_lower_bound,1400,tonne,gt,C_R0405,C_GOJ24,Абзац с общим грузопотоком,Общий грузопоток. «Более». Включение почты не определено.
+GOJ,2025,cargo_reported,1200,тонн,gt,B_R0236,B_GOJ25,"Основной текст, L75",
+GOJ,2025,freight_scope_unspecified_lower_bound,1200,tonne,gt,C_R0452,C_GOJ25,Абзац с общим грузопотоком,Общий грузопоток. «Более». Включение почты не определено.
+GSV,2024,cargo_mail_total_tonnes_lower_bound,579,tonne,gt,C_R0709,C_GSV24,Первый абзац,Строгая нижняя граница («более»).
+KUF,2024,cargo,2246.772,тонн,reported_precision,B_R0116,B_KUF2024F,"PDF, с.1, таблица 1, строка 1, графа 6",Заголовок формы: грузовые перевозки; включение почты не разъяснено. Не складывать с cargo_mail.
+MMK,2024,freight_scope_unspecified_tonnes,3237.133,tonne,reported,C_R0498,C_MMK24,Абзац о грузообороте,"В источнике 3 237,133 т. Включение почты не определено."
+NUX,2024,cargo_mail_total_tonnes_lower_bound,3800,tonne,gt,C_R0800,C_NUX24,Первый абзац,Строгая нижняя граница («более»).
+OVB,2024,cargo_reported,25110,тонн,rounded,B_R0421,B_OVB24,"Основной текст, L21",
+OVB,2025,cargo_reported,22838,тонн,rounded,B_R0441,B_OVB25,Тот же пост; строка общего грузопотока,
+SVX,2024,cargo_reported,14000,тонн,rounded,B_R0015,B_SVX24C,"Основной текст, L77; предложение о грузообороте",В источнике грузооборот в тоннах; разделение груза и почты не дано.
+SVX,2025,cargo_reported,13700,тонн,gt,B_R0035,B_SVX25,"Основной текст, L77",Грузооборот в тоннах; почта отдельно не указана.
+UUS,2024,terminal_reported_cargo_mail_tonnes,15731,tonne,reported,C_R0608,C_UUS_TERM,Абзац после пассажиропотока за декабрь,Масса груза и почты по отчёту АО «Аэровокзал» на площадке Хомутово. Полнота относительно иных обработчиков не подтверждена.
+UUS,2025,operator_group_cargo_tonnes,18499,tonne,reported,C_R0657,C_UUS25,Строка о грузе,Охват четырёх аэропортов.
+VOG,2024,cargo_mail_total_tonnes_lower_bound,453,tonne,gt,C_R0183,C_VOG24,Абзац о рейсах и грузах,Строгая нижняя граница («более»).

@@ -1,0 +1,13 @@
+# Летнее расписание 2025: пресс-релиз аэропорта
+
+Организация: Аэропорт Казань / АвиаПорт
+
+URL: https://www.aviaport.ru/news/mezhdunarodnyy-aeroport-kazan-pereshel-na-letnee-raspisanie-zaplanirovano-otkrytie-novykh-reysov/
+
+Дата публикации: не указана. Проверка: 2026-11-13.
+
+## Извлечённые сведения
+
+KZN–SYX: Аэрофлот, 2/нед., тип неизвестен; KZN–PVG: China Eastern Airlines, 3/нед., тип неизвестен; KZN–BEG: Air Serbia, 2/нед., тип неизвестен; KZN–MSQ: Belavia, 2/нед., тип неизвестен; KZN–TAS: Centrum Air, не указано/нед., тип неизвестен; KZN–TAS: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–NQZ: Red Wings, 3/нед., тип неизвестен; KZN–ALA: Red Wings, 2/нед., тип неизвестен; KZN–BUS: Red Wings, 2/нед., тип неизвестен; KZN–TBS: Red Wings, 3.5/нед., тип неизвестен; KZN–LED: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–KGD: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–MCX: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–KEJ: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–UUD: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–AER: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–MRV: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–TOF: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–OMS: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–IKT: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–RGK: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–KJA: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–MMK: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–NOZ: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–BAX: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–UFA: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–VOG: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–FRU: Nordwind Airlines, не указано/нед., тип неизвестен; KZN–PES: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–TOX: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–RGK: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–MQF: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–NJC: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–SKX: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–PEE: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–OMS: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–KLF: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–KVX: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–GOJ: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–KUF: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–USK: ЮВТ АЭРО, не указано/нед., тип неизвестен; KZN–IAR: ЮВТ АЭРО, не указано/нед., тип неизвестен
+
+Это краткая запись фактов, а не копия исходной публикации.

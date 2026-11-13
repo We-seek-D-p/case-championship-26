@@ -1,0 +1,4 @@
+airport_iata,as_of_date,metric,value,unit,value_origin,source_id,source_locator,notes
+UFA,2026-11-13,terminal_capacity_pax_hour,2300,person/hour,observed,UFA_GENERAL,Общая площадь и пропускная способность терминалов,Не пересчитывается в годовую мощность через 8760 часов.
+UFA,2026-11-13,contact_gates,9,gate,observed,UFA_GENERAL,Абзац о 9 контактных выходах,Телетрапы/выходы не равны общему числу мест стоянки.
+BQS,2024-12-31,new_apron_stands_added_in_2024,5,stand,observed,BQS_RUNWAY,Абзац о новом перроне 2024 года,"Подмножество стоянок: не общее число аэропорта. as_of_date — конец отчётного года, а не точная дата ввода."

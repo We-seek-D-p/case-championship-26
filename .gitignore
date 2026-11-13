@@ -21,9 +21,6 @@ node_modules/
 .slidev/
 .vite/
 
-# Generated presentation exports
-/artifacts/
-
 # Local configuration and system files
 .env
 .env.*

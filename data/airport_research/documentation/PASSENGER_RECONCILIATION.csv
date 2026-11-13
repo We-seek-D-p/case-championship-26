@@ -1,0 +1,193 @@
+airport_iata,year,check,metric,annual_value,comparison_value,difference,classification,notes
+AER,2024,month_sum_vs_annual,passengers_total,13725979,13725979,0,exact,Published monthly cells are preserved.
+AER,2024,month_sum_vs_annual,passengers_domestic,12020000,12020000,0,exact,Published monthly cells are preserved.
+AER,2024,month_sum_vs_annual,passengers_international,1705979,1705979,0,exact,Published monthly cells are preserved.
+AER,2024,annual_total_vs_domestic_international,passengers_total,13725979,13725979,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+AER,2025,month_sum_vs_annual,passengers_total,12475453,12475453,0,exact,Published monthly cells are preserved.
+AER,2025,month_sum_vs_annual,passengers_domestic,10700000,10700000,0,exact,Published monthly cells are preserved.
+AER,2025,month_sum_vs_annual,passengers_international,1800000,1800000,0,exact,Published monthly cells are preserved.
+AER,2025,annual_total_vs_domestic_international,passengers_total,12475453,12500000,-24547,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+BQS,2024,month_sum_vs_annual,passengers_total,928000,928000,0,exact,Published monthly cells are preserved.
+BQS,2024,month_sum_vs_annual,passengers_domestic,883852,883852,0,exact,Published monthly cells are preserved.
+BQS,2024,month_sum_vs_annual,passengers_international,44148,44148,0,exact,Published monthly cells are preserved.
+BQS,2024,annual_total_vs_domestic_international,passengers_total,928000,928000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+BQS,2025,month_sum_vs_annual,passengers_total,1051000,1051000,0,exact,Published monthly cells are preserved.
+BQS,2025,month_sum_vs_annual,passengers_domestic,1001000,1001000,0,exact,Published monthly cells are preserved.
+BQS,2025,month_sum_vs_annual,passengers_international,50000,50000,0,exact,Published monthly cells are preserved.
+BQS,2025,annual_total_vs_domestic_international,passengers_total,1051000,1051000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+CEK,2024,month_sum_vs_annual,passengers_total,2173235,2173235,0,exact,Published monthly cells are preserved.
+CEK,2024,month_sum_vs_annual,passengers_domestic,1924345,1924345,0,exact,Published monthly cells are preserved.
+CEK,2024,month_sum_vs_annual,passengers_international,248890,248890,0,exact,Published monthly cells are preserved.
+CEK,2024,annual_total_vs_domestic_international,passengers_total,2173235,2173235,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+CEK,2025,month_sum_vs_annual,passengers_total,2166689,2166689,0,exact,Published monthly cells are preserved.
+CEK,2025,month_sum_vs_annual,passengers_domestic,1912999,1912999,0,exact,Published monthly cells are preserved.
+CEK,2025,month_sum_vs_annual,passengers_international,247422,247422,0,exact,Published monthly cells are preserved.
+CEK,2025,annual_total_vs_domestic_international,passengers_total,2166689,2160421,6268,explicit_additive_transit,Transfer is not an additive component. Residual is never automatically named transit.
+DME,2024,month_sum_vs_annual,passengers_total,15553000,15553000,0,exact,Published monthly cells are preserved.
+DME,2024,month_sum_vs_annual,passengers_domestic,9914000,9914000,0,exact,Published monthly cells are preserved.
+DME,2024,month_sum_vs_annual,passengers_international,5639000,5639000,0,exact,Published monthly cells are preserved.
+DME,2024,annual_total_vs_domestic_international,passengers_total,15553000,15553000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+DME,2025,month_sum_vs_annual,passengers_total,13836000,13836000,0,exact,Published monthly cells are preserved.
+DME,2025,month_sum_vs_annual,passengers_domestic,8268000,8268000,0,exact,Published monthly cells are preserved.
+DME,2025,month_sum_vs_annual,passengers_international,5568000,5568000,0,exact,Published monthly cells are preserved.
+DME,2025,annual_total_vs_domestic_international,passengers_total,13836000,13836000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+GOJ,2024,month_sum_vs_annual,passengers_total,1470000,1470000,0,exact,Published monthly cells are preserved.
+GOJ,2024,month_sum_vs_annual,passengers_domestic,1160000,1160000,0,exact,Published monthly cells are preserved.
+GOJ,2024,month_sum_vs_annual,passengers_international,310000,310000,0,exact,Published monthly cells are preserved.
+GOJ,2024,annual_total_vs_domestic_international,passengers_total,1470000,1470000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+GOJ,2025,month_sum_vs_annual,passengers_total,1400000,1400000,0,exact,Published monthly cells are preserved.
+GOJ,2025,month_sum_vs_annual,passengers_domestic,1100000,1100000,0,exact,Published monthly cells are preserved.
+GOJ,2025,month_sum_vs_annual,passengers_international,357000,357000,0,exact,Published monthly cells are preserved.
+GOJ,2025,annual_total_vs_domestic_international,passengers_total,1400000,1457000,-57000,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+GSV,2024,month_sum_vs_annual,passengers_total,1150000,1150000,0,exact,Published monthly cells are preserved.
+GSV,2024,month_sum_vs_annual,passengers_domestic,1112000,1112000,0,exact,Published monthly cells are preserved.
+GSV,2024,month_sum_vs_annual,passengers_international,37500,37500,0,exact,Published monthly cells are preserved.
+GSV,2024,annual_total_vs_domestic_international,passengers_total,1150000,1149500,500,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+GSV,2025,month_sum_vs_annual,passengers_total,1064000,1064000,0,exact,Published monthly cells are preserved.
+GSV,2025,month_sum_vs_annual,passengers_domestic,1019000,1019000,0,exact,Published monthly cells are preserved.
+GSV,2025,month_sum_vs_annual,passengers_international,44600,44600,0,exact,Published monthly cells are preserved.
+GSV,2025,annual_total_vs_domestic_international,passengers_total,1064000,1063600,400,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+KGD,2024,month_sum_vs_annual,passengers_total,4814395,4814395,0,exact,Published monthly cells are preserved.
+KGD,2024,month_sum_vs_annual,passengers_domestic,4728947,4728947,0,exact,Published monthly cells are preserved.
+KGD,2024,month_sum_vs_annual,passengers_international,85448,85448,0,exact,Published monthly cells are preserved.
+KGD,2024,annual_total_vs_domestic_international,passengers_total,4814395,4814395,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+KGD,2025,month_sum_vs_annual,passengers_total,5015000,5015000,0,exact,Published monthly cells are preserved.
+KGD,2025,month_sum_vs_annual,passengers_domestic,4925992,4925992,0,exact,Published monthly cells are preserved.
+KGD,2025,month_sum_vs_annual,passengers_international,89008,89008,0,exact,Published monthly cells are preserved.
+KGD,2025,annual_total_vs_domestic_international,passengers_total,5015000,5015000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+KJA,2024,month_sum_vs_annual,passengers_total,4282721,4282668,-53,published_rounding_or_conflict,Published monthly cells are preserved.
+KJA,2024,month_sum_vs_annual,passengers_domestic,3499185,3499185,0,exact,Published monthly cells are preserved.
+KJA,2024,month_sum_vs_annual,passengers_international,747226,747226,0,exact,Published monthly cells are preserved.
+KJA,2024,annual_total_vs_domestic_international,passengers_total,4282721,4246411,36310,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+KJA,2025,month_sum_vs_annual,passengers_total,4263566,4263566,0,exact,Published monthly cells are preserved.
+KJA,2025,month_sum_vs_annual,passengers_domestic,3421272,3421272,0,exact,Published monthly cells are preserved.
+KJA,2025,month_sum_vs_annual,passengers_international,786939,786939,0,exact,Published monthly cells are preserved.
+KJA,2025,annual_total_vs_domestic_international,passengers_total,4263566,4208211,55355,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+KUF,2024,month_sum_vs_annual,passengers_total,3567165,3567165,0,exact,Published monthly cells are preserved.
+KUF,2024,month_sum_vs_annual,passengers_domestic,2800000,2800000,0,exact,Published monthly cells are preserved.
+KUF,2024,month_sum_vs_annual,passengers_international,767165,767165,0,exact,Published monthly cells are preserved.
+KUF,2024,annual_total_vs_domestic_international,passengers_total,3567165,3567165,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+KUF,2025,month_sum_vs_annual,passengers_total,3570000,3570000,0,exact,Published monthly cells are preserved.
+KUF,2025,month_sum_vs_annual,passengers_domestic,2750000,2750000,0,exact,Published monthly cells are preserved.
+KUF,2025,month_sum_vs_annual,passengers_international,822000,822000,0,exact,Published monthly cells are preserved.
+KUF,2025,annual_total_vs_domestic_international,passengers_total,3570000,3572000,-2000,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+KZN,2024,month_sum_vs_annual,passengers_total,5369200,5369200,0,exact,Published monthly cells are preserved.
+KZN,2024,month_sum_vs_annual,passengers_domestic,3895302,3895302,0,exact,Published monthly cells are preserved.
+KZN,2024,month_sum_vs_annual,passengers_international,1473898,1473898,0,exact,Published monthly cells are preserved.
+KZN,2024,annual_total_vs_domestic_international,passengers_total,5369200,5369200,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+KZN,2025,month_sum_vs_annual,passengers_total,5384400,5384400,0,exact,Published monthly cells are preserved.
+KZN,2025,month_sum_vs_annual,passengers_domestic,3906329,3906329,0,exact,Published monthly cells are preserved.
+KZN,2025,month_sum_vs_annual,passengers_international,1478071,1478071,0,exact,Published monthly cells are preserved.
+KZN,2025,annual_total_vs_domestic_international,passengers_total,5384400,5384400,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+LED,2024,month_sum_vs_annual,passengers_total,20900000,20900000,0,exact,Published monthly cells are preserved.
+LED,2024,month_sum_vs_annual,passengers_domestic,16700000,16700000,0,exact,Published monthly cells are preserved.
+LED,2024,month_sum_vs_annual,passengers_international,4200000,4200000,0,exact,Published monthly cells are preserved.
+LED,2024,annual_total_vs_domestic_international,passengers_total,20900000,20900000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+LED,2025,month_sum_vs_annual,passengers_total,20800000,20800000,0,exact,Published monthly cells are preserved.
+LED,2025,month_sum_vs_annual,passengers_domestic,15900000,15900000,0,exact,Published monthly cells are preserved.
+LED,2025,month_sum_vs_annual,passengers_international,4900000,4900000,0,exact,Published monthly cells are preserved.
+LED,2025,annual_total_vs_domestic_international,passengers_total,20800000,20800000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+MMK,2024,month_sum_vs_annual,passengers_total,1466649,1466649,0,exact,Published monthly cells are preserved.
+MMK,2024,month_sum_vs_annual,passengers_domestic,1466354,1466354,0,exact,Published monthly cells are preserved.
+MMK,2024,month_sum_vs_annual,passengers_international,295,295,0,exact,Published monthly cells are preserved.
+MMK,2024,annual_total_vs_domestic_international,passengers_total,1466649,1466649,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+MMK,2025,month_sum_vs_annual,passengers_total,1410000,1410000,0,exact,Published monthly cells are preserved.
+MMK,2025,month_sum_vs_annual,passengers_domestic,1409984,1409984,0,exact,Published monthly cells are preserved.
+MMK,2025,month_sum_vs_annual,passengers_international,16,16,0,exact,Published monthly cells are preserved.
+MMK,2025,annual_total_vs_domestic_international,passengers_total,1410000,1410000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+MRV,2024,month_sum_vs_annual,passengers_total,4860000,4860000,0,exact,Published monthly cells are preserved.
+MRV,2024,month_sum_vs_annual,passengers_domestic,3790000,3790000,0,exact,Published monthly cells are preserved.
+MRV,2024,month_sum_vs_annual,passengers_international,1070000,1070000,0,exact,Published monthly cells are preserved.
+MRV,2024,annual_total_vs_domestic_international,passengers_total,4860000,4860000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+MRV,2025,month_sum_vs_annual,passengers_total,4600000,4600000,0,exact,Published monthly cells are preserved.
+MRV,2025,month_sum_vs_annual,passengers_domestic,3400000,3400000,0,exact,Published monthly cells are preserved.
+MRV,2025,month_sum_vs_annual,passengers_international,1200000,1200000,0,exact,Published monthly cells are preserved.
+MRV,2025,annual_total_vs_domestic_international,passengers_total,4600000,4600000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+NUX,2024,month_sum_vs_annual,passengers_total,1076000,1076000,0,exact,Published monthly cells are preserved.
+NUX,2024,month_sum_vs_annual,passengers_domestic,1076000,1076000,0,exact,Published monthly cells are preserved.
+NUX,2024,month_sum_vs_annual,passengers_international,0,0,0,exact,Published monthly cells are preserved.
+NUX,2024,annual_total_vs_domestic_international,passengers_total,1076000,1076000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+NUX,2025,month_sum_vs_annual,passengers_total,1037000,1037000,0,exact,Published monthly cells are preserved.
+NUX,2025,month_sum_vs_annual,passengers_domestic,1037000,1037000,0,exact,Published monthly cells are preserved.
+NUX,2025,month_sum_vs_annual,passengers_international,0,0,0,exact,Published monthly cells are preserved.
+NUX,2025,annual_total_vs_domestic_international,passengers_total,1037000,1037000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+OMS,2024,month_sum_vs_annual,passengers_total,1726029,1726029,0,exact,Published monthly cells are preserved.
+OMS,2024,month_sum_vs_annual,passengers_domestic,1479678,1479678,0,exact,Published monthly cells are preserved.
+OMS,2024,month_sum_vs_annual,passengers_international,246351,246351,0,exact,Published monthly cells are preserved.
+OMS,2024,annual_total_vs_domestic_international,passengers_total,1726029,1726029,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+OMS,2025,month_sum_vs_annual,passengers_total,1629761,1629761,0,exact,Published monthly cells are preserved.
+OMS,2025,month_sum_vs_annual,passengers_domestic,1397150,1397150,0,exact,Published monthly cells are preserved.
+OMS,2025,month_sum_vs_annual,passengers_international,232611,232611,0,exact,Published monthly cells are preserved.
+OMS,2025,annual_total_vs_domestic_international,passengers_total,1629761,1629761,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+OVB,2024,month_sum_vs_annual,passengers_total,9299000,9299000,0,exact,Published monthly cells are preserved.
+OVB,2024,month_sum_vs_annual,passengers_domestic,7578000,7578000,0,exact,Published monthly cells are preserved.
+OVB,2024,month_sum_vs_annual,passengers_international,1720000,1720000,0,exact,Published monthly cells are preserved.
+OVB,2024,annual_total_vs_domestic_international,passengers_total,9299000,9298000,1000,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+OVB,2025,month_sum_vs_annual,passengers_total,9682000,9682000,0,exact,Published monthly cells are preserved.
+OVB,2025,month_sum_vs_annual,passengers_domestic,7608000,7608000,0,exact,Published monthly cells are preserved.
+OVB,2025,month_sum_vs_annual,passengers_international,2074000,2074000,0,exact,Published monthly cells are preserved.
+OVB,2025,annual_total_vs_domestic_international,passengers_total,9682000,9682000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+PEE,2024,month_sum_vs_annual,passengers_total,1971678,1971678,0,exact,Published monthly cells are preserved.
+PEE,2024,month_sum_vs_annual,passengers_domestic,1690266,1690266,0,exact,Published monthly cells are preserved.
+PEE,2024,month_sum_vs_annual,passengers_international,281412,281412,0,exact,Published monthly cells are preserved.
+PEE,2024,annual_total_vs_domestic_international,passengers_total,1971678,1971678,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+PEE,2025,month_sum_vs_annual,passengers_total,2004861,2004861,0,exact,Published monthly cells are preserved.
+PEE,2025,month_sum_vs_annual,passengers_domestic,1707582,1707582,0,exact,Published monthly cells are preserved.
+PEE,2025,month_sum_vs_annual,passengers_international,284295,284295,0,exact,Published monthly cells are preserved.
+PEE,2025,annual_total_vs_domestic_international,passengers_total,2004861,1991877,12984,explicit_additive_transit,Transfer is not an additive component. Residual is never automatically named transit.
+SVO,2024,month_sum_vs_annual,passengers_total,43403000,43403000,0,exact,Published monthly cells are preserved.
+SVO,2024,month_sum_vs_annual,passengers_domestic,30886000,30886000,0,exact,Published monthly cells are preserved.
+SVO,2024,month_sum_vs_annual,passengers_international,12517000,12517000,0,exact,Published monthly cells are preserved.
+SVO,2024,annual_total_vs_domestic_international,passengers_total,43403000,43403000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+SVO,2025,month_sum_vs_annual,passengers_total,43127000,43127000,0,exact,Published monthly cells are preserved.
+SVO,2025,month_sum_vs_annual,passengers_domestic,29635000,29635000,0,exact,Published monthly cells are preserved.
+SVO,2025,month_sum_vs_annual,passengers_international,13492000,13492000,0,exact,Published monthly cells are preserved.
+SVO,2025,annual_total_vs_domestic_international,passengers_total,43127000,43127000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+SVX,2024,month_sum_vs_annual,passengers_total,8047000,8047000,0,exact,Published monthly cells are preserved.
+SVX,2024,month_sum_vs_annual,passengers_domestic,5834075,5834075,0,exact,Published monthly cells are preserved.
+SVX,2024,month_sum_vs_annual,passengers_international,2212925,2212925,0,exact,Published monthly cells are preserved.
+SVX,2024,annual_total_vs_domestic_international,passengers_total,8047000,8047000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+SVX,2025,month_sum_vs_annual,passengers_total,8385000,8385000,0,exact,Published monthly cells are preserved.
+SVX,2025,month_sum_vs_annual,passengers_domestic,5800000,5800000,0,exact,Published monthly cells are preserved.
+SVX,2025,month_sum_vs_annual,passengers_international,2600000,2600000,0,exact,Published monthly cells are preserved.
+SVX,2025,annual_total_vs_domestic_international,passengers_total,8385000,8400000,-15000,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+UFA,2024,month_sum_vs_annual,passengers_total,4753742,4753742,0,exact,Published monthly cells are preserved.
+UFA,2024,month_sum_vs_annual,passengers_domestic,3880606,3880606,0,exact,Published monthly cells are preserved.
+UFA,2024,month_sum_vs_annual,passengers_international,873136,873136,0,exact,Published monthly cells are preserved.
+UFA,2024,annual_total_vs_domestic_international,passengers_total,4753742,4753742,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+UFA,2025,month_sum_vs_annual,passengers_total,4929715,4929715,0,exact,Published monthly cells are preserved.
+UFA,2025,month_sum_vs_annual,passengers_domestic,4000000,4000000,0,exact,Published monthly cells are preserved.
+UFA,2025,month_sum_vs_annual,passengers_international,900000,900000,0,exact,Published monthly cells are preserved.
+UFA,2025,annual_total_vs_domestic_international,passengers_total,4929715,4900000,29715,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+UUS,2024,month_sum_vs_annual,passengers_total,1455824,1455824,0,exact,Published monthly cells are preserved.
+UUS,2024,month_sum_vs_annual,passengers_domestic,1437700,1437700,0,exact,Published monthly cells are preserved.
+UUS,2024,month_sum_vs_annual,passengers_international,18124,18124,0,exact,Published monthly cells are preserved.
+UUS,2024,annual_total_vs_domestic_international,passengers_total,1455824,1455824,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+UUS,2025,month_sum_vs_annual,passengers_total,1455691,1455691,0,exact,Published monthly cells are preserved.
+UUS,2025,month_sum_vs_annual,passengers_domestic,1433663,1433663,0,exact,Published monthly cells are preserved.
+UUS,2025,month_sum_vs_annual,passengers_international,22028,22028,0,exact,Published monthly cells are preserved.
+UUS,2025,annual_total_vs_domestic_international,passengers_total,1455691,1455691,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+VKO,2024,month_sum_vs_annual,passengers_total,16106210,16107000,790,published_rounding_or_conflict,Published monthly cells are preserved.
+VKO,2024,month_sum_vs_annual,passengers_domestic,7069335,7071000,1665,published_rounding_or_conflict,Published monthly cells are preserved.
+VKO,2024,month_sum_vs_annual,passengers_international,9036875,9036000,-875,published_rounding_or_conflict,Published monthly cells are preserved.
+VKO,2024,annual_total_vs_domestic_international,passengers_total,16106210,16106210,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+VKO,2025,month_sum_vs_annual,passengers_total,16403627,16405000,1373,published_rounding_or_conflict,Published monthly cells are preserved.
+VKO,2025,month_sum_vs_annual,passengers_domestic,6806412,6807000,588,published_rounding_or_conflict,Published monthly cells are preserved.
+VKO,2025,month_sum_vs_annual,passengers_international,9597215,9595000,-2215,published_rounding_or_conflict,Published monthly cells are preserved.
+VKO,2025,annual_total_vs_domestic_international,passengers_total,16403627,16403627,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+VOG,2024,month_sum_vs_annual,passengers_total,1682843,1682843,0,exact,Published monthly cells are preserved.
+VOG,2024,month_sum_vs_annual,passengers_domestic,1519000,1519000,0,exact,Published monthly cells are preserved.
+VOG,2024,month_sum_vs_annual,passengers_international,163350,163350,0,exact,Published monthly cells are preserved.
+VOG,2024,annual_total_vs_domestic_international,passengers_total,1682843,1682350,493,unresolved_scope_or_rounding,Transfer is not an additive component. Residual is never automatically named transit.
+VOG,2025,month_sum_vs_annual,passengers_total,1540278,1540278,0,exact,Published monthly cells are preserved.
+VOG,2025,month_sum_vs_annual,passengers_domestic,1435591,1435591,0,exact,Published monthly cells are preserved.
+VOG,2025,month_sum_vs_annual,passengers_international,104687,104687,0,exact,Published monthly cells are preserved.
+VOG,2025,annual_total_vs_domestic_international,passengers_total,1540278,1540278,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+ZIA,2024,month_sum_vs_annual,passengers_total,1491000,1491000,0,exact,Published monthly cells are preserved.
+ZIA,2024,month_sum_vs_annual,passengers_domestic,231000,231000,0,exact,Published monthly cells are preserved.
+ZIA,2024,month_sum_vs_annual,passengers_international,1260000,1260000,0,exact,Published monthly cells are preserved.
+ZIA,2024,annual_total_vs_domestic_international,passengers_total,1491000,1491000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.
+ZIA,2025,month_sum_vs_annual,passengers_total,1426000,1426000,0,exact,Published monthly cells are preserved.
+ZIA,2025,month_sum_vs_annual,passengers_domestic,220930,220930,0,exact,Published monthly cells are preserved.
+ZIA,2025,month_sum_vs_annual,passengers_international,1205070,1205070,0,exact,Published monthly cells are preserved.
+ZIA,2025,annual_total_vs_domestic_international,passengers_total,1426000,1426000,0,exact,Transfer is not an additive component. Residual is never automatically named transit.

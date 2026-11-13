@@ -1,0 +1,89 @@
+airport_iata,airport_ident,airport_name,city,country,latitude,longitude
+MIR,DTMB,Monastir Habib Bourguiba International Airport,Monastir,TN,35.75809860229492,10.75469970703125
+HRG,HEGN,Hurghada International Airport,Hurghada,EG,27.176776,33.796692
+SSH,HESH,Sharm El Sheikh International Airport,Sharm El Sheikh,EG,27.977272,34.394717
+TLV,LLBG,Ben Gurion International Airport,Tel Aviv,IL,32.011398,34.8867
+AYT,LTAI,Antalya International Airport,Antalya,TR,36.898701,30.800501
+IST,LTFM,İstanbul Airport,Istanbul,TR,41.274874,28.732136
+BEG,LYBE,Belgrade Nikola Tesla Airport,Belgrade,RS,44.818401,20.309099
+ALA,UAAA,Almaty International Airport,Almaty,KZ,43.354267,77.042828
+NQZ,UACC,Nursultan Nazarbayev International Airport,Astana,KZ,51.027035,71.467094
+GYD,UBBB,Heydar Aliyev International Airport,Baku,AZ,40.47278,50.050931
+EVN,UDYZ,Zvartnots International Airport,Yerevan,AM,40.148941,44.397887
+YKS,UEEE,Platon Oyunsky Yakutsk International Airport,Yakutsk,RU,62.0933,129.770996
+KUT,UGKO,David the Builder Kutaisi International Airport,Kopitnari,GE,42.177448,42.485353
+BUS,UGSB,Alexander Kartveli Batumi International Airport,Batumi,GE,41.60939,41.600315
+TBS,UGTB,Tbilisi International Airport,Tbilisi,GE,41.669201,44.9547
+BQS,UHBB,Ignatyevo Airport,Blagoveschensk,RU,50.426723,127.415502
+KHV,UHHH,Khabarovsk Novy Airport,Khabarovsk,RU,48.528338,135.188588
+UUS,UHSS,Yuzhno-Sakhalinsk International Airport,Yuzhno-Sakhalinsk,RU,46.885461,142.717466
+VVO,UHWW,Vladivostok International Airport,Artyom,RU,43.396256,132.148155
+IKT,UIII,Irkutsk International Airport,Irkutsk,RU,52.266707,104.395563
+UUD,UIUU,Baikal International Airport,Ulan Ude,RU,51.808614,107.439652
+ARH,ULAA,Talagi Airport,Archangelsk,RU,64.60030364990234,40.71670150756836
+LED,ULLI,Pulkovo Airport,St. Petersburg,RU,59.800301,30.262501
+MMK,ULMM,Emperor Nicholas II Murmansk Airport,Murmansk,RU,68.7817,32.750801
+PES,ULPB,Petrozavodsk Airport,Petrozavodsk,RU,61.885201,34.154701
+CEE,ULWC,Cherepovets Airport,Cherepovets,RU,59.273601532,38.015800476100004
+KGD,UMKK,Khrabrovo Airport,Kaliningrad,RU,54.89161,20.598559
+MSQ,UMMS,Minsk National Airport,Minsk,BY,53.888071,28.039964
+ABA,UNAA,Abakan International Airport,Abakan,RU,53.740002,91.385002
+BAX,UNBB,Barnaul Gherman Titov International Airport,Barnaul,RU,53.361285,83.539701
+RGK,UNBG,Gorno-Altaysk Airport,Gorno-Altaysk,RU,51.969204,85.836539
+KEJ,UNEE,Alexei Leonov Kemerovo International Airport,Kemerovo,RU,55.2701,86.107201
+KJA,UNKL,Krasnoyarsk International Airport,Krasnoyarsk,RU,56.175743,92.485788
+OVB,UNNT,Novosibirsk Tolmachevo Airport,Novosibirsk,RU,55.019756,82.618675
+OMS,UNOO,Omsk Central Airport,Omsk,RU,54.963124,73.312418
+TOF,UNTT,Tomsk Kamov Airport,Tomsk,RU,56.380299,85.208298
+NOZ,UNWW,Spichenkovo Airport,Novokuznetsk,RU,53.811401,86.877197
+NSK,UOOO,Alykel International Airport,Norilsk,RU,69.307951,87.325906
+GDZ,URKG,Gelendzhik Airport,Gelendzhik,RU,44.5820926295,38.0124807358
+MCX,URML,Makhachkala Uytash International Airport,Makhachkala,RU,42.816799,47.652302
+MRV,URMM,Mineralnye Vody Airport,Mineralnyye Vody,RU,44.225101,43.081902
+NAL,URMN,Nalchik Airport,Nalchik,RU,43.512901,43.6366
+OGZ,URMO,Vladikavkaz Beslan International Airport,Beslan,RU,43.205101,44.606602
+IGT,URMS,Magas Airport,Sunzha,RU,43.323268,45.012568
+STW,URMT,Stavropol Shpakovskoye Airport,Stavropol,RU,45.10919952392578,42.11280059814453
+AER,URSS,Sochi International Airport,Sochi,RU,43.449902,39.9566
+ASF,URWA,Astrakhan Narimanovo Boris M. Kustodiev International Airport,Astrakhan,RU,46.282843,48.010511
+ESL,URWI,Elista Airport,Elista,RU,46.373901,44.330898
+VOG,URWW,Volgograd International Airport,Volgograd,RU,48.78134,44.339194
+CEK,USCC,Kurchatov Chelyabinsk International Airport,Chelyabinsk,RU,55.303141,61.504927
+MQF,USCM,Magnitogorsk International Airport,Magnitogorsk,RU,53.391991,58.755235
+NYA,USHN,Nyagan Airport,Nyagan,RU,62.110001,65.614998
+EYK,USHQ,Beloyarskiy Airport,,RU,63.686901,66.698601
+IJK,USII,Izhevsk Airport,Izhevsk,RU,56.834524,53.462172
+KVX,USKK,Pobedilovo Airport,Kirov,RU,58.503883,49.347831
+NUX,USMU,Novy Urengoy Airport,Novy Urengoy,RU,66.06939697265625,76.52030181884766
+NJC,USNN,Nizhnevartovsk Airport,Nizhnevartovsk,RU,60.949299,76.483597
+PEE,USPP,Perm International Airport,Perm,RU,57.914501,56.021198
+SGC,USRR,Surgut International Airport,Surgut,RU,61.340501,73.405782
+SVX,USSS,Koltsovo Airport,Yekaterinburg,RU,56.743099212646,60.802700042725
+TOX,USTO,Tobolsk Airport,Tobolsk,RU,58.135799,68.231903
+TJM,USTR,Roshchino International Airport,Tyumen,RU,57.178984,65.327696
+BHK,UTSB,Bukhara International Airport,Bukhara,UZ,39.775319,64.482279
+SKD,UTSS,Samarkand International Airport,Samarkand,UZ,39.701842,66.981467
+TAS,UTTT,Tashkent International Airport,Tashkent,UZ,41.2579,69.281197
+KLF,UUBC,Grabtsevo Airport,Kaluga,RU,54.5499992371,36.3666687012
+ZIA,UUBW,Zhukovsky International Airport,Moscow,RU,55.553299,38.150002
+DME,UUDD,Domodedovo International Airport,Moscow,RU,55.408798,37.9063
+IAR,UUDL,Golden Ring Yaroslavl International Airport,Tunoshna,RU,57.560699,40.157398
+SVO,UUEE,Sheremetyevo International Airport,Moscow,RU,55.977486,37.386677
+VKO,UUWW,Vnukovo International Airport,Moscow,RU,55.591499,37.261501
+USK,UUYS,Usinsk Airport,Usinsk,RU,66.0047,57.367199
+GOJ,UWGG,Nizhny Novgorod / Strigino International Airport,Nizhny Novgorod,RU,56.227351,43.785152
+KZN,UWKD,Kazan International Airport,Kazan,RU,55.606201,49.278702
+ULV,UWLL,Ulyanovsk Baratayevka Airport,Ulyanovsk,RU,54.27016,48.225569
+REN,UWOO,Orenburg Central Airport,Orenburg,RU,51.792668,55.457229
+OSW,UWOR,Orsk Airport,Orsk,RU,51.072498,58.5956
+PEZ,UWPP,Penza Airport,Penza,RU,53.1106,45.021099
+SKX,UWPS,Saransk International Airport,Saransk,RU,54.12513,45.212257
+GSV,UWSG,Gagarin International Airport,Saratov,RU,51.712778,46.171111
+UFA,UWUU,Ufa International Airport,Ufa,RU,54.557499,55.874401
+KUF,UWWW,Kurumoch International Airport,Samara,RU,53.504902,50.164299
+HRI,VCRI,Mattala Rajapaksa International Airport,Mattala,LK,6.283878,81.124163
+HKT,VTSP,Phuket International Airport,Phuket,TH,8.113257,98.3174
+CXR,VVCR,Cam Ranh International Airport / Cam Ranh Air Base,Nha Trang/nha Trang aiurportCam Ranh,VN,11.9982,109.219002
+PEK,ZBAA,Beijing Capital International Airport,Beijing,CN,40.077349,116.596702
+SYX,ZJSY,Sanya Phoenix International Airport,Sanya (Tianya),CN,18.3029,109.412003
+PVG,ZSPD,Shanghai Pudong International Airport,Shanghai (Pudong),CN,31.1434,121.805
