@@ -1,0 +1,16 @@
+{
+  "name": "redwings-slides",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.15.0",
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export --output ../artifacts/redwings.pdf"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^53.1.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "playwright-chromium": "^1.65.0"
+  }
+}

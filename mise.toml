@@ -1,0 +1,13 @@
+[tools]
+python = "3.14"
+node = "24"
+pnpm = "12.15.0"
+
+[tasks.sync]
+run = "pnpm -C presentation install --frozen-lockfile"
+
+[tasks."presentation:dev"]
+run = "pnpm -C presentation dev"
+
+[tasks."presentation:pdf"]
+run = "pnpm -C presentation export"
