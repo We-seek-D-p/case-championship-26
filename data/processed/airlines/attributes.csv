@@ -1,3 +1,0 @@
-source_id,raw_path,source_locator,source_excerpt,entity,period,attribute,value,scope,record_kind,limitations
-S61,data/raw/airlines/S61__bortovoy_zhurnal_vash_azimut_97.pdf,pdf page=60; normalized_text_chars=315:322,100/103,Азимут,issue_2026-01,cabin_configuration,100/103 кресла,SSJ100,reported_specification,Типовая характеристика из журнала; не подтверждает конфигурацию конкретного борта
-S61,data/raw/airlines/S61__bortovoy_zhurnal_vash_azimut_97.pdf,pdf page=60; normalized_text_chars=561:568,SaM-146,Азимут,issue_2026-01,engine,два турбореактивных двигателя SaM-146,SSJ100,reported_specification,Типовая характеристика из журнала; не подтверждает конфигурацию конкретного борта

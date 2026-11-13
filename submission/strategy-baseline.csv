@@ -1,4 +1,0 @@
-entity,period,passengers,unit,source_id,source_file,source_row,source_locator,source_url,status
-Red Wings,2025,2700000,passenger,S08,data/processed/airlines/metrics.csv,5,html class=post; occurrence=2; normalized_text_chars=776:794,https://flyredwings.com/en/press/news/red-wings-perevezla-za-god-na-rossijskix-samoletax-2-mln-passazhirov-i-2-sovy/,reported; user strategy contract
-Победа,2025,13800000,passenger,BASE-PBD,user task 2026-11-10,,Общий контракт стратегии; подтверждение Интерфакс 15.01.2026,https://www.interfax.ru/business/1067812,reported rounded; rank 2 per user strategy contract
-S7,2025,12800000,passenger,BASE-S7,user task 2026-11-10,,Общий контракт стратегии; S7 О компании; итоги 2025,https://www.s7.ru/ru/pages/o-kompanii/,reported rounded; comparison only
