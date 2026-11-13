@@ -1,0 +1,141 @@
+import { z } from 'zod'
+const n = z.number().finite().nonnegative(),
+  ratio = n.max(1),
+  nullable = n.nullable()
+export const routeSchema = z.object({
+  id: z.string(),
+  destination: z.string(),
+  enabled: z.boolean(),
+  type: z.string(),
+  seats: nullable,
+  frequency: n.int().max(14),
+  lf: ratio.nullable(),
+  fare: nullable,
+  bh: nullable,
+  cost: nullable,
+  od: nullable,
+  capture: ratio,
+})
+export const allocationSchema = z.object({
+  type: z.string(),
+  available: n.int(),
+  working: n.int(),
+  reserve: n.int(),
+  peak: n.int(),
+  resource: nullable,
+  fixed: nullable,
+})
+export const scenarioSchema = z.object({
+  schemaVersion: z.literal(1),
+  dataRevision: z.string(),
+  name: z.string().min(1),
+  year: n.int().min(2026).max(2100),
+  base: z.string(),
+  hub: z.boolean(),
+  transfers: z.boolean(),
+  weeks: n.int().min(1).max(53),
+  lf: ratio,
+  tariff: n,
+  expense: n,
+  ancillary: n,
+  passengerCost: n,
+  cannibalization: ratio,
+  lostMargin: n,
+  displacedP: n,
+  displacedCM: n,
+  baseCost: n,
+  personnel: n,
+  infrastructure: n,
+  launch: n,
+  discount: ratio,
+  transferShare: ratio,
+  mct: n,
+  routes: z.array(routeSchema),
+  fleet: z.array(allocationSchema),
+  cargo: z.object({
+    enabled: z.boolean(),
+    kg: n,
+    tariff: n,
+    handling: n,
+    weight: n,
+    commission: ratio,
+    fixed: n,
+    limit: nullable,
+  }),
+})
+export type Scenario = z.infer<typeof scenarioSchema>
+export type Route = z.infer<typeof routeSchema>
+export function preset(id: string, revision = ''): Scenario {
+  const hub = id === 'S2',
+    zero = id === 'S0',
+    stress = id === 'stress'
+  return {
+    schemaVersion: 1,
+    dataRevision: revision,
+    name: zero
+      ? 'S0 · Без дополнительной программы'
+      : hub
+        ? 'S2 · NUX · Новый хаб'
+        : stress
+          ? 'S1 · Осторожный'
+          : 'S1 · MRV · Действующая база',
+    year: 2028,
+    base: hub ? 'NUX' : 'MRV',
+    hub,
+    transfers: hub,
+    weeks: 52,
+    lf: stress ? 0.7 : 0.82,
+    tariff: stress ? 0.85 : 1,
+    expense: stress ? 1.15 : 1,
+    ancillary: 900,
+    passengerCost: 650,
+    cannibalization: hub ? 0.06 : 0.12,
+    lostMargin: 3000,
+    displacedP: 0,
+    displacedCM: 0,
+    baseCost: zero ? 0 : hub ? 120e6 : 20e6,
+    personnel: zero ? 0 : hub ? 45e6 : 20e6,
+    infrastructure: zero ? 0 : hub ? 35e6 : 10e6,
+    launch: 0,
+    discount: 0.08,
+    transferShare: 0.2,
+    mct: 75,
+    routes: (zero ? [] : hub ? ['OMS', 'SVX', 'PEE', 'CEK'] : ['KUF', 'GOJ', 'KZN', 'UFA']).map(
+      (d, i) => ({
+        id: String(i),
+        destination: d,
+        enabled: true,
+        type: 'SSJ100',
+        seats: 100,
+        frequency: 4,
+        lf: null,
+        fare: null,
+        bh: null,
+        cost: null,
+        od: null,
+        capture: 1,
+      }),
+    ),
+    fleet: [
+      {
+        type: 'SSJ100',
+        available: zero ? 0 : 3,
+        working: zero ? 0 : 2,
+        reserve: zero ? 0 : 1,
+        peak: zero ? 0 : 2,
+        resource: 2200,
+        fixed: 65e6,
+      },
+    ],
+    cargo: {
+      enabled: false,
+      kg: 60,
+      tariff: 100,
+      handling: 20,
+      weight: 10,
+      commission: 0.15,
+      fixed: 1.5e6,
+      limit: null,
+    },
+  }
+}

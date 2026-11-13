@@ -11,3 +11,12 @@ run = "pnpm -C presentation dev"
 
 [tasks."presentation:pdf"]
 run = "pnpm -C presentation export"
+
+[tasks."calculator:install"]
+run = "pnpm -C calculator install --frozen-lockfile"
+
+[tasks."calculator:dev"]
+run = "pnpm -C calculator dev"
+
+[tasks."calculator:build"]
+run = "pnpm -C calculator build"
