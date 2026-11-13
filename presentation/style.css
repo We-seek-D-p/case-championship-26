@@ -1,4 +1,9 @@
-/* Slidev loads this file automatically. Keep deck styles inside .rw-slide. */
+/* Imported by layouts/deck.vue so every slide loads its shared styles. */
+.rw-deck-layout {
+  position: absolute;
+  inset: 0;
+}
+
 .rw-slide {
   --rw-background: #faf9f6;
   --rw-foreground: #20252b;
@@ -453,4 +458,140 @@
   margin: 0;
   font-size: 22px;
   line-height: 1.4;
+}
+
+/* Cargo growth */
+.rw-slide.cargo-growth {
+  padding: 28px 48px;
+  border-top: 6px solid var(--rw-accent);
+}
+
+.rw-slide.cargo-growth h1 {
+  margin: 0 0 12px;
+  color: var(--rw-foreground);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+}
+
+.rw-slide.cargo-growth p {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.rw-slide.cargo-growth .cargo-growth__subtitle {
+  margin-bottom: 20px;
+  color: var(--rw-muted);
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.rw-slide .cargo-growth__columns {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr 1.05fr;
+  gap: 34px;
+}
+
+.rw-slide.cargo-growth h2 {
+  margin: 0 0 14px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.rw-slide.cargo-growth h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.rw-slide.cargo-growth .cargo-growth__value {
+  margin: 0 0 10px;
+  color: var(--rw-accent);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.rw-slide .cargo-growth__value span {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.rw-slide.cargo-growth .cargo-growth__value--secondary {
+  margin-top: 30px;
+  font-size: 44px;
+}
+
+.rw-slide .cargo-growth__value--secondary span {
+  display: block;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.rw-slide.cargo-growth .cargo-growth__market-note {
+  margin-top: 18px;
+  color: var(--rw-muted);
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.rw-slide .cargo-growth__item {
+  margin-bottom: 12px;
+}
+
+.rw-slide .cargo-growth__item:last-child {
+  margin-bottom: 0;
+}
+
+.rw-slide .cargo-growth__step {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.rw-slide .cargo-growth__step:last-child {
+  margin-bottom: 0;
+}
+
+.rw-slide .cargo-growth__step > span {
+  color: var(--rw-accent);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.rw-slide .cargo-growth__takeaway {
+  margin-top: 16px;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--rw-rule);
+}
+
+.rw-slide .cargo-growth__takeaway h2 {
+  margin-bottom: 10px;
+  color: var(--rw-accent);
+}
+
+.rw-slide .cargo-growth__case {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr 1.15fr;
+  gap: 24px;
+}
+
+.rw-slide .cargo-growth__case strong {
+  color: var(--rw-accent);
+  font-size: 21px;
+}
+
+.rw-slide.cargo-growth .cargo-growth__case-note {
+  margin-top: 10px;
+  color: var(--rw-muted);
+  font-size: 16px;
+  line-height: 1.3;
 }

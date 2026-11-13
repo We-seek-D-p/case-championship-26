@@ -1,6 +1,6 @@
 ---
 theme: seriph
-layout: none
+layout: deck
 title: 'Кейс 5: Red Wings — WeSeekDp'
 aspectRatio: '16/9'
 canvasWidth: 1204
@@ -24,7 +24,7 @@ info: |
 <!-- Фото: https://flyredwings.com/upload/information_system_24/5/6/6/item_5661/item_5661.jpg -->
 
 ---
-layout: none
+layout: deck
 ---
 
 <div class="rw-slide market-position">
@@ -75,7 +75,7 @@ https://apimarket.ru/2026/01/12/za-2025-god-rzhd-perevezli-13-mlrd-passazhirov/
 -->
 
 ---
-layout: none
+layout: deck
 ---
 
 <div class="rw-slide fleet-slide">
@@ -128,7 +128,7 @@ analysis/HUB_STRATEGY.md (99 кресел, 2 рабочих SSJ100 и 1 резе
 -->
 
 ---
-layout: none
+layout: deck
 ---
 
 <div class="rw-slide hub-method">
@@ -179,7 +179,7 @@ data/airport_research/documentation/METHODOLOGY.md (статистика).
 -->
 
 ---
-layout: none
+layout: deck
 ---
 
 <div class="rw-slide hub-choice">
@@ -201,11 +201,7 @@ layout: none
       </table>
     </section>
     <section class="hub-choice__strategies">
-      <h2>Три стратегии</h2>
-      <div>
-        <h3>S0 · Сохранить сеть</h3>
-        <p>Без новой программы.<br>Дополнительный результат: 0.</p>
-      </div>
+      <h2>Две стратегии</h2>
       <div class="hub-choice__strategy-selected">
         <h3>S1 · Развивать действующую базу</h3>
         <p>Прямые рейсы из Минеральных Вод.<br>+632,2 млн RUB/год.</p>
@@ -233,4 +229,84 @@ analysis/HUB_STRATEGY.md, разделы «Сравнение S0 / S1 / S2 за 
 Одинаковая загрузка 82%, четыре направления, 2 рабочих самолёта + 1 резервный.
 MRV подтверждён как летняя база; круглогодичная работа — допущение модели.
 Преимущество S1: 632.2 − 384.1 = 248.1 млн RUB/год.
+-->
+
+---
+layout: deck
+---
+
+<div class="rw-slide cargo-growth">
+  <h1>Грузовые перевозки — потенциал роста по России</h1>
+  <p class="cargo-growth__subtitle">Дополнительная выручка на пассажирской сети Red Wings: почта, посылки и срочные B2B-грузы</p>
+  <div class="cargo-growth__columns">
+    <section class="cargo-growth__market">
+      <h2>Масштаб рынка · 2025</h2>
+      <p class="cargo-growth__value">446,3 <span>тыс. т</span></p>
+      <p>грузов и почты перевезли<br>российские авиакомпании.</p>
+      <p class="cargo-growth__value cargo-growth__value--secondary">311 <span>тыс. т внутри России</span></p>
+      <p class="cargo-growth__market-note">Включая грузовые самолёты.</p>
+    </section>
+    <section class="cargo-growth__demand">
+      <h2>Где искать спрос</h2>
+      <div class="cargo-growth__item">
+        <h3>Север и Дальний Восток</h3>
+        <p>Почта, посылки, снабжение<br>удалённых территорий.</p>
+      </div>
+      <div class="cargo-growth__item">
+        <h3>Промышленные регионы</h3>
+        <p>Срочные запчасти и комплектующие<br>для предприятий.</p>
+      </div>
+      <div class="cargo-growth__item">
+        <h3>Межрегиональные связи</h3>
+        <p>Курьерские и B2B-отправления,<br>где важна скорость доставки.</p>
+      </div>
+    </section>
+    <section class="cargo-growth__rollout">
+      <h2>Как развивать Red Wings</h2>
+      <div class="cargo-growth__step">
+        <span>01</span>
+        <div><h3>Выделить ёмкость</h3><p>Свободный отсек после багажа;<br>обработка в обоих аэропортах.</p></div>
+      </div>
+      <div class="cargo-growth__step">
+        <span>02</span>
+        <div><h3>Продать регулярность</h3><p>Агенты, почтовые операторы<br>и корпоративные контракты.</p></div>
+      </div>
+      <div class="cargo-growth__step">
+        <span>03</span>
+        <div><h3>Расширять по сети</h3><p>Пилот на 1–2 парах, затем<br>масштабирование по марже.</p></div>
+      </div>
+    </section>
+  </div>
+  <div class="cargo-growth__takeaway">
+    <h2>Пример: Минеральные Воды · расчётный сценарий</h2>
+    <div class="cargo-growth__case">
+      <p><strong>4 маршрута · 1 664 вылета/год</strong><br>60 кг/вылет × 100 RUB/кг</p>
+      <p><strong>≈10 млн RUB/год</strong><br>выручка при 99,84 т груза в год</p>
+      <p><strong>+3,99 млн RUB/год</strong><br>результат после дополнительных затрат</p>
+    </div>
+    <p class="cargo-growth__case-note">Тариф и загрузка — допущения модели. Проверяем пилотом, затем расширяем по сети России.</p>
+  </div>
+</div>
+
+<!--
+Источники: data/cargo_research/documentation/RESEARCH.md, разделы 1–8, 10–12;
+data/cargo_research/processed/market_benchmarks.csv.
+446,3 тыс. т грузов и почты — весь рынок российских авиакомпаний за 2025 год,
+311 тыс. т — внутренние перевозки. Общий объём включает грузовые самолёты;
+это не объём доступного рынка грузов в отсеках пассажирских ВС.
+Источник рынка: https://www.alta.ru/logistics_news/125303/
+Север, Дальний Восток и промышленные регионы — гипотезы географии спроса,
+не подтверждённые маршруты или контракты Red Wings.
+Почта и курьерские отправления, запчасти — потенциальные сегменты пилота.
+Масштабирование: подтверждённая ёмкость, аэропортовая обработка, договоры,
+положительная дополнительная маржа и надёжность пассажирской перевозки.
+Потенциал относится к пассажирской сети, отдельно от грузового оператора Sky Gates.
+Пример MRV: estimates/scenarios.csv, строка base; assumptions.csv.
+1 664 вылета = 4 направления × 4 оборота × 2 плеча × 52 недели.
+99 840 кг × 100 RUB/кг = 9 984 000 RUB выручки.
+Обработка 20 RUB/кг, масса 10 RUB/кг, агент 15% выручки,
+фиксированные расходы 1,5 млн RUB/год: результат 3 991 200 RUB/год.
+Это условный пример для MRV, не оценка всей России; в итог S1 не включён.
+Рынок в 2025 снизился примерно на 9%; «рост» — возможность продукта Red Wings,
+а не утверждение об историческом росте национального рынка.
 -->
