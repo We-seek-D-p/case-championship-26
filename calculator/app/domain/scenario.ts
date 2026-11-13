@@ -67,18 +67,15 @@ export type Scenario = z.infer<typeof scenarioSchema>
 export type Route = z.infer<typeof routeSchema>
 export function preset(id: string, revision = ''): Scenario {
   const hub = id === 'S2',
-    zero = id === 'S0',
     stress = id === 'stress'
   return {
     schemaVersion: 1,
     dataRevision: revision,
-    name: zero
-      ? 'S0 · Без дополнительной программы'
-      : hub
-        ? 'S2 · NUX · Новый хаб'
-        : stress
-          ? 'S1 · Осторожный'
-          : 'S1 · MRV · Действующая база',
+    name: hub
+      ? 'S2 · NUX · Новый хаб'
+      : stress
+        ? 'S1 · Осторожный'
+        : 'S1 · MRV · Действующая база',
     year: 2028,
     base: hub ? 'NUX' : 'MRV',
     hub,
@@ -93,14 +90,14 @@ export function preset(id: string, revision = ''): Scenario {
     lostMargin: 3000,
     displacedP: 0,
     displacedCM: 0,
-    baseCost: zero ? 0 : hub ? 120e6 : 20e6,
-    personnel: zero ? 0 : hub ? 45e6 : 20e6,
-    infrastructure: zero ? 0 : hub ? 35e6 : 10e6,
+    baseCost: hub ? 120e6 : 20e6,
+    personnel: hub ? 45e6 : 20e6,
+    infrastructure: hub ? 35e6 : 10e6,
     launch: 0,
     discount: 0.08,
     transferShare: 0.2,
     mct: 75,
-    routes: (zero ? [] : hub ? ['OMS', 'SVX', 'PEE', 'CEK'] : ['KUF', 'GOJ', 'KZN', 'UFA']).map(
+    routes: (hub ? ['OMS', 'SVX', 'PEE', 'CEK'] : ['KUF', 'GOJ', 'KZN', 'UFA']).map(
       (d, i) => ({
         id: String(i),
         destination: d,
@@ -119,10 +116,10 @@ export function preset(id: string, revision = ''): Scenario {
     fleet: [
       {
         type: 'SSJ100',
-        available: zero ? 0 : 3,
-        working: zero ? 0 : 2,
-        reserve: zero ? 0 : 1,
-        peak: zero ? 0 : 2,
+        available: 3,
+        working: 2,
+        reserve: 1,
+        peak: 2,
         resource: 2200,
         fixed: 65e6,
       },

@@ -5,46 +5,55 @@ routeAlias: growth-2036
 ---
 
 <div class="rw-slide growth-roadmap">
-  <h1>Развитие S1: от Минеральных Вод к сети баз</h1>
-  <p class="growth-roadmap__subtitle">2027–2036 · продолжаем нашу маршрутную программу, добавляем пакеты и груз на тех же рейсах</p>
-  <div class="growth-roadmap__columns">
-    <section>
-      <div class="growth-roadmap__metrics">
-        <div><strong>+1,16 млн</strong><span>пассажирских сегментов в год</span></div>
-        <div><strong>24 маршрута</strong><span>6 баз · 23 борта с резервом</span></div>
-      </div>
-      <svg class="growth-roadmap__plot" viewBox="0 0 620 280" role="img" aria-label="Модельный пассажиропоток при неизменном остальном бизнесе:2.7млн в2026,3.06млн в2030,3.32млн в2032,3.64млн в2034,3.86млн в2036. Новые этапы условны на флот и спрос.">
-<line class="growth-roadmap__gridline" x1="52" y1="240" x2="572" y2="240"/><text class="growth-roadmap__axis" x="38" y="245" text-anchor="end">0</text>
-<line class="growth-roadmap__gridline" x1="52" y1="144" x2="572" y2="144"/><text class="growth-roadmap__axis" x="38" y="149" text-anchor="end">2</text>
-<line class="growth-roadmap__gridline" x1="52" y1="48" x2="572" y2="48"/><text class="growth-roadmap__axis" x="38" y="53" text-anchor="end">4</text>
-<polyline class="growth-roadmap__target" points="52,110.4 156,104.7 260,93.3 364,80.5 468,65.1 572,54.7"/>
-<circle class="growth-roadmap__point" cx="52" cy="110.4" r="4"/><text class="growth-roadmap__axis" x="52" y="266" text-anchor="middle">2026</text>
-<circle class="growth-roadmap__point" cx="156" cy="104.7" r="4"/><text class="growth-roadmap__axis" x="156" y="266" text-anchor="middle">2028</text>
-<circle class="growth-roadmap__point" cx="260" cy="93.3" r="4"/><text class="growth-roadmap__axis" x="260" y="266" text-anchor="middle">2030</text>
-<circle class="growth-roadmap__point" cx="364" cy="80.5" r="4"/><text class="growth-roadmap__axis" x="364" y="266" text-anchor="middle">2032</text>
-<circle class="growth-roadmap__point" cx="468" cy="65.1" r="4"/><text class="growth-roadmap__axis" x="468" y="266" text-anchor="middle">2034</text>
-<circle class="growth-roadmap__point" cx="572" cy="54.7" r="4"/><text class="growth-roadmap__axis" x="572" y="266" text-anchor="middle">2036</text>
-<text class="growth-roadmap__value" x="456" y="36">3,86 млн</text>
-<text class="growth-roadmap__value" x="52" y="97">2,7 млн</text>
-</svg>
-      <p class="growth-roadmap__milestones">2030: <strong>12 направлений</strong> → 2032: <strong>16</strong> → 2034–2036: <strong>24</strong></p>
-      <p class="growth-roadmap__milestones">Новые этапы: <strong>4 → 6 оборотов/неделю</strong>, загрузка <strong>82% → 88%</strong>.</p>
+  <p class="growth-roadmap__eyebrow">Стратегическая цель</p>
+  <h1>Red Wings — №2 на российском авиарынке</h1>
+  <p class="growth-roadmap__subtitle">Развитие действующих баз — первый рассчитанный шаг долгосрочной стратегии</p>
+  <div class="growth-roadmap__stages">
+    <section class="growth-roadmap__stage">
+      <div class="growth-roadmap__stage-number">01</div>
+      <h2>Запуск модели<br>в Минеральных Водах</h2>
+      <p class="growth-roadmap__period">2027–2028 · 4 прямых маршрута</p>
+      <div class="growth-roadmap__metric"><strong>+118,9 тыс.</strong><span>пассажирских сегментов в год</span></div>
+      <div class="growth-roadmap__metric"><strong>+632 млн RUB</strong><span>расчётный результат в год</span></div>
+      <p class="growth-roadmap__detail">Показатели полного года программы.<br>Проверяем спрос и экономику запуском.</p>
     </section>
-    <section class="growth-roadmap__drivers">
-      <h2>Одна сеть — три источника результата</h2>
-      <div><h3>01 · Тиражируем прямые рейсы</h3><p>MRV → Сочи, Петербург, Екатеринбург,<br>Казань и Самара. 4 направления на базу.<br><strong>1,32 млн сегментов − 12% перетока.</strong></p></div>
-      <div><h3>02 · Продаём пакет на этих рейсах</h3><p>При доле пакетов 20% среди клиентов:<br><strong>+21,7% прибыли группы пассажиров</strong><br>по условной экономике слайда 7.</p></div>
-      <div><h3>03 · Продаём грузовую квоту</h3><p>Те же 14 976 вылетов, 60–100 кг на вылет:<br><strong>90–150 млн RUB выручки/год</strong>.<br>Проверяем квоту совместно с багажом.</p></div>
+    <section class="growth-roadmap__stage">
+      <div class="growth-roadmap__stage-number">02</div>
+      <h2>Масштабирование<br>региональной сети</h2>
+      <p class="growth-roadmap__period">К 2036 году · 24 маршрута · 6 баз</p>
+      <div class="growth-roadmap__metric"><strong>3,86 млн</strong><span>годовой пассажиропоток<br>при неизменном остальном бизнесе</span></div>
+      <p class="growth-roadmap__increment">В том числе <strong>+1,16 млн</strong><br>сегментов в год от новой программы.</p>
+      <p class="growth-roadmap__detail">Тиражируем S1, увеличиваем частоты<br>и обеспечиваем программу флотом.</p>
+    </section>
+    <section class="growth-roadmap__stage growth-roadmap__stage--goal">
+      <div class="growth-roadmap__stage-number">03</div>
+      <h2>Выход на второе место<br>среди авиакомпаний</h2>
+      <p class="growth-roadmap__period">Следующий этап роста всей компании</p>
+      <div class="growth-roadmap__metric"><strong>&gt;13,8 млн</strong><span>пассажиров в год — ориентир,<br>который растёт вместе с конкурентами</span></div>
+      <p class="growth-roadmap__increment">Дальнейшее расширение<br>флота, сети и пассажирского бизнеса.</p>
+      <p class="growth-roadmap__goal-label">Долгосрочная цель роста.</p>
     </section>
   </div>
-  <div class="growth-roadmap__condition">
-    <h2>№2 требует следующего этапа: масштабирования остального бизнеса</h2>
-    <p>До ориентира 13,8 млн остаётся <strong>≈9,94 млн пассажиров/год</strong>. Нужна отдельная программа флота и сети.<br>Наш S1 — рассчитанный первый этап; пакеты и груз усиливают его экономику, но не заменяют рост перевозок.</p>
+  <div class="growth-roadmap__conclusion">
+    <strong>Рассчитанный старт → тиражирование → масштаб всей авиакомпании</strong>
+    <p>Грузовые и мультимодальные продукты повышают доходность маршрутной программы на каждом этапе.</p>
   </div>
 </div>
 
 <!--
-Источники: analysis/HUB_STRATEGY.md, analysis/calculate.py; cargo_research/estimates;
+ТЕКСТ ДЛЯ ВЫСТУПЛЕНИЯ
+Наша стратегическая цель — второе место Red Wings на российском авиарынке.
+Мы начинаем с рассчитанной программы прямых рейсов из действующей базы: она
+даёт прирост пассажиропотока и положительный экономический результат.
+Следующий шаг — тиражировать эту модель на другие базы и повысить доходность
+пакетами с трансфером и отелем, а также грузовой квотой на тех же рейсах.
+В сценарии2036 новая сеть добавляет около1.16млн сегментов в год. Это первый
+ресурсно оценённый этап; выход на№2 потребует гораздо большего масштаба компании.
+Поэтому третий этап — цель, а не уже рассчитанный результат. Для его обоснования
+нужна отдельная модель флота, маршрутов, пассажиропотока, инвестиций и экономики.
+
+ИСТОЧНИКИ И РАСЧЁТЫ
+analysis/HUB_STRATEGY.md, analysis/calculate.py; cargo_research/estimates;
 модель пакета на слайде7. Исходные расчёты/данные не изменялись.
 2028 и2030 — исходный99местный сценарий:118873/356620доп.сегментов.
 2032:4базы*4направления*5оборотов*2*52*100мест*85%LF*88%=622336доп.сегментов.

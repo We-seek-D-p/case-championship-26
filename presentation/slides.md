@@ -17,6 +17,10 @@ info: |
     <div class="redwings-cover__team">Команда <strong>WeSeekDp</strong></div>
     <h1><span>Кейс 5:</span> Red Wings</h1>
   </div>
+  <a class="redwings-cover__repository" href="https://github.com/We-seek-D-p/case-championship-26" target="_blank" rel="noopener noreferrer" aria-label="Открыть репозиторий проекта">
+    <img src="/images/repository-qr.svg" alt="QR-код репозитория WeSeekDp на GitHub" />
+    <span>Репозиторий ↗</span>
+  </a>
   <img class="redwings-cover__photo" src="/images/red-wings-cover.jpg" alt="Красный самолёт Red Wings на полосе на закате" />
 </div>
 
@@ -139,7 +143,7 @@ layout: deck
 
 <!--
 Источники: analysis/HUB_CANDIDATES.md (метод отбора, 24 аэропорта),
-analysis/HUB_STRATEGY.md (S0/S1/S2, пересадочные волны, расходы),
+analysis/HUB_STRATEGY.md (S1/S2, пересадочные волны, расходы),
 analysis/calculate.py (routes, calc, program),
 data/airport_research/documentation/METHODOLOGY.md (статистика).
 Недостающие месяцы восстановлены по профилям аналогов с сохранением годовых сумм.
@@ -218,9 +222,9 @@ layout: deck
 
 <!--
 Источники: analysis/HUB_CANDIDATES.md, раздел «Экономика финалистов»;
-analysis/HUB_STRATEGY.md, разделы «Сравнение S0 / S1 / S2 за 2028 год»,
+analysis/HUB_STRATEGY.md, разделы «Сравнение S1 / S2 за 2028 год»,
 «Итоги всех предлагаемых маршрутов», «Почему выбранная стратегия лучше».
-Все суммы — дополнительные модельные результаты относительно S0, после
+Все суммы — дополнительные модельные результаты относительно действующей сети, после
 переменных, постоянных расходов и потерь CM от каннибализации, до инвестиций и налогов.
 Три базы и три новые площадки выбраны по CM/рабочий борт внутри своего класса.
 Одинаковая загрузка 82%, четыре направления, 2 рабочих самолёта + 1 резервный.

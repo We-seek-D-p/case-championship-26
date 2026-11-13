@@ -69,6 +69,34 @@
   color: var(--rw-accent);
 }
 
+.rw-slide .redwings-cover__repository {
+  position: absolute;
+  top: 40px;
+  right: 56px;
+  width: 140px;
+  padding: 8px 8px 12px;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--rw-foreground);
+  text-align: center;
+  text-decoration: none;
+}
+
+.rw-slide .redwings-cover__repository img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.rw-slide .redwings-cover__repository span {
+  display: block;
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
 .rw-slide .redwings-cover__photo {
   display: block;
   min-height: 0;
@@ -758,36 +786,87 @@
   line-height: 1.3;
 }
 
-/* Ten-year growth roadmap */
-.rw-slide.growth-roadmap { padding: 28px 48px; border-top: 6px solid var(--rw-accent); }
-.rw-slide.growth-roadmap h1 { margin: 0 0 12px; color: var(--rw-foreground); font-size: 36px; font-weight: 700; line-height: 1.2; }
-.rw-slide.growth-roadmap p { margin: 0; font-size: 18px; line-height: 1.35; }
-.rw-slide.growth-roadmap .growth-roadmap__subtitle { margin-bottom: 22px; font-size: 20px; color: var(--rw-muted); }
-.rw-slide .growth-roadmap__columns { display: grid; grid-template-columns: 620px 1fr; gap: 40px; }
-.rw-slide .growth-roadmap__metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 6px; }
-.rw-slide .growth-roadmap__metrics strong { display: block; font-size: 38px; line-height: 1.1; color: var(--rw-accent); }
-.rw-slide .growth-roadmap__metrics span { display: block; margin-top: 6px; font-size: 18px; }
-.rw-slide .growth-roadmap__plot { display: block; width: 100%; height: 240px; }
-.rw-slide .growth-roadmap__gridline { stroke: var(--rw-rule); stroke-width: 1; }
-.rw-slide .growth-roadmap__axis { fill: var(--rw-muted); font-family: var(--rw-font); font-size: 15px; }
-.rw-slide .growth-roadmap__target { fill: none; stroke: var(--rw-accent); stroke-width: 3; }
-.rw-slide .growth-roadmap__upside { fill: none; stroke: var(--rw-accent); stroke-width: 2; stroke-dasharray: 4 4; }
-.rw-slide .growth-roadmap__range { fill: var(--rw-accent); fill-opacity: 0.1; stroke: none; }
-.rw-slide .growth-roadmap__point { fill: var(--rw-accent); }
-.rw-slide .growth-roadmap__benchmark { fill: none; stroke: #939a9f; stroke-width: 2; stroke-dasharray: 6 5; }
-.rw-slide .growth-roadmap__value { fill: var(--rw-accent); font-family: var(--rw-font); font-size: 18px; font-weight: 700; }
-.rw-slide .growth-roadmap__reference-label { fill: var(--rw-muted); font-family: var(--rw-font); font-size: 15px; }
-.rw-slide .growth-roadmap__legend { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; color: var(--rw-muted); margin-bottom: 14px; }
-.rw-slide .growth-roadmap__legend span:first-child { color: var(--rw-accent); }
-.rw-slide.growth-roadmap .growth-roadmap__milestones { font-size: 17px; }
-.rw-slide.growth-roadmap h2 { margin: 0 0 20px; font-size: 23px; font-weight: 700; line-height: 1.25; }
-.rw-slide .growth-roadmap__drivers > div { margin-bottom: 14px; }
-.rw-slide .growth-roadmap__drivers > div:last-child { margin-bottom: 0; }
-.rw-slide .growth-roadmap__drivers h2 { margin-bottom: 14px; }
-.rw-slide.growth-roadmap .growth-roadmap__drivers p { font-size: 17px; line-height: 1.3; }
-.rw-slide .growth-roadmap__drivers h3 { margin: 0 0 8px; font-size: 20px; font-weight: 700; line-height: 1.25; }
-.rw-slide .growth-roadmap__drivers strong { color: var(--rw-accent); }
-.rw-slide .growth-roadmap__condition { margin-top: 20px; padding-left: 16px; border-left: 3px solid var(--rw-accent); }
-.rw-slide .growth-roadmap__condition h2 { margin-bottom: 8px; font-size: 21px; color: var(--rw-accent); }
-.rw-slide.growth-roadmap .growth-roadmap__condition p { font-size: 17px; }
-.rw-slide.growth-roadmap .growth-roadmap__note { margin-top: 12px; color: var(--rw-muted); font-size: 14px; line-height: 1.3; }
+/* Strategic growth stages */
+.rw-slide.growth-roadmap {
+  padding: 28px 48px;
+  border-top: 6px solid var(--rw-accent);
+}
+.rw-slide.growth-roadmap p { margin: 0; font-size: 18px; line-height: 1.4; }
+.rw-slide.growth-roadmap .growth-roadmap__eyebrow {
+  margin-bottom: 8px;
+  color: var(--rw-accent);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.rw-slide.growth-roadmap h1 {
+  margin: 0 0 12px;
+  color: var(--rw-foreground);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.7px;
+}
+.rw-slide.growth-roadmap .growth-roadmap__subtitle {
+  margin-bottom: 22px;
+  color: var(--rw-muted);
+  font-size: 21px;
+}
+.rw-slide .growth-roadmap__stages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+.rw-slide .growth-roadmap__stage {
+  padding-top: 12px;
+  border-top: 3px solid var(--rw-accent);
+}
+.rw-slide .growth-roadmap__stage--goal {
+  border-top-style: dashed;
+}
+.rw-slide .growth-roadmap__stage-number {
+  margin-bottom: 8px;
+  color: var(--rw-accent);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.rw-slide.growth-roadmap h2 {
+  margin: 0 0 12px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.rw-slide.growth-roadmap .growth-roadmap__period {
+  margin-bottom: 16px;
+  color: var(--rw-muted);
+  font-size: 17px;
+}
+.rw-slide .growth-roadmap__metric { margin-bottom: 16px; }
+.rw-slide .growth-roadmap__metric > strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--rw-accent);
+  font-size: 34px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+.rw-slide .growth-roadmap__metric > span { display: block; font-size: 18px; line-height: 1.4; }
+.rw-slide.growth-roadmap .growth-roadmap__increment { margin-bottom: 22px; }
+.rw-slide .growth-roadmap__increment strong { color: var(--rw-accent); }
+.rw-slide.growth-roadmap .growth-roadmap__detail {
+  color: var(--rw-muted);
+  font-size: 17px;
+}
+.rw-slide.growth-roadmap .growth-roadmap__goal-label {
+  font-size: 17px;
+  font-weight: 700;
+}
+.rw-slide .growth-roadmap__conclusion {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rw-rule);
+}
+.rw-slide .growth-roadmap__conclusion > strong { color: var(--rw-accent); font-size: 21px; }
+.rw-slide.growth-roadmap .growth-roadmap__conclusion p { margin-top: 8px; font-size: 18px; }

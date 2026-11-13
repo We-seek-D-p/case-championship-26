@@ -26,7 +26,7 @@ const airports = computed(() =>
       .includes(search.value.toLowerCase()),
   ),
 )
-const comparisonIds = ref(['S0', 'S1', 'S2'])
+const comparisonIds = ref(['S1', 'S2'])
 const comparisons = computed(() =>
   comparisonIds.value.map((id) => {
     const stored = id.startsWith('rw:')
@@ -215,7 +215,6 @@ onMounted(() => {
             <option v-if="presetId === 'custom'" value="custom">Пользовательский</option>
             <option value="S1">S1 · MRV</option>
             <option value="S2">S2 · NUX</option>
-            <option value="S0">S0 · Без программы</option>
             <option value="stress">S1 · Осторожный</option>
           </select></label
         ><button @click="save">Сохранить</button
@@ -374,10 +373,9 @@ onMounted(() => {
     </template>
     <FleetPanel v-if="tab === 'Флот'" v-model="s" :result="result" />
     <section v-if="tab === 'Сравнение'" class="panel">
-      <h2>S0 / S1 / S2</h2>
+      <h2>S1 / S2</h2>
       <p>
-        Независимые пресеты при 100 креслах; текущие изменения остаются в редакторе. При убытках S0
-        может быть предпочтительнее.
+        Независимые пресеты при 100 креслах; текущие изменения остаются в редакторе.
       </p>
       <div class="table-scroll">
         <table>
@@ -386,7 +384,7 @@ onMounted(() => {
               <th>Показатель</th>
               <th v-for="(c, i) in comparisons" :key="i">
                 <select v-model="comparisonIds[i]" :aria-label="'Сценарий сравнения ' + (i + 1)">
-                  <option v-for="id in ['S0', 'S1', 'S2', 'stress']" :key="id" :value="id">
+                  <option v-for="id in ['S1', 'S2', 'stress']" :key="id" :value="id">
                     {{ id }}
                   </option>
                   <option value="current">Текущий</option>
