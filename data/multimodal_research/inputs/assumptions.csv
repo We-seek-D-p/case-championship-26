@@ -1,0 +1,21 @@
+parameter_id,parameter,value,unit,scope,evidence_status,source_id,reason_and_constraint
+A01,bus_hourly_reference,3500,RUB/hour,MRV 51 seat coach,observed_public_listing,S06,"Публичная карточка отдельного перевозчика, не среднее"
+A02,bus_capacity_reference,51,seats,MRV King Long,observed_public_listing,S06,Не гарантирует допустимый багаж
+A03,model_paid_hours,4,hour,CITY_BASE,scenario,S05,Принятые часы с учетом городской минималки; не подтверждено для маршрута
+A04,model_group_size,32,persons,CITY_BASE,scenario,,Условная заказанная группа
+A05,model_price_client,22000,RUB/order,CITY_BASE,scenario,,"Целевая продажная цена, не публичный тариф Red Wings"
+A06,model_other_transport,800,RUB/order,CITY_BASE,scenario,,Подача парковка дополнительные затраты
+A07,model_dispatch,1200,RUB/order,CITY_BASE,scenario,,Затраты операционного сопровождения заказа
+A08,model_risk_reserve,1000,RUB/order,CITY_BASE,scenario,,"Ожидаемые расходы на сбой, не статистическая оценка"
+A09,remote_mrv_vendor_quote_low,20000,RUB/trip,MRV resort <=20 pax,observed_public_listing,S07,Предложение сторонней компании без подтверждения доступности
+A10,remote_mrv_vendor_quote_high,22000,RUB/trip,MRV resort 19-20 pax,observed_public_listing,S08,Предложение другого перевозчика
+A11,portfolio_orders_baseline,24,orders/month,PORTFOLIO_BASE,scenario,,Условная проверка точки безубыточности
+A12,portfolio_fixed_costs_baseline,60000,RUB/month,PORTFOLIO_BASE,scenario,,Дополнительные общие расходы сверх затрат на заказ
+A13,hotel_room_price,6000,RUB/room-night,HOTEL_EXAMPLE,scenario,,Не котировка Ostrovok
+A14,hotel_agent_fee_rate,5,percent,HOTEL_EXAMPLE,scenario,,Не подтверждено договором; не включено в базовую экономику
+A15,airline_incremental_CM,0,RUB,PORTFOLIO_BASE,scenario,,Ноль до доказательства дополнительности / исключение двойного счёта
+A16,pilot_duration,8,weeks,PILOT,proposal,,"Предлагаемый срок, не утверждённый график Red Wings"
+A17,quote_currency_tax_basis,unknown,,ALL,unknown,,Не проверено наличие НДС и точных включенных услуг
+A18,group_demand_observed,unknown,orders/month,MRV,unknown,,Нет CRM/оплаченных B2B сделок
+A19,Ostrovok_commission_actual,unknown,percent,HOTEL,unknown,S01,Публичная интеграция не раскрывает B2B вознаграждение
+A20,flight_status_API_access,unknown,boolean,FLIGHT,unknown,S03,Интеграционные права не подтверждены

@@ -112,7 +112,7 @@ layout: deck
     </section>
   </div>
   <div class="fleet-slide__working">
-    <h2>С чем работаем: SSJ100 на 99 кресел</h2>
+    <h2>С чем работаем: SSJ100 на 100 кресел</h2>
     <p>Для маршрутной модели нужны <strong>2 рабочих борта + 1 резервный</strong>.<br>Новые SJ-100 и Ту-214 в доступный парк модели не включены.</p>
   </div>
 </div>
@@ -142,9 +142,9 @@ layout: deck
     </aside>
     <section>
       <h2>Общая модель для 24 аэропортов</h2>
-      <p class="hub-method__inputs">4 направления · 4 оборота в неделю · 52 недели · 99 кресел · загрузка 82%</p>
+      <p class="hub-method__inputs">4 направления · 4 оборота в неделю · 52 недели · 100 кресел · загрузка 82%</p>
       <div class="hub-method__formulas">
-        <p><strong>P = 4 × 2 × 4 × 52 × 99 × 82% ≈ 135 тыс.</strong> сегментов/год</p>
+        <p><strong>P = 4 × 2 × 4 × 52 × 100 × 82% ≈ 136 тыс.</strong> сегментов/год</p>
         <p>Выручка R = P × (тариф + 900 RUB допуслуг)</p>
         <p>Переменные расходы V = вылеты × стоимость вылета + P × 650 RUB</p>
       </div>
@@ -199,6 +199,10 @@ layout: deck
           <tr><td>Саратов</td><td>Новый хаб</td><td>334,1</td><td>60,9%</td></tr>
         </tbody>
       </table>
+      <div class="hub-choice__decision">
+        <h2>Выбираем S1: Минеральные Воды</h2>
+        <p><strong>+248,1 млн RUB/год</strong> к результату нового хаба.<br>2 рабочих борта + 1 резервный.</p>
+      </div>
     </section>
     <section class="hub-choice__strategies">
       <h2>Две стратегии</h2>
@@ -210,11 +214,33 @@ layout: deck
         <h3>S2 · Открыть новый хаб</h3>
         <p>Прямые рейсы и пересадки в Новом Уренгое.<br>+384,1 млн RUB/год.</p>
       </div>
+      <figure class="hub-choice__routes">
+        <figcaption>Выбранные прямые маршруты</figcaption>
+        <svg class="hub-choice__route-map" viewBox="0 0 420 230" role="img" aria-label="Прямые рейсы из Минеральных Вод в Нижний Новгород, Казань, Самару и Уфу. Схема по координатам аэропортов.">
+          <image href="/maps/volga-caucasus.svg" width="420" height="230" />
+          <g class="route-map__lines">
+            <path d="M86 198 Q46 112 101 25" />
+            <path d="M86 198 Q100 72 216 34" />
+            <path d="M86 198 Q142 111 234 65" />
+            <path d="M86 198 Q190 28 354 49" />
+          </g>
+          <g class="route-map__points">
+            <circle cx="101" cy="25" r="3.5" />
+            <circle cx="216" cy="34" r="3.5" />
+            <circle cx="234" cy="65" r="3.5" />
+            <circle cx="354" cy="49" r="3.5" />
+            <circle cx="86" cy="198" r="5.5" />
+          </g>
+          <g class="route-map__labels">
+            <text x="12" y="15">Нижний Новгород</text>
+            <text x="207" y="24">Казань</text>
+            <text x="245" y="87">Самара</text>
+            <text x="364" y="45">Уфа</text>
+            <text class="route-map__base" x="100" y="198">Минеральные Воды</text>
+          </g>
+        </svg>
+      </figure>
     </section>
-  </div>
-  <div class="hub-choice__decision">
-    <h2>Выбираем S1: развитие Минеральных Вод</h2>
-    <p>На <strong>248,1 млн RUB/год</strong> выше результат при тех же 2 рабочих бортах и 1 резервном.<br>Начинаем с прямых рейсов в Самару, Нижний Новгород, Казань и Уфу.</p>
   </div>
 </div>
 
@@ -229,6 +255,10 @@ analysis/HUB_STRATEGY.md, разделы «Сравнение S0 / S1 / S2 за 
 Одинаковая загрузка 82%, четыре направления, 2 рабочих самолёта + 1 резервный.
 MRV подтверждён как летняя база; круглогодичная работа — допущение модели.
 Преимущество S1: 632.2 − 384.1 = 248.1 млн RUB/год.
+Схема маршрутов: координаты аэропортов из data/airport_research/processed/airports.csv.
+Упрощённая проекция, север сверху; маршруты — MRV–GOJ/KZN/KUF/UFA.
+Берега и реки: Natural Earth 1:50m (public domain), public/maps/volga-caucasus.svg.
+Рельеф Кавказа условный, не цифровая модель высот.
 -->
 
 ---
@@ -309,4 +339,65 @@ data/cargo_research/processed/market_benchmarks.csv.
 Это условный пример для MRV, не оценка всей России; в итог S1 не включён.
 Рынок в 2025 снизился примерно на 9%; «рост» — возможность продукта Red Wings,
 а не утверждение об историческом росте национального рынка.
+-->
+
+---
+layout: deck
+---
+
+<div class="rw-slide multimodal">
+  <h1>Мультимодальность: перелёт + трансфер + отель</h1>
+  <p class="multimodal__subtitle">Одна бронь и согласованная поездка до курорта — больше сервиса для клиента и дохода с поездки</p>
+  <div class="multimodal__journey">
+    <div><span>01 · Red Wings</span><strong>Перелёт в Минеральные Воды</strong></div>
+    <span class="multimodal__arrow">→</span>
+    <div><span>02 · Автобусный партнёр</span><strong>Трансфер в Кисловодск</strong></div>
+    <span class="multimodal__arrow">→</span>
+    <div><span>03 · Отель-партнёр</span><strong>3 ночи на курорте</strong></div>
+  </div>
+  <div class="multimodal__columns">
+    <section>
+      <h2>Пример экономики на одного клиента</h2>
+      <p>Маржа перелёта: <strong>1 500 RUB</strong></p>
+      <p>Трансфер: 1 500 RUB × 20% = <strong>300 RUB</strong></p>
+      <p>Отель: 12 000 RUB × 10% = <strong>1 200 RUB</strong></p>
+      <p>Поддержка и оформление пакета: <strong>−200 RUB</strong></p>
+      <p class="multimodal__service">Клиенту — встреча к прилёту, трансфер до отеля и единая поддержка.</p>
+    </section>
+    <section class="multimodal__chart">
+      <h2>Маржа на покупателя пакета · модель</h2>
+      <div class="multimodal__bar-label"><span>Только перелёт</span><strong>1 500 RUB</strong></div>
+      <div class="multimodal__bar multimodal__bar--flight"></div>
+      <div class="multimodal__bar-label"><span>Перелёт + автобус + отель</span><strong>2 800 RUB</strong></div>
+      <div class="multimodal__bar multimodal__bar--bundle"></div>
+      <p class="multimodal__uplift">×1,87 <span>маржа с покупателя пакета</span></p>
+      <p class="multimodal__attach">Если пакет выбирают 20% пассажиров,<br>маржа всей когорты растёт примерно на <strong>17%</strong>.</p>
+    </section>
+  </div>
+  <div class="multimodal__proof">
+    <section>
+      <h2>Реальный пример: easyJet holidays</h2>
+      <p>Прибыль до налога: <strong>122 → 190 млн GBP.</strong><br>2023 → 2024 · <strong>+56%</strong> (скорректированная).</p>
+    </section>
+    <section>
+      <h2>Что берём для Red Wings</h2>
+      <p>Автобус расширяет охват аэропорта.<br>Отель добавляет комиссию, единый сервис — удобство.</p>
+    </section>
+  </div>
+  <p class="multimodal__note">Расчёт Red Wings — иллюстрация, все ставки условные; партнёрства не подтверждены. easyJet: Annual Report 2024.</p>
+</div>
+
+<!--
+Пример Red Wings — предложение продукта, не существующая услуга или договор.
+Мультимодальная перевозка здесь — самолёт + автобус; отель — дополнительная услуга.
+Все суммы на одного путешественника; 12 000 RUB — отнесённая на него стоимость 3 ночей.
+Маржа билета 1500, комиссия трансфера 1500*0.2=300,
+комиссия отеля 12000*0.1=1200, дополнительные затраты пакета 200 RUB.
+Итог 1500+300+1200-200=2800 RUB, отношение 2800/1500=1.8667.
+Для когорты 10000 пассажиров при 20% пакетов: 2000*1300=2.6 млн RUB
+дополнительной маржи к 15 млн исходной, +17.33%. Не множитель прибыли авиакомпании.
+Не включены разработка, продвижение, налоги и иные общие расходы; не прогноз.
+Факт easyJet holidays: headline profit before tax 2024 GBP190m, 2023 GBP122m, +56%.
+Реальный туроператор — аналог продукта, не свидетельство эффекта для Red Wings.
+Источник: https://corporate.easyjet.com/files/doc_downloads/2024/12/easyJet_AR24_web.pdf
 -->

@@ -1,0 +1,6 @@
+observation_id,source_id,location,product,capacity_seats,price_rub,unit,status,as_of_date,qualifications
+P01,S06,Минеральные Воды,King Long bus,51,3500,hour,observed_public_listing,2026-11-13,Не среднерыночная цена и не подтверждена бронированием
+P02,S05,"Россия, отдельный каталог поставщика",Большие автобусы 49-55 мест,49,3500,hour_from,observed_public_listing,2026-11-13,Минимальный заказ городских поездок 3-4 часа по FAQ
+P03,S07,Аэропорт MRV — Архыз / Домбай / Приэльбрусье,Микроавтобус / трансфер,20,20000,trip,observed_public_listing,2026-11-13,Цена за маршрут и диапазон до 20 человек
+P04,S08,Аэропорт MRV — Архыз / Домбай / Приэльбрусье,Микроавтобус / трансфер,20,22000,trip,observed_public_listing,2026-11-13,19-20 мест по сайту
+P05,S14,Минеральные Воды,Микроавтобус,,1500,hour_from,observed_public_listing,2026-11-13,Вместимость конкретной машины не подтверждена

@@ -1,0 +1,4 @@
+scenario,status,orders_month,contribution_per_order_rub,total_contribution_month_rub,incremental_fixed_month_rub,result_month_rub,result_year_rub
+conservative,synthetic_scenario,10,2000.00,20000.00,60000.00,-40000.00,-480000.00
+base,synthetic_scenario,24,5000.00,120000.00,60000.00,60000.00,720000.00
+growth,synthetic_scenario,48,7000.00,336000.00,100000.00,236000.00,2832000.00

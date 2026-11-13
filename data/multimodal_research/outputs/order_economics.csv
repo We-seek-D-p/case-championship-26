@@ -1,0 +1,8 @@
+order_id,status,passengers,vehicle_seats,client_price_rub,vendor_rub,other_costs_rub,total_cost_rub,contribution_rub,contribution_per_pax_rub,margin_pct
+CITY_BASE,synthetic_scenario,32,51,22000.00,14000.00,3000.00,17000.00,5000.00,156.25,22.73
+CITY_STRESS,synthetic_scenario,32,51,22000.00,20250.00,5000.00,25250.00,-3250.00,-101.56,-14.77
+CITY_UPSIDE,synthetic_scenario,44,51,25000.00,14000.00,2300.00,16300.00,8700.00,197.73,34.80
+CITY_SMALL,synthetic_scenario,16,20,10500.00,6800.00,1400.00,8200.00,2300.00,143.75,21.90
+RESORT_20K,synthetic_scenario,20,20,27500.00,20000.00,2500.00,22500.00,5000.00,250.00,18.18
+RESORT_22K,synthetic_scenario,20,20,27500.00,22000.00,2500.00,24500.00,3000.00,150.00,10.91
+SPLIT_TWO_VANS,synthetic_scenario,32,40,22000.00,20000.00,3500.00,23500.00,-1500.00,-46.88,-6.82

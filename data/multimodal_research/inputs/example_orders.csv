@@ -1,0 +1,8 @@
+order_id,segment,passengers,vehicle_type,vehicle_seats,price_method,rate_rub_hour,billable_hours,min_billable_hours,flat_vehicle_quote_rub,other_transport_rub,dispatch_rub,risk_reserve_rub,client_price_rub,assumption_status,notes
+CITY_BASE,local_corporate,32,coach_51,51,hourly,3500,4,4,,800,1200,1000,22000,synthetic_scenario,3500/h reference S06; all others modeled
+CITY_STRESS,local_corporate,32,coach_51,51,hourly,4500,4.5,4,,1500,1500,2000,22000,synthetic_scenario,Cost/extra hours stress; negative contribution expected
+CITY_UPSIDE,local_corporate,44,coach_51,51,hourly,3500,4,4,,800,1000,500,25000,synthetic_scenario,Better realized pricing and smaller risk reserve; luggage not validated
+CITY_SMALL,local_corporate,16,minibus_20,20,hourly,1700,4,4,,400,700,300,10500,synthetic_scenario,1700/h assumed; not a verified supplier quote
+RESORT_20K,remote_corporate,20,minibus_20,20,fixed,,,,20000,700,900,900,27500,synthetic_scenario,Vendor reference S07; baggage capacity to check
+RESORT_22K,remote_corporate,20,minibus_20,20,fixed,,,,22000,700,900,900,27500,synthetic_scenario,Vendor reference S08; compare terms
+SPLIT_TWO_VANS,local_corporate,32,two_minibuses_20,40,fixed,,,,20000,1000,1500,1000,22000,synthetic_scenario,2 vehicles total cost purely hypothetical

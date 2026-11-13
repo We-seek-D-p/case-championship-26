@@ -1,0 +1,4 @@
+scenario,orders_month,contribution_per_order_rub,incremental_fixed_month_rub,evidence_status,notes
+conservative,10,2000,60000,scenario,Low order intake and lower per-order profitability
+base,24,5000,60000,scenario,Break-even 12 orders/month on unit CM 5000
+growth,48,7000,100000,scenario,Higher throughput but higher fixed overhead
