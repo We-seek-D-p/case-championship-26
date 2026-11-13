@@ -1,0 +1,4 @@
+scenario_id,routes,round_trips_per_route_week,legs_per_round_trip,weeks,legs_per_year,kg_per_leg,volume_kg_year,tariff_rub_per_kg,revenue_rub_year,handling_rub_per_kg,handling_rub_year,weight_cost_rub_per_kg,weight_cost_rub_year,agent_commission_rate,agent_commission_rub_year,fixed_cost_rub_year,contribution_rub_year,result_rub_year,value_origin,strategy_source_id,note
+conservative,4,4,2,52,1664,25,41600,100,4160000,20,832000,10,416000,0.15,624000.0,1500000,2288000,788000,scenario,SRC12,"Без подтвержденного свободного БГО, спроса, тарифов и затрат; не входит в итог S1"
+base,4,4,2,52,1664,60,99840,100,9984000,20,1996800,10,998400,0.15,1497600.0,1500000,5491200,3991200,scenario,SRC12,"Без подтвержденного свободного БГО, спроса, тарифов и затрат; не входит в итог S1"
+upside,4,4,2,52,1664,100,166400,100,16640000,20,3328000,10,1664000,0.15,2496000.0,1500000,9152000,7652000,scenario,SRC12,"Без подтвержденного свободного БГО, спроса, тарифов и затрат; не входит в итог S1"

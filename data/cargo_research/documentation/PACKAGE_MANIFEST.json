@@ -1,0 +1,57 @@
+{
+  "project": "red-wings",
+  "branch_reference": "gg",
+  "as_of": "2026-11-13",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3708,
+      "sha256": "6987168b4b78f7a2e7b43bcb971e5a187594b150882db64bd13c041db6f6612c"
+    },
+    {
+      "path": "documentation/DATA_GAPS.md",
+      "bytes": 3129,
+      "sha256": "8a8d6f31e9cd3f27274873b682238644b5b4f5cf86d5ca18333e1f147f991934"
+    },
+    {
+      "path": "documentation/METHODOLOGY.md",
+      "bytes": 3386,
+      "sha256": "32292d2c111bf49e9d0648b31751e476058542fbc353472f9e2f9c0f509e567e"
+    },
+    {
+      "path": "documentation/RESEARCH.md",
+      "bytes": 27214,
+      "sha256": "8de35ca995df8fde35341b5673cb4d87868d9f91f3ecb4468f22dab56a25272b"
+    },
+    {
+      "path": "documentation/VALIDATION_REPORT.md",
+      "bytes": 1310,
+      "sha256": "5168cec78cf8a850f06832dde1a42e1acafb10cd6a43b8283c2147a19f6d1914"
+    },
+    {
+      "path": "estimates/assumptions.csv",
+      "bytes": 1997,
+      "sha256": "0ef2eaeab6067e4b83e6bd67fea2e804920c29152036bedbaa39ef8501635bf6"
+    },
+    {
+      "path": "estimates/scenarios.csv",
+      "bytes": 1176,
+      "sha256": "9ce91a03ad8d8180200af219fd29e1e199f292afad65fae30a6932f497792938"
+    },
+    {
+      "path": "processed/industry_examples.csv",
+      "bytes": 1029,
+      "sha256": "7235637802814d4aee8ce87958c4a1a501da4f184f20ba1d74e58e02d2a588d7"
+    },
+    {
+      "path": "processed/market_benchmarks.csv",
+      "bytes": 1214,
+      "sha256": "52db49133b9704a12166d6d3b1e5cb50fd5e2869cd5ad6870add59dff2862581"
+    },
+    {
+      "path": "sources/sources.csv",
+      "bytes": 4719,
+      "sha256": "44d9d98927c172870daf9fe88bc565be75015ca6d29116e32809d3e876e02b9c"
+    }
+  ]
+}

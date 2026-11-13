@@ -1,0 +1,8 @@
+metric,entity,period,value,unit,value_origin,source_id,note
+cargo_and_mail_all,Russia,2025,446300,tonnes,observed,SRC04,"Округлённое опубликованное значение; все авиагрузоперевозки, не только belly cargo"
+cargo_and_mail_domestic,Russia,2025,311000,tonnes,observed,SRC04,Округлённое опубликованное значение
+cargo_and_mail_international,Russia,2025,135200,tonnes,observed,SRC04,Вместе с внутренним даёт 446200 т; разница 100 т связана с округлением
+cargo_and_mail_all,Russia,2026-H1,202000,tonnes,observed,SRC05,Округлённое опубликованное значение
+cargo_and_mail_domestic,Russia,2026-H1,136000,tonnes,observed,SRC05,Округлённое опубликованное значение
+cargo_and_mail_international,Russia,2026-H1,66000,tonnes,observed,SRC05,Округлённое опубликованное значение
+cargo_and_mail_aeroflot_group,Aeroflot Group,2026-H1,102000,tonnes,observed,SRC05,Грузы и почта в грузовых отсеках по сообщению группы; не весь рынок

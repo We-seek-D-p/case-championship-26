@@ -1,0 +1,16 @@
+parameter,value,unit,value_origin,source_ids,description
+base_strategy,S1,dimensionless,scenario,SRC12,Текущая стратегия ветки gg: существующая база MRV
+base_airport,MRV,IATA,scenario,SRC12,Минеральные Воды
+aircraft,SSJ-100,type,scenario,SRC12,99 мест в модели; доступность БГО не подтверждена
+routes_count,4,routes,scenario,SRC12,"MRV–KUF, MRV–GOJ, MRV–KZN, MRV–UFA"
+round_trips_per_route_week,4,round_trips,scenario,SRC12,Четыре оборота на направление в неделю
+weeks_per_year,52,weeks,scenario,SRC12,Полный 2028 год; не календарный прогноз рейсов
+flight_legs_per_year,1664,legs,derived,SRC12,4 маршрута × 4 оборота × 2 плеча × 52 недели
+average_cargo_kg_per_leg_low,25,kg,scenario,,Не подтверждённый спрос; только проверка чувствительности
+average_cargo_kg_per_leg_base,60,kg,scenario,,Не подтверждённый спрос; только проверка чувствительности
+average_cargo_kg_per_leg_high,100,kg,scenario,,Не подтверждённый спрос; только проверка чувствительности
+realized_tariff_rub_per_kg,100,RUB/kg,scenario,,Не рыночная котировка; ставка для модели
+handling_rub_per_kg,20,RUB/kg,scenario,,Не коммерческое предложение аэропорта
+incremental_weight_cost_rub_per_kg,10,RUB/kg,scenario,,Прокси доп. расхода из-за массы; не инженерная топливная модель
+agent_commission_rate,0.15,fraction,scenario,,Предположенная комиссия агента
+fixed_cargo_cost_rub_per_year,1500000,RUB/year,scenario,,Отдельные годовые расходы направления; не полный бизнес-план

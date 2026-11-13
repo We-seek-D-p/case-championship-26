@@ -1,0 +1,5 @@
+example_id,entity,service,scope_or_limit,evidence_type,source_id,qualification
+aeroflot_regular_cargo,Аэрофлот,commercial cargo,regular passenger flights,official_webpage,SRC01,Детальные ограничения зависят от рейса и ВС
+aeroflot_express,Аэрофлот,express cargo,max 32 kg/piece; max 100 kg/flight,official_webpage,SRC02,Только параметры конкретного экспресс-продукта; не универсальный предел БГО
+utair_cargo,ЮТэйр,commercial cargo,ATR-72-500; Boeing 737 variants; Boeing 767,official_webpage,SRC03,"Доступность груза зависит от типа ВС, люка, пола, аэропорта и согласования"
+russian_post,Почта России,postal logistics,uses contracted small aircraft and helicopters,annual_report,SRC06,"Подтверждает модель привлечения перевозчиков, а не наличие контракта с Red Wings"
